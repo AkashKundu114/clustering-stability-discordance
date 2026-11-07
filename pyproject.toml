@@ -51,9 +51,9 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/AkashKundu114/csd"
-Repository = "https://github.com/AkashKundu114/csd.git"
-Issues = "https://github.com/AkashKundu114/csd/issues"
+Homepage = "https://github.com/AkashKundu114/clustering-stability-discordance"
+Repository = "https://github.com/AkashKundu114/clustering-stability-discordance.git"
+Issues = "https://github.com/AkashKundu114/clustering-stability-discordance/issues"
 
 [project.scripts]
 csd = "icc.__main__:main"

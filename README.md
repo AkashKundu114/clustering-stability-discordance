@@ -79,8 +79,8 @@ csd/
 ### 4.1 Environment Setup
 ```bash
 # Clone the repository
-git clone https://github.com/AkashKundu114/csd.git
-cd csd
+git clone https://github.com/AkashKundu114/clustering-stability-discordance.git
+cd clustering-stability-discordance
 
 # Create and activate a clean Python 3.10+ virtual environment
 python -m venv venv

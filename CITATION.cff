@@ -3,7 +3,7 @@ message: "If you use this software or empirical data, please cite both the paper
 title: "CSD: Clustering Stability–Accuracy Discordance in High-Dimensional Biomedical Data"
 version: 1.0.0-rc2
 date-released: 2026-11-07
-repository-code: "https://github.com/AkashKundu114/csd"
+repository-code: "https://github.com/AkashKundu114/clustering-stability-discordance"
 license: MIT
 authors:
   - name: "Kalyan Kumar Das"
