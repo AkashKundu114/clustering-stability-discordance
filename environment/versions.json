@@ -1,0 +1,44 @@
+{
+  "system": {
+    "os": "Windows 11 (64-bit)",
+    "processor": "AMD Ryzen 9 8940HX (16 physical cores, 32 logical threads)",
+    "ram_installed_gb": 16.0,
+    "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU"
+  },
+  "runtime": {
+    "python_executable": "python",
+    "python_tested_versions": ["3.10", "3.11", "3.12", "3.13", "3.14.6"],
+    "current_python": "3.14.6"
+  },
+  "verified_core_dependencies": {
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.9.1",
+    "pyyaml": "6.0.3",
+    "pytest": "9.1.1"
+  },
+  "deep_learning_dependencies": {
+    "torch": "2.16.0.dev20261017+cu134",
+    "torchvision": "0.30.0.dev20261030+cu134",
+    "tensorflow": "2.22.0rc0"
+  },
+  "reproducibility_tiers": {
+    "tier_1_saved_reconstruction": {
+      "command": "python reproduction/scripts/recompute_saved_stability.py --data-root <path> --output-dir <path>",
+      "runtime_seconds": 53.87,
+      "ram_mb": 512,
+      "gpu_required": false,
+      "verified_status": "PASS"
+    },
+    "tier_2_unit_and_cli_tests": {
+      "command": "python -m pytest tests/unit tests/test_reproduce_cli.py",
+      "runtime_seconds": 93.5,
+      "verified_status": "76 PASSED"
+    },
+    "tier_3_fresh_clustering_rerun": {
+      "status": "NOT_RECOMMENDED_ON_LAPTOP",
+      "host_boundary": "16 GB RAM ceiling causes OS thrashing on N >= 10k benchmarks; fresh benchmark frozen at 892/1430 fits"
+    }
+  }
+}

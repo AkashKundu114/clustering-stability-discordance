@@ -1,0 +1,149 @@
+# CSD: Clustering Stability–Accuracy Discordance in High-Dimensional Biomedical Data
+
+[![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Tests: 86 Passing](https://img.shields.io/badge/tests-86%20passed-brightgreen.svg)](tests/)
+[![Target Journal: Springer DMKD](https://img.shields.io/badge/Target%20Journal-Springer%20DMKD-orange.svg)](https://link.springer.com/journal/10618)
+[![Code style: Ruff](https://img.shields.io/badge/code%20style-ruff-000000.svg)](https://github.com/astral-sh/ruff)
+[![Types: Mypy](https://img.shields.io/badge/types-mypy-blue.svg)](https://mypy-lang.org/)
+
+> **CSD** stands for **Clustering Stability–Accuracy Discordance**.  
+> **Full Manuscript Title:** *An Empirical Analysis of Stability-Accuracy Discordance in High-Dimensional Consensus Clustering: Evidence from Biomedical Cohorts*  
+> **Authors:** Kalyan Kumar Das, Akash Kundu, Anirban Mukhopadhyay  
+> **Target Journal:** Springer Nature — *Data Mining and Knowledge Discovery* (DMKD)
+
+---
+
+## 1. Scientific Summary & Core Thesis
+
+Subsample stability is widely treated as an empirical proxy for clustering reliability, and consensus clustering is frequently assumed to protect against distance concentration and high-dimensional noise. This repository (**CSD**) hosts the self-contained, reproducible research code, saved-evidence reconstruction tools, dataset governance manifests, and documentation for an empirical investigation into whether resampling stability implies external reference-label accuracy in high-dimensional biomedical data ($D \gg N$).
+
+### Core Finding
+**Resampling stability and external reference-label alignment are fundamentally distinct mathematical quantities.** In high-dimensional regimes with extreme noise ($D/N > 20$), unsupervised clustering algorithms can repeatedly converge onto mutually agreeing, data-driven noise partitions. These partitions achieve high subsample stability while exhibiting zero or near-zero agreement with external diagnostic or biological ground-truth labels.
+
+---
+
+## 2. Research Questions & Empirical Evidence
+
+Across six clinical cancer microarray cohorts ($N = 60\text{--}102$, $D = 2{,}000\text{--}12{,}600$, $D/N = 32\text{--}201$) evaluated over 12 clustering algorithms with 30 subsampling iterations per cell:
+
+1. **Does subsample stability guarantee external label accuracy in high-dimensional data?**  
+   *Finding:* No. Base clustering algorithms repeatedly achieve subsample stability $\ge 0.50$ (and up to $0.996$) while empirical Adjusted Rand Index (ARI) against clinical annotations collapses to chance (mean external ARI: $0.052522$). The mean stability–accuracy gap across all 72 cells is $+0.457289$ (median $+0.442304$).
+2. **Do discordant partitions reflect data-driven structure or trivial permutation artifacts?**  
+   *Finding:* Data-driven structure. Under column-permuted null controls where feature-feature covariance is broken, stability collapses to near zero ($-0.003$ to $+0.049$, grand mean $0.006608$). Thus, high stability reflects true geometric concentration in the sample space, but along technical or noise axes unrelated to diagnostic classes.
+3. **Can modular algorithmic interventions bridge the stability-accuracy gap?**  
+   *Finding:* Selectively. Using Gated Anchor Consensus (GAC) as an experimental ablation vehicle, we find that random feature gating and bipartite anchor graph compression alone do not improve accuracy. Unsupervised Bimodality-Gated Subspace Selection (BGSS) selectively recovers signal when informative coordinates possess multimodal marginals (e.g., Leukemia, SRBCT), but fails when signal is diffuse or non-bimodal (e.g., Prostate, CNS).
+
+---
+
+## 3. Repository Architecture
+
+```text
+csd/
+├── .github/workflows/ci.yml       # Automated CI (lint, typing, tests, smoke verification)
+├── configs/                       # Algorithm and dataset execution configurations
+├── data/
+│   ├── dataset_registry.csv       # 19-dataset governance registry
+│   ├── registry.yaml              # Structural registry schemas
+│   └── manifests/
+│       ├── public_artifacts.csv   # 4,323 audited public telemetry/summary records
+│       ├── restricted_artifacts.csv# 4,326 restricted files (partitions & clinical caches)
+│       └── source_fetch_only.csv  # Direct upstream download sources (GEO, ArrayExpress)
+├── docs/                          # In-depth scientific and reproduction documentation
+├── reproduction/
+│   ├── scripts/
+│   │   ├── recompute_saved_stability.py  # Tier 1 six-cohort stability recalculation
+│   │   └── recompute_benchmark_scores.py # Tier 1 13-dataset benchmark recalculation
+│   └── reviewer_guide/            # Dedicated step-by-step reviewer instructions
+├── scripts/
+│   ├── reproduce.py               # Top-level reproduction CLI runner
+│   ├── evaluate.py                # Partition evaluation script
+│   └── validate_registry_and_release_metadata.py
+├── src/
+│   ├── icc/                       # Core algorithms, consensus engine, and metrics
+│   └── cicc/                      # Conformal inductive consensus modules
+├── tests/                         # Unit, integration, and CLI test suite (86 tests)
+├── CITATION.cff                   # Citation metadata for DMKD article
+├── DATA_AVAILABILITY.md           # Tiered data governance statement
+├── ENVIRONMENT.md                 # System requirements and dependency lockfiles
+├── LICENSE                        # MIT License
+├── README.md                      # This document
+├── REPRODUCIBILITY.md             # Detailed Tier 1 reconstruction protocols
+└── THIRD_PARTY_NOTICES.md         # Upstream data licensing and provenance notices
+```
+
+---
+
+## 4. Quickstart: Verification & Reproduction
+
+### 4.1 Environment Setup
+```bash
+# Clone the repository
+git clone https://github.com/AkashKundu114/csd.git
+cd csd
+
+# Create and activate a clean Python 3.10+ virtual environment
+python -m venv venv
+# On Linux/macOS:
+source venv/bin/activate
+# On Windows (PowerShell):
+.\venv\Scripts\Activate.ps1
+
+# Install core and test dependencies
+pip install -e ".[dev]"
+```
+
+### 4.2 Run Test Suite
+```bash
+python -m pytest tests/unit tests/test_reproduce_cli.py
+```
+*Expected result:* 86 passed in ~50s.
+
+### 4.3 Run Synthetic Smoke Workflow
+```bash
+python scripts/reproduce.py --scope smoke
+```
+
+### 4.4 Tier 1 Saved-Evidence Reconstruction
+For journal editors and peer reviewers with access to the authorized partition bundle:
+```bash
+python reproduction/scripts/recompute_saved_stability.py \
+    --data-root /path/to/evidence_bundle \
+    --output-dir results/recomputed_tier1
+```
+*Output:* Recalculates all 62,640 pairwise subsample stability ARIs and 2,160 external ARIs in ~50 seconds without refitting base models.
+
+---
+
+## 5. Dataset Governance & Ethics
+
+In strict compliance with Springer Nature research data policies, this repository implements a four-tiered data governance model:
+* **Tier A (Committed):** Synthetic benchmark configurations, analysis code, evaluation manifests.
+* **Tier B (Source-Fetch):** Public open-access datasets (UCI, CuratedMicroarrayData) fetched via deterministic scripts with SHA-256 verification.
+* **Tier C (Restricted / Academic Non-Commercial):** Yale Face Database B and UPV/EHU Lung Cancer — non-redistributable; original download links and acquisition instructions provided.
+* **Tier D (Confidential Reviewer Package):** Precomputed partition arrays (`.npy`) and clinical caches (`.npz`) available to DMKD editors/reviewers under confidential academic peer-review terms.
+
+See [`DATA_AVAILABILITY.md`](DATA_AVAILABILITY.md) and [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md) for complete details.
+
+---
+
+## 6. Citation
+
+If you use this codebase or refer to the stability–accuracy discordance findings, please cite:
+
+```bibtex
+@article{das2026csd,
+  title={An Empirical Analysis of Stability-Accuracy Discordance in High-Dimensional Consensus Clustering: Evidence from Biomedical Cohorts},
+  author={Das, Kalyan Kumar and Kundu, Akash and Mukhopadhyay, Anirban},
+  journal={Data Mining and Knowledge Discovery},
+  year={2026},
+  publisher={Springer Nature},
+  doi={10.1007/s10618-026-XXXXX-X}
+}
+```
+
+---
+
+## 7. License
+
+This repository is distributed under the [MIT License](LICENSE). Third-party datasets and benchmarks remain subject to their respective original licenses and terms.

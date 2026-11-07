@@ -1,0 +1,15 @@
+# Pinned reproducible dependency lock for Tier 1 & Tier 2 reproduction
+# Generated on 2026-11-07 under Python 3.14.6 / Windows 11
+
+numpy==2.4.6
+scipy==1.18.0
+pandas==2.2.3
+scikit-learn==1.9.1
+pyyaml==6.0.3
+pytest==9.1.1
+tabulate==0.10.0
+tqdm==4.70.0
+Pillow==11.0.0
+matplotlib==3.10.0
+seaborn==0.13.2
+fastparquet==2024.11.0

@@ -1,0 +1,108 @@
+[build-system]
+requires = ["setuptools>=77.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "csd"
+version = "1.0.0-rc1"
+description = "CSD: Clustering Stability–Accuracy Discordance in High-Dimensional Biomedical Data (Reproducibility Package for Springer Nature DMKD)"
+readme = "README.md"
+authors = [
+    {name = "Kalyan Kumar Das"},
+    {name = "Akash Kundu"},
+    {name = "Anirban Mukhopadhyay"}
+]
+license = "MIT"
+classifiers = [
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.23.0",
+    "scipy>=1.10.0",
+    "pandas>=2.0.0",
+    "matplotlib>=3.7.0",
+    "scikit-learn>=1.3.0",
+    "seaborn>=0.12.0",
+    "pyyaml>=6.0",
+    "tqdm>=4.60.0",
+    "tabulate>=0.9.0",
+    "reportlab>=4.0.0",
+    "Pillow>=9.5.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "black",
+    "ruff",
+    "mypy>=1.0.0",
+    "requests>=2.28.0",
+    "tomli>=2.0.1; python_version < '3.11'",
+]
+
+[project.urls]
+Homepage = "https://github.com/AkashKundu114/csd"
+Repository = "https://github.com/AkashKundu114/csd.git"
+Issues = "https://github.com/AkashKundu114/csd/issues"
+
+[project.scripts]
+csd = "icc.__main__:main"
+icc = "icc.__main__:main"
+reproduce = "scripts.reproduce:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+exclude = [
+    "./data",
+    ".pytest_cache",
+    ".ruff_cache",
+    ".mypy_cache",
+]
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+ignore = ["E501"]
+
+[tool.ruff.lint.per-file-ignores]
+"scripts/*" = ["E402"]
+
+[tool.mypy]
+python_version = "3.10"
+mypy_path = "src"
+ignore_missing_imports = true
+warn_unused_configs = true
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q --cov=src"
+testpaths = [
+    "tests",
+]
+pythonpath = [
+    ".",
+    "src",
+]
+markers = [
+    "unit: Fast mathematical and algorithmic unit tests",
+    "integration: Multi-model benchmarks, dataset loading, and scalability sweeps",
+    "regression: Regression, fidelity, and theoretical boundary verification",
+]
+filterwarnings = [
+    "ignore::sklearn.exceptions.ConvergenceWarning",
+    "ignore:Graph is not fully connected:UserWarning",
+    "ignore:`beta` is not used by ICC-v2:DeprecationWarning",
+]

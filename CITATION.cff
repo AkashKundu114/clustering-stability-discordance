@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this software or empirical data, please cite both the paper and the software repository."
+title: "CSD: Clustering Stability–Accuracy Discordance in High-Dimensional Biomedical Data"
+version: 1.0.0-rc1
+date-released: 2026-11-07
+repository-code: "https://github.com/AkashKundu114/csd"
+license: MIT
+authors:
+  - name: "Kalyan Kumar Das"
+    affiliation: "University of Kalyani"
+  - name: "Akash Kundu"
+    affiliation: "University of Kalyani"
+  - name: "Anirban Mukhopadhyay"
+    affiliation: "University of Kalyani"
+preferred-citation:
+  type: article
+  title: "An Empirical Analysis of Stability-Accuracy Discordance in High-Dimensional Consensus Clustering: Evidence from Biomedical Cohorts"
+  authors:
+    - name: "Kalyan Kumar Das"
+      affiliation: "University of Kalyani"
+    - name: "Akash Kundu"
+      affiliation: "University of Kalyani"
+    - name: "Anirban Mukhopadhyay"
+      affiliation: "University of Kalyani"
+  journal: "Data Mining and Knowledge Discovery"
+  year: 2026
+  publisher: "Springer Nature"

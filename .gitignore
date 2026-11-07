@@ -1,0 +1,116 @@
+# Private research and audit material
+/audit/
+/paper/
+/manuscript/
+/submission/
+/reviewer-responses/
+/supplementary-private/
+/private-research/
+/publication-records/
+/internal-notes/
+
+# Research data and machine-local caches
+/data/raw/
+/data/cache/
+/data/paul15/
+/data/interim/*
+!/data/interim/.gitkeep
+!/data/interim/README.md
+/data/processed/*
+!/data/processed/.gitkeep
+!/data/processed/README.md
+*.h5
+*.h5ad
+
+# Explicitly private or large experimental outputs; reviewed public summaries may be tracked
+/results/study_null_gating/confirmatory_raw/
+/results/stability/labels/
+/results/stability/runs/
+/results/stability/partitions/
+/results/confirmatory/predictions/
+/results/experiments/*.json
+/experiments/**/data/cache/
+/experiments/**/data/*.npz
+/experiments/**/data/*.h5ad
+/experiments/**/data/*.mat
+
+# Local model checkpoints and generated logs
+/checkpoints/
+**/checkpoints/
+*.ckpt
+*.log
+/logs/
+
+# Python, build, test, and coverage outputs
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments and local environment files
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Testing and coverage caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# IDE and operating-system files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+.mcp.json
+
+# Local scratch and governance workspaces
+/scratch/
+/governance/
+/reports/
+/paper2/
+/results_legacy/
+/tools/bin/
+*.exe
+!/tools/check_consistency.py
+
+# LaTeX auxiliary build files (source manuscripts are ignored by private directories above)
+*.aux
+*.bbl
+*.blg
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
