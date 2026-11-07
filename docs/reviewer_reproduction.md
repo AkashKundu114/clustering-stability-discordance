@@ -1,8 +1,7 @@
-# Reviewer Reproduction Guide: Springer Nature DMKD
+# Reviewer Reproduction Guide: Peer-Reviewed Journal
 
-**Target Journal:** Springer Nature — *Data Mining and Knowledge Discovery* (DMKD)  
-**Manuscript Title:** *An Empirical Analysis of Stability-Accuracy Discordance in High-Dimensional Consensus Clustering: Evidence from Biomedical Cohorts*  
-**Authors:** Kalyan Kumar Das, Akash Kundu, Anirban Mukhopadhyay  
+**Manuscript Title:** *An Empirical Analysis of Stability-Accuracy Discordance in High-Dimensional Consensus Clustering: Evidence from Biomedical Cohorts* 
+**Authors:** Kalyan Kumar Das, Akash Kundu, Anirban Mukhopadhyay 
 
 ---
 
@@ -25,35 +24,35 @@ To independently verify the complete empirical foundation:
 
 ### Instructions
 1. Ensure Python 3.10+ and standard packages are available:
-   ```bash
-   pip install numpy scipy pandas scikit-learn
-   ```
+ ```bash
+ pip install numpy scipy pandas scikit-learn
+ ```
 2. Run the self-contained Tier 1 reproduction script:
-   ```bash
-   python reproduction/scripts/recompute_saved_stability.py \
-       --data-root /path/to/reviewer_evidence_bundle \
-       --output-dir results/reviewer_audit
-   ```
+ ```bash
+ python reproduction/scripts/recompute_saved_stability.py \
+ --data-root /path/to/reviewer_evidence_bundle \
+ --output-dir results/reviewer_audit
+ ```
 
 ### What You Will See
 The script performs full cryptographic checksum checks on all inputs and recalculates all metrics from scratch. In ~38 seconds, it will output:
 ```json
 {
-  "counts": {
-    "partition_files": 4320,
-    "per_fit_records": 4320,
-    "cells": 72,
-    "real_pairwise_ari": 31320,
-    "null_pairwise_ari": 31320,
-    "validation_errors": 0
-  },
-  "summary": {
-    "mean_stability": 0.509812,
-    "mean_external_ari": 0.052522,
-    "mean_gap": 0.457289,
-    "median_gap": 0.442304,
-    "mean_null_stability": 0.006608
-  }
+ "counts": {
+ "partition_files": 4320,
+ "per_fit_records": 4320,
+ "cells": 72,
+ "real_pairwise_ari": 31320,
+ "null_pairwise_ari": 31320,
+ "validation_errors": 0
+ },
+ "summary": {
+ "mean_stability": 0.509812,
+ "mean_external_ari": 0.052522,
+ "mean_gap": 0.457289,
+ "median_gap": 0.442304,
+ "mean_null_stability": 0.006608
+ }
 }
 ```
 
@@ -70,17 +69,17 @@ In Section 6.2, we report an exploratory historical comparison across 13 dataset
 - The non-parametric Friedman omnibus test yields $\chi_F^2 = 11.556, p = 0.3979 \approx 0.40$ ($\text{df}=11$), establishing that all 12 estimators belong to a single equivalence clique under Nemenyi critical difference testing ($\text{CD}=4.62$). Simple K-Means attains top rank ($5.15$).
 - A modern fresh re-execution completed 892 of 1,430 planned unique fits before being halted to avoid host memory exhaustion on dense spectral/distance matrix operations.
 - To verify the historical scores and Friedman calculation:
-  ```bash
-  python reproduction/scripts/recompute_benchmark_scores.py \
-      --scores data/historical_benchmarks/benchmark_matrix_passF.csv data/historical_benchmarks/exp3_cohirf_benchmark.csv \
-      --output-dir results/recomputed_benchmark
-  ```
+ ```bash
+ python reproduction/scripts/recompute_benchmark_scores.py \
+ --scores data/historical_benchmarks/benchmark_matrix_passF.csv data/historical_benchmarks/exp3_cohirf_benchmark.csv \
+ --output-dir results/recomputed_benchmark
+ ```
 
 ---
 
 ## 3. Data Governance & Reviewer Confidential Access
 
-In strict adherence to Springer Nature guidelines and upstream institutional terms:
+In strict adherence to standard research data guidelines and upstream institutional terms:
 - Open-access benchmarks (Sonar, Madelon, Isolet, 20 Newsgroups, PBMC68k) carry permissive **CC BY 4.0** licenses.
 - Extended Yale Face Database B terms prohibit third-party database redistribution; images are acquired dynamically from authorized servers.
 - Clinical biomedical microarrays (Colon, Leukemia, CNS, Ovarian, Prostate, SRBCT) originate from landmark hospital biobanks and are retrieved via OpenML's API.

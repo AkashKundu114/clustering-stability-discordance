@@ -1,10 +1,9 @@
 # Release Engineering and Publication Gate Process
 
-**Document:** `docs/release-process.md`  
-**Date:** 2026-11-07  
-**Candidate Version:** `v1.0.0-rc1`  
-**Final Release Target:** `v1.0.0`  
-**Target Journal:** Springer Nature — *Data Mining and Knowledge Discovery* (DMKD)
+**Document:** `docs/release-process.md` 
+**Date:** 2026-11-07 
+**Candidate Version:** `v1.0.0-rc1` 
+**Final Release Target:** `v1.0.0` 
 
 ---
 
@@ -13,7 +12,7 @@
 ### 1.1 Repository Identity
 - **Current Repository:** `AkashKundu114/icc-clustering`
 - **Proposed Public Candidate Name:** `clustering-stability-discordance`
-- **Proposed Public Title:** **Clustering Stability–Accuracy Discordance in High-Dimensional Biomedical Data**
+- **Proposed Public Title:** **Clustering Stability-Accuracy Discordance in High-Dimensional Biomedical Data**
 - **Description:** "Reproducible research code, saved-evidence reconstruction tools, and documentation for an empirical study of resampling stability and external-label alignment in high-dimensional biomedical clustering."
 - **Topics:** `clustering`, `consensus-clustering`, `clustering-stability`, `high-dimensional-data`, `biomedical-data`, `unsupervised-learning`, `statistical-learning`, `reproducible-research`, `data-mining`, `computational-biology`, `research-software`, `python`.
 

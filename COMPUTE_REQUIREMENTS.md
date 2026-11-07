@@ -9,9 +9,9 @@ This document details hardware specifications, memory budgets, software dependen
 | Activity | CPU Requirements | RAM Requirement | GPU Needed? | Wall-Clock Time | Recommended Environment |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Tier 1: Reviewer Metric Recomputation** | 1 Core | 512 MB | No | **~38 seconds** | Standard Laptop / Desktop |
-| **Tier 2: Unit Tests & Smoke Suite** | 1–2 Cores | 1 GB | No | **~1–2 minutes** | Standard Laptop / CI Runner |
-| **Tier 3A: Fresh Six-Cohort Re-Run** | 8+ Cores (Ryzen 9 / Intel i7/i9) | 16 GB | Recommended (CUDA GPU for DEC) | **10–14 hours** | Workstation with NVIDIA GPU |
-| **Tier 3B: 13-Dataset Full Benchmark** | 16+ Cores | 32+ GB | Mandatory | **~36–48 hours** | HPC Compute Node (Halted in repo) |
+| **Tier 2: Unit Tests & Smoke Suite** | 1-2 Cores | 1 GB | No | **~1-2 minutes** | Standard Laptop / CI Runner |
+| **Tier 3A: Fresh Six-Cohort Re-Run** | 8+ Cores (Ryzen 9 / Intel i7/i9) | 16 GB | Recommended (CUDA GPU for DEC) | **10-14 hours** | Workstation with NVIDIA GPU |
+| **Tier 3B: 13-Dataset Full Benchmark** | 16+ Cores | 32+ GB | Mandatory | **~36-48 hours** | HPC Compute Node (Halted in repo) |
 
 ---
 
@@ -32,10 +32,10 @@ To prevent operating system thrashing and memory exhaustion:
 - **Supported Operating Systems:** Linux (Ubuntu 20.04+, Debian 11+), macOS (12.0+), Windows 10/11 (64-bit).
 - **Python Version:** Python $\ge 3.10$ (validated on Python 3.10, 3.11, 3.12, 3.13, 3.14).
 - **Core Numerical Stack:**
-  - `numpy >= 1.23.0`
-  - `scipy >= 1.10.0`
-  - `pandas >= 2.0.0`
-  - `scikit-learn >= 1.3.0`
-  - `pyyaml >= 6.0`
+ - `numpy >= 1.23.0`
+ - `scipy >= 1.10.0`
+ - `pandas >= 2.0.0`
+ - `scikit-learn >= 1.3.0`
+ - `pyyaml >= 6.0`
 - **Optional Deep Learning Stack (for DEC):**
-  - `torch >= 2.0.0` with CUDA runtime (recommended) or PyTorch CPU.
+ - `torch >= 2.0.0` with CUDA runtime (recommended) or PyTorch CPU.

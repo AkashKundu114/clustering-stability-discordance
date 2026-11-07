@@ -83,9 +83,9 @@ Provide a local evidence root with this layout:
 <evidence-root>/
 ├── data/cache/{cns,colon,leukemia,ovarian,prostate,srbct}.npz
 └── results/stability/
-    ├── partitions/<cohort>_<method>_<real-or-null>_<repeat>.npy
-    ├── runs/<matching-partition-name>.parquet
-    └── subsample_stability_summary.csv
+ ├── partitions/<cohort>_<method>_<real-or-null>_<repeat>.npy
+ ├── runs/<matching-partition-name>.parquet
+ └── subsample_stability_summary.csv
 ```
 
 The script validates the expected 6 × 12 × 2 × 30 file grid, Parquet keys,
@@ -105,8 +105,8 @@ primary result from these subsets.
 
 ```powershell
 python reproduction/scripts/recompute_saved_stability.py `
-  --data-root <evidence-root> `
-  --output-dir <new-empty-output-directory>
+ --data-root <evidence-root> `
+ --output-dir <new-empty-output-directory>
 ```
 
 This recalculation assumes each NPY row index refers to the corresponding row
@@ -122,21 +122,21 @@ evidence that every row came from an independent, fair, or successful fit.
 
 ```powershell
 python reproduction/scripts/recompute_benchmark_scores.py `
-  --scores <pass-f-score.csv> <cohirf-score.csv> `
-  --output-dir <new-empty-output-directory>
+ --scores <pass-f-score.csv> <cohirf-score.csv> `
+ --output-dir <new-empty-output-directory>
 ```
 
 ## Current reproduction status
 
 - **Aggregate result verification:** unavailable from a fresh clone because
-  authorized result tables and their inputs are not included.
+ authorized result tables and their inputs are not included.
 - **Partition-level verification:** unavailable from a fresh clone because the
-  partitions, per-fit records and exact input caches are not included.
+ partitions, per-fit records and exact input caches are not included.
 - **Full experimental reproduction:** a full six-cohort run was executed locally
-  on 2026-11-02, but a fresh run from this public clone is unavailable because
-  the exact inputs and verified input/configuration chain are not included and
-  redistribution rights remain unresolved. This local run does not authenticate
-  the historical execution. No full 13-dataset rerun was completed.
+ on 2026-11-02, but a fresh run from this public clone is unavailable because
+ the exact inputs and verified input/configuration chain are not included and
+ redistribution rights remain unresolved. This local run does not authenticate
+ the historical execution. No full 13-dataset rerun was completed.
 
 The software package itself has passed a fresh-clone installation and a
 synthetic API smoke test. That check is not reproduction of the scientific

@@ -1,9 +1,8 @@
 # Environment Setup and Installation Guide
 
-**Document:** `docs/environment-setup.md`  
-**Date:** 2026-11-07  
-**Project:** Stability-Accuracy Discordance in High-Dimensional Consensus Clustering  
-**Target Journal:** Springer Nature — *Data Mining and Knowledge Discovery* (DMKD)
+**Document:** `docs/environment-setup.md` 
+**Date:** 2026-11-07 
+**Project:** Stability-Accuracy Discordance in High-Dimensional Consensus Clustering 
 
 ---
 

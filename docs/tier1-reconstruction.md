@@ -1,9 +1,8 @@
 # Tier 1: Saved-Evidence Reconstruction Guide
 
-**Document:** `docs/tier1-reconstruction.md`  
-**Date:** 2026-11-07  
-**Project:** Stability-Accuracy Discordance in High-Dimensional Consensus Clustering  
-**Target Journal:** Springer Nature — *Data Mining and Knowledge Discovery* (DMKD)
+**Document:** `docs/tier1-reconstruction.md` 
+**Date:** 2026-11-07 
+**Project:** Stability-Accuracy Discordance in High-Dimensional Consensus Clustering 
 
 ---
 
@@ -26,11 +25,11 @@ Tier 1 is a self-contained, zero-network-exposure evaluation protocol designed s
 - **Processor:** Any modern CPU (1 core is sufficient).
 - **RAM:** $< 512\text{ MB}$.
 - **GPU:** None required.
-- **Runtime:** **~38–53 seconds** on standard laptop workstations.
+- **Runtime:** **~38-53 seconds** on standard laptop workstations.
 - **Dependencies:** Standard Python stack:
-  ```bash
-  pip install numpy scipy pandas scikit-learn
-  ```
+ ```bash
+ pip install numpy scipy pandas scikit-learn
+ ```
 
 ---
 
@@ -38,33 +37,33 @@ Tier 1 is a self-contained, zero-network-exposure evaluation protocol designed s
 
 1. Obtain the authorized reviewer evidence bundle (`partitions/` and `runs/`).
 2. Run the committed recomputation CLI:
-   ```bash
-   python reproduction/scripts/recompute_saved_stability.py \
-       --data-root /path/to/evidence_bundle \
-       --output-dir results/recomputed_tier1
-   ```
+ ```bash
+ python reproduction/scripts/recompute_saved_stability.py \
+ --data-root /path/to/evidence_bundle \
+ --output-dir results/recomputed_tier1
+ ```
 3. Verify the generated output manifest and summary:
-   ```json
-   {
-     "counts": {
-       "partition_files": 4320,
-       "per_fit_records": 4320,
-       "cells": 72,
-       "real_pairwise_ari": 31320,
-       "null_pairwise_ari": 31320,
-       "partition_duplicate_hash_groups": 140,
-       "validation_errors": 0
-     },
-     "summary": {
-       "mean_stability": 0.509812,
-       "mean_external_ari": 0.052522,
-       "mean_gap": 0.457289,
-       "median_gap": 0.442304,
-       "mean_null_stability": 0.006608
-     }
-   }
-   ```
+ ```json
+ {
+ "counts": {
+ "partition_files": 4320,
+ "per_fit_records": 4320,
+ "cells": 72,
+ "real_pairwise_ari": 31320,
+ "null_pairwise_ari": 31320,
+ "partition_duplicate_hash_groups": 140,
+ "validation_errors": 0
+ },
+ "summary": {
+ "mean_stability": 0.509812,
+ "mean_external_ari": 0.052522,
+ "mean_gap": 0.457289,
+ "median_gap": 0.442304,
+ "mean_null_stability": 0.006608
+ }
+ }
+ ```
 4. Output files created:
-   - `results/recomputed_tier1/recomputation_summary.json` (Full per-cell breakdown and aggregate metrics).
-   - `results/recomputed_tier1/recomputed_cells.csv` (CSV table of all 72 cells).
-   - `results/recomputed_tier1/output_manifest.json` (SHA-256 hashes of generated artifacts).
+ - `results/recomputed_tier1/recomputation_summary.json` (Full per-cell breakdown and aggregate metrics).
+ - `results/recomputed_tier1/recomputed_cells.csv` (CSV table of all 72 cells).
+ - `results/recomputed_tier1/output_manifest.json` (SHA-256 hashes of generated artifacts).

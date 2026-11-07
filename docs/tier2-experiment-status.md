@@ -1,9 +1,8 @@
 # Tier 2: Fresh Experiment Status and Incomplete Benchmark Disclosure
 
-**Document:** `docs/tier2-experiment-status.md`  
-**Date:** 2026-11-07  
-**Project:** Stability-Accuracy Discordance in High-Dimensional Consensus Clustering  
-**Target Journal:** Springer Nature — *Data Mining and Knowledge Discovery* (DMKD)
+**Document:** `docs/tier2-experiment-status.md` 
+**Date:** 2026-11-07 
+**Project:** Stability-Accuracy Discordance in High-Dimensional Consensus Clustering 
 
 ---
 
@@ -19,17 +18,17 @@ Unlike Tier 1 (which reconstructs metrics from saved partition arrays in under 6
 
 - **Total Planned Fits:** $4{,}320$ fits ($72\text{ cells} \times 30\text{ subsamples} \times 2\text{ modes [real, null]}$).
 - **Execution Status:** **100% Completed** in dedicated clean-clone re-execution on 2026-11-02.
-- **Compute Time:** Approximately 10–14 hours of continuous compute on an AMD Ryzen 9 8940HX with an NVIDIA GeForce RTX 5060 Laptop GPU.
+- **Compute Time:** Approximately 10-14 hours of continuous compute on an AMD Ryzen 9 8940HX with an NVIDIA GeForce RTX 5060 Laptop GPU.
 - **Reproducibility Findings:**
-  - 11 of 12 algorithms ($3{,}960$ of $4{,}320$ partitions) are **100% bitwise identical** to original historical outputs.
-  - The remaining 360 partitions (DEC) exhibited expected numerical divergence due to framework evolution (TensorFlow/Keras CPU mini-batch vs. PyTorch CUDA GPU full-batch).
+ - 11 of 12 algorithms ($3{,}960$ of $4{,}320$ partitions) are **100% bitwise identical** to original historical outputs.
+ - The remaining 360 partitions (DEC) exhibited expected numerical divergence due to framework evolution (TensorFlow/Keras CPU mini-batch vs. PyTorch CUDA GPU full-batch).
 
 ---
 
 ## 3. Status of the 13-Dataset Multi-Domain Benchmark (Exploratory / Incomplete)
 
-> [!IMPORTANT]  
-> **Mandatory Disclosure for Referees and Authors:**  
+> [!IMPORTANT] 
+> **Mandatory Disclosure for Referees and Authors:** 
 > The 13-dataset multi-domain benchmark is presented strictly as an **exploratory historical comparison**, NOT as a completed fresh benchmark.
 
 ### The Numbers:

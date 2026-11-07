@@ -1,13 +1,12 @@
 # Research Questions and Empirical Findings
 
-**Document:** `docs/research-questions.md`  
-**Date:** 2026-11-07  
-**Project:** Stability-Accuracy Discordance in High-Dimensional Consensus Clustering  
-**Target Journal:** Springer Nature — *Data Mining and Knowledge Discovery* (DMKD)
+**Document:** `docs/research-questions.md` 
+**Date:** 2026-11-07 
+**Project:** Stability-Accuracy Discordance in High-Dimensional Consensus Clustering 
 
 ---
 
-## 1. Research Question 1 (RQ1): The Stability–Accuracy Relationship
+## 1. Research Question 1 (RQ1): The Stability-Accuracy Relationship
 
 > **Does subsample stability guarantee external reference-label accuracy in high-dimensional biomedical cohorts?**
 
@@ -16,10 +15,10 @@
 - Total pairwise comparisons: $62{,}640$ evaluations ($31{,}320$ real $+ 31{,}320$ column-permuted null controls).
 - External ARI evaluations: $2{,}160$ measurements against clinical reference labels.
 - Across all 72 cells, authoritative fresh re-execution yields:
-  - Grand Mean Subsample Stability: $0.509812$
-  - Grand Mean External Accuracy (ARI): $0.052522$
-  - Mean Discordance Gap ($\Delta$): $+0.457289$
-  - Median Discordance Gap: $+0.442304$
+ - Grand Mean Subsample Stability: $0.509812$
+ - Grand Mean External Accuracy (ARI): $0.052522$
+ - Mean Discordance Gap ($\Delta$): $+0.457289$
+ - Median Discordance Gap: $+0.442304$
 - **Conclusion for RQ1:** **NO.** Resampling stability does not guarantee external accuracy. In fact, a positive discordance gap is pervasive across algorithms in high-dimensional biomedical regimes.
 
 ---
@@ -40,7 +39,7 @@
 
 ## 3. Research Question 3 (RQ3): Algorithmic Remediation via GAC
 
-> **Can modular unsupervised interventions—feature gating, subspace ensembling, and bipartite compression—mitigate stability–accuracy discordance?**
+> **Can modular unsupervised interventions - feature gating, subspace ensembling, and bipartite compression - mitigate stability-accuracy discordance?**
 
 ### Empirical Evidence
 - Evaluated using Gated Anchor Consensus (GAC) as an experimental ablation vehicle.

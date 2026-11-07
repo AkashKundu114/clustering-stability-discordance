@@ -4,16 +4,16 @@
 
 ```text
 src/icc/
-├── algorithms/     # Comparative baseline shims (re-exporting from baselines/)
-├── baselines/      # Canonical comparative baseline algorithms (KMeans, Spectral, GMM, HDBSCAN, FCAG, etc.)
-├── benchmarks/     # Canonical benchmark runner and scaling suites
-├── consensus/      # ICC estimator and legacy consensus implementation, ASPP, Auto-K, CICC
-├── data/           # Dataset shims, preprocessing (BGSS), and synthetic generators
-├── datasets/       # Canonical 13-benchmark dataset loader and registry suite
-├── evaluation/     # Dual-backend evaluation metrics (ARI, NMI, AMI, PAC, coverage)
-├── experiments/    # Backward-compatibility shims for benchmarks/
-├── stats/          # Non-parametric hypothesis tests (Friedman, Nemenyi CD, TOST, Wilcoxon, Bonferroni)
-└── utils/          # Logging, seed control, and timers
+├── algorithms/ # Comparative baseline shims (re-exporting from baselines/)
+├── baselines/ # Canonical comparative baseline algorithms (KMeans, Spectral, GMM, HDBSCAN, FCAG, etc.)
+├── benchmarks/ # Canonical benchmark runner and scaling suites
+├── consensus/ # ICC estimator and legacy consensus implementation, ASPP, Auto-K, CICC
+├── data/ # Dataset shims, preprocessing (BGSS), and synthetic generators
+├── datasets/ # Canonical 13-benchmark dataset loader and registry suite
+├── evaluation/ # Dual-backend evaluation metrics (ARI, NMI, AMI, PAC, coverage)
+├── experiments/ # Backward-compatibility shims for benchmarks/
+├── stats/ # Non-parametric hypothesis tests (Friedman, Nemenyi CD, TOST, Wilcoxon, Bonferroni)
+└── utils/ # Logging, seed control, and timers
 ```
 
 ## Running Tests

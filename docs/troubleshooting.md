@@ -1,9 +1,8 @@
 # Troubleshooting and Common Questions
 
-**Document:** `docs/troubleshooting.md`  
-**Date:** 2026-11-07  
-**Project:** Stability-Accuracy Discordance in High-Dimensional Consensus Clustering  
-**Target Journal:** Springer Nature — *Data Mining and Knowledge Discovery* (DMKD)
+**Document:** `docs/troubleshooting.md` 
+**Date:** 2026-11-07 
+**Project:** Stability-Accuracy Discordance in High-Dimensional Consensus Clustering 
 
 ---
 
@@ -13,11 +12,11 @@
 - **Symptom:** Running `python reproduction/scripts/recompute_saved_stability.py` raises `FileNotFoundError`.
 - **Cause:** The script requires the `--data-root` argument pointing to the authorized evidence bundle directory containing `results/stability/partitions/` and `results/stability/runs/`.
 - **Resolution:** Specify the full local path to the evidence directory:
-  ```bash
-  python reproduction/scripts/recompute_saved_stability.py \
-      --data-root /path/to/authorized/evidence_bundle \
-      --output-dir results/recomputed_tier1
-  ```
+ ```bash
+ python reproduction/scripts/recompute_saved_stability.py \
+ --data-root /path/to/authorized/evidence_bundle \
+ --output-dir results/recomputed_tier1
+ ```
 
 ---
 
@@ -32,13 +31,13 @@
 - **Symptom:** `pdflatex` reports missing document class.
 - **Cause:** Compilation must be executed from within the manuscript directory (`paper/manuscript` or `paper/review`) where `sn-jnl.cls` resides.
 - **Resolution:**
-  ```bash
-  cd paper/review
-  pdflatex main.tex
-  bibtex main
-  pdflatex main.tex
-  pdflatex main.tex
-  ```
+ ```bash
+ cd paper/review
+ pdflatex main.tex
+ bibtex main
+ pdflatex main.tex
+ pdflatex main.tex
+ ```
 
 ---
 

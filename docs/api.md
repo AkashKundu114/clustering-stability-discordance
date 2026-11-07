@@ -18,22 +18,22 @@ from icc.consensus_v2 import InvariantCoreConsensusV2
 
 ```python
 ICC(
-    n_clusters: int = 3,
-    n_base_models: int = 25,
-    n_anchors: int = 40,
-    core_quantile: float = 0.50,
-    subspace_rate: float = 0.30,
-    beta: float = 2.0,
-    pool_frac: float = 0.20,
-    embedding: str = "transfer_cut",
-    dense_threshold: int = 2000,
-    base_clusterer: str = "auto",
-    enable_aspp: bool = False,
-    aspp_config: Optional[ASPPConfig] = None,
-    random_state: int = 42,
-    pool_mode: str = "legacy",
-    pool_mad_c: float = 1.0,
-    pool_alpha: float = 0.05,
+ n_clusters: int = 3,
+ n_base_models: int = 25,
+ n_anchors: int = 40,
+ core_quantile: float = 0.50,
+ subspace_rate: float = 0.30,
+ beta: float = 2.0,
+ pool_frac: float = 0.20,
+ embedding: str = "transfer_cut",
+ dense_threshold: int = 2000,
+ base_clusterer: str = "auto",
+ enable_aspp: bool = False,
+ aspp_config: Optional[ASPPConfig] = None,
+ random_state: int = 42,
+ pool_mode: str = "legacy",
+ pool_mad_c: float = 1.0,
+ pool_alpha: float = 0.05,
 )
 ```
 
@@ -78,9 +78,9 @@ from icc.datasets.registry import load_dataset, list_datasets, get_dataset_info
 ```
 
 - `load_dataset(name: str, cache_dir: str = "data/cache", force_download: bool = False)`:
-  Loads preprocessed feature matrix `X`, label vector `y`, and descriptor dictionary `metadata`.
+ Loads preprocessed feature matrix `X`, label vector `y`, and descriptor dictionary `metadata`.
 - `list_datasets(enabled_only: bool = True)`:
-  Returns list of registered dataset metadata containers.
+ Returns list of registered dataset metadata containers.
 
 ---
 
@@ -91,7 +91,7 @@ from icc.metrics import evaluate_all, adjusted_rand_score, normalized_mutual_inf
 ```
 
 - `evaluate_all(y_true, y_pred) -> Dict[str, float]`:
-  Computes ARI, NMI, AMI, V-Measure, and Fowlkes-Mallows Index in a unified dictionary.
+ Computes ARI, NMI, AMI, V-Measure, and Fowlkes-Mallows Index in a unified dictionary.
 
 ---
 
@@ -101,11 +101,11 @@ The `cicc` module provides finite-sample distribution-free uncertainty quantific
 
 ```python
 from cicc import (
-    ConformalClusterer,
-    ConformalResult,
-    DecoyFeatureGating,
-    InductiveConsensusClusterer,
-    InductiveConsensusMemory,
+ ConformalClusterer,
+ ConformalResult,
+ DecoyFeatureGating,
+ InductiveConsensusClusterer,
+ InductiveConsensusMemory,
 )
 ```
 
@@ -115,14 +115,14 @@ Unified pipeline combining decoy feature gating, anchor consensus, and split-con
 
 ```python
 InductiveConsensusClusterer(
-    n_clusters: int = 4,
-    n_anchors: int = 40,
-    n_base_models: int = 20,
-    subspace_rate: float = 0.50,
-    enable_decoy_gating: bool = True,
-    fdr_target: float = 0.10,
-    alpha: float = 0.10,
-    random_state: int = 42,
+ n_clusters: int = 4,
+ n_anchors: int = 40,
+ n_base_models: int = 20,
+ subspace_rate: float = 0.50,
+ enable_decoy_gating: bool = True,
+ fdr_target: float = 0.10,
+ alpha: float = 0.10,
+ random_state: int = 42,
 )
 ```
 
@@ -157,24 +157,24 @@ Dynamic incremental clustering memory for streaming query evaluation with instan
 
 ```python
 from icc.stats import (
-    bonferroni_correction,
-    friedman_test,
-    hodges_lehmann_estimator,
-    nemenyi_critical_distance,
-    tost_equivalence_test,
-    wilcoxon_signed_rank_test,
+ bonferroni_correction,
+ friedman_test,
+ hodges_lehmann_estimator,
+ nemenyi_critical_distance,
+ tost_equivalence_test,
+ wilcoxon_signed_rank_test,
 )
 ```
 
 - `wilcoxon_signed_rank_test(x: np.ndarray, y: Optional[np.ndarray] = None) -> Dict[str, float]`:
-  Computes Wilcoxon signed-rank test for paired samples or one sample vs zero.
+ Computes Wilcoxon signed-rank test for paired samples or one sample vs zero.
 - `bonferroni_correction(p_values: np.ndarray) -> np.ndarray`:
-  Applies Bonferroni multiple testing correction, capping adjusted p-values at 1.0.
+ Applies Bonferroni multiple testing correction, capping adjusted p-values at 1.0.
 - `hodges_lehmann_estimator(diffs: np.ndarray, alpha: float = 0.05) -> Tuple[float, Tuple[float, float]]`:
-  Computes non-parametric pseudo-median difference and asymptotic confidence interval.
+ Computes non-parametric pseudo-median difference and asymptotic confidence interval.
 - `tost_equivalence_test(diffs: np.ndarray, margin: float = 0.02, alpha: float = 0.05) -> Dict[str, Any]`:
-  Two One-Sided Tests (TOST) for operational equivalence within $[-\text{margin}, +\text{margin}]$.
+ Two One-Sided Tests (TOST) for operational equivalence within $[-\text{margin}, +\text{margin}]$.
 - `friedman_test(*args: np.ndarray) -> Dict[str, float]`:
-  Computes Friedman non-parametric two-way ANOVA by ranks.
+ Computes Friedman non-parametric two-way ANOVA by ranks.
 - `nemenyi_critical_distance(k: int, n: int, alpha: float = 0.05) -> float`:
-  Computes Nemenyi post-hoc critical distance for comparing mean ranks across datasets.
+ Computes Nemenyi post-hoc critical distance for comparing mean ranks across datasets.

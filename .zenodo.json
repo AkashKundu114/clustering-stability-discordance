@@ -1,5 +1,5 @@
 {
-  "title": "CSD: Clustering Stability–Accuracy Discordance in High-Dimensional Biomedical Data (Reproducibility Package for Springer Nature DMKD)",
+  "title": "CSD: Clustering Stability-Accuracy Discordance in High-Dimensional Biomedical Data",
   "version": "1.0.0-rc2",
   "upload_type": "software",
   "license": "MIT",
@@ -8,11 +8,11 @@
   "creators": [
     {
       "name": "Kalyan Kumar Das",
-      "affiliation": "University of Kalyani"
+      "affiliation": "Techno India University"
     },
     {
       "name": "Akash Kundu",
-      "affiliation": "University of Kalyani"
+      "affiliation": "Techno India University"
     },
     {
       "name": "Anirban Mukhopadhyay",

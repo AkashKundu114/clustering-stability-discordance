@@ -14,10 +14,10 @@ y_true = np.repeat([0, 1, 2], 50)
 
 # Instantiate and fit ICC
 model = ICC(
-    n_clusters=3,
-    n_base_models=25,
-    n_anchors=50,
-    random_state=42,
+ n_clusters=3,
+ n_base_models=25,
+ n_anchors=50,
+ random_state=42,
 )
 labels = model.fit_predict(X)
 

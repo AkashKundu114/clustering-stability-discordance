@@ -23,14 +23,14 @@ Then run each verifier to a new empty output directory:
 
 ```powershell
 python reproduction/scripts/recompute_saved_stability.py `
-  --data-root <authorized-evidence-root> `
-  --output-dir <new-output-directory>
+ --data-root <authorized-evidence-root> `
+ --output-dir <new-output-directory>
 ```
 
 ```powershell
 python reproduction/scripts/recompute_benchmark_scores.py `
-  --scores <pass-f-scores.csv> <cohirf-scores.csv> `
-  --output-dir <new-output-directory>
+ --scores <pass-f-scores.csv> <cohirf-scores.csv> `
+ --output-dir <new-output-directory>
 ```
 
 Each tool writes recalculated CSV/JSON outputs and dynamically computed SHA-256 manifests. To test integrity checking, provide an expected-hash JSON with a deliberately incorrect digest; the command must fail and report the mismatch. Never use expected hashes copied from an unauthenticated report as proof of source identity.

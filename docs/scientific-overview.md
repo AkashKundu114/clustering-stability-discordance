@@ -1,15 +1,14 @@
-# Scientific Overview: Stability–Accuracy Discordance
+# Scientific Overview: Stability-Accuracy Discordance
 
-**Document:** `docs/scientific-overview.md`  
-**Date:** 2026-11-07  
-**Manuscript Title:** *An Empirical Analysis of Stability-Accuracy Discordance in High-Dimensional Consensus Clustering: Evidence from Biomedical Cohorts*  
-**Target Journal:** Springer Nature — *Data Mining and Knowledge Discovery* (DMKD)
+**Document:** `docs/scientific-overview.md` 
+**Date:** 2026-11-07 
+**Manuscript Title:** *An Empirical Analysis of Stability-Accuracy Discordance in High-Dimensional Consensus Clustering: Evidence from Biomedical Cohorts* 
 
 ---
 
 ## 1. Executive Summary
 
-Consensus clustering (cluster ensembling) is widely considered a gold standard for discovering reliable subgroups in biomedical data. In particular, resampling stability—the reproducibility of cluster partitions under random sample subsampling or bootstrapping—is frequently taken as evidence of biological cluster validity.
+Consensus clustering (cluster ensembling) is widely considered a gold standard for discovering reliable subgroups in biomedical data. In particular, resampling stability - the reproducibility of cluster partitions under random sample subsampling or bootstrapping - is frequently taken as evidence of biological cluster validity.
 
 This research empirically tests this foundational assumption. Across six high-dimensional biomedical microarray cohorts ($D/N > 20$) and twelve distinct clustering algorithms, we demonstrate that **subsample stability does not imply external classification accuracy**. Under high noise and feature-sample imbalance, base clusterers frequently latch onto mutually agreeing, data-driven noise partitions that display near-perfect subsample stability while showing zero or near-zero alignment with clinical diagnostic ground truth.
 
@@ -19,16 +18,16 @@ This research empirically tests this foundational assumption. Across six high-di
 
 It is crucial to distinguish between three orthogonal concepts that are often conflated in unsupervised literature:
 
-1. **Resampling Stability ($\text{Stab}$):**  
-   Agreement between partitions produced on different random subsamples of the same dataset. Evaluated via the Adjusted Rand Index (ARI) on overlapping samples:
-   $$\text{Stab}(C_1, C_2) = \text{ARI}(C_1|_{S_1 \cap S_2}, C_2|_{S_1 \cap S_2})$$
-2. **External Label Alignment ($\text{Acc}$):**  
-   Agreement between an unsupervised partition and an independent external biological or clinical reference label vector $y^*$:
-   $$\text{Acc}(C) = \text{ARI}(C, y^*)$$
-3. **The Discordance Gap ($\Delta$):**  
-   The arithmetic difference between observed stability and external label recovery:
-   $$\Delta = \text{Stab} - \text{Acc}$$
-   When $\Delta \gg 0$ alongside high stability ($\text{Stab} \ge 0.50$), an algorithm is in a state of **stability–accuracy discordance**.
+1. **Resampling Stability ($\text{Stab}$):** 
+ Agreement between partitions produced on different random subsamples of the same dataset. Evaluated via the Adjusted Rand Index (ARI) on overlapping samples:
+ $$\text{Stab}(C_1, C_2) = \text{ARI}(C_1|_{S_1 \cap S_2}, C_2|_{S_1 \cap S_2})$$
+2. **External Label Alignment ($\text{Acc}$):** 
+ Agreement between an unsupervised partition and an independent external biological or clinical reference label vector $y^*$:
+ $$\text{Acc}(C) = \text{ARI}(C, y^*)$$
+3. **The Discordance Gap ($\Delta$):** 
+ The arithmetic difference between observed stability and external label recovery:
+ $$\Delta = \text{Stab} - \text{Acc}$$
+ When $\Delta \gg 0$ alongside high stability ($\text{Stab} \ge 0.50$), an algorithm is in a state of **stability-accuracy discordance**.
 
 ---
 

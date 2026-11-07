@@ -1,9 +1,8 @@
 # Results, Statistical Adjudication, and Interpretation
 
-**Document:** `docs/results-and-interpretation.md`  
-**Date:** 2026-11-07  
-**Project:** Stability-Accuracy Discordance in High-Dimensional Consensus Clustering  
-**Target Journal:** Springer Nature — *Data Mining and Knowledge Discovery* (DMKD)
+**Document:** `docs/results-and-interpretation.md` 
+**Date:** 2026-11-07 
+**Project:** Stability-Accuracy Discordance in High-Dimensional Consensus Clustering 
 
 ---
 
@@ -49,18 +48,18 @@ The empirical foundation rests on 62,640 pairwise subsample stability evaluation
 Evaluated across the 3,000 assembled historical score records (from 1,430 planned fits; 892 fresh clean fits completed before freezing):
 
 - **Non-Parametric Friedman Omnibus Test:**
-  $$\chi_F^2 = 11.556, \quad p = 0.3979 \approx 0.40, \quad \text{df} = 11$$
+ $$\chi_F^2 = 11.556, \quad p = 0.3979 \approx 0.40, \quad \text{df} = 11$$
 - **Omnibus Ranks Across All 13 Benchmarks:**
-  1. K-Means ($R = 5.15$)
-  2. Standard Consensus ($R = 5.23$)
-  3. DEC ($R = 5.23$)
-  4. GAC ($R = 5.62$)
-  5. Ward ($R = 5.69$)
-  6. Ungated AC ($R = 6.92$)
-  7. FCM ($R = 7.08$)
-  8. Spectral ($R = 7.08$)
-  9. Core-Halo ($R = 7.15$)
-  10. FastMVC ($R = 7.38$)
-  11. CoHiRF ($R = 7.69$)
-  12. FCAG ($R = 7.77$)
+ 1. K-Means ($R = 5.15$)
+ 2. Standard Consensus ($R = 5.23$)
+ 3. DEC ($R = 5.23$)
+ 4. GAC ($R = 5.62$)
+ 5. Ward ($R = 5.69$)
+ 6. Ungated AC ($R = 6.92$)
+ 7. FCM ($R = 7.08$)
+ 8. Spectral ($R = 7.08$)
+ 9. Core-Halo ($R = 7.15$)
+ 10. FastMVC ($R = 7.38$)
+ 11. CoHiRF ($R = 7.69$)
+ 12. FCAG ($R = 7.77$)
 - **Nemenyi Critical Difference ($\alpha = 0.05$):** $\text{CD} = 4.622$. All 12 algorithms reside in a single shared equivalence clique. Complex consensus methods provide no statistically detectable advantage over elementary baselines.
