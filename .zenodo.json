@@ -1,6 +1,6 @@
 {
   "title": "CSD: Clustering Stability–Accuracy Discordance in High-Dimensional Biomedical Data (Reproducibility Package for Springer Nature DMKD)",
-  "version": "1.0.0-rc1",
+  "version": "1.0.0-rc2",
   "upload_type": "software",
   "license": "MIT",
   "description": "Reproducible research code, saved-evidence reconstruction tools, and documentation for an empirical analysis of resampling stability and external-label alignment in high-dimensional biomedical clustering.",

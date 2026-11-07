@@ -1,8 +1,11 @@
 """Run the supported synthetic smoke workflow or the automated test suite."""
 
 import argparse
+from pathlib import Path
 import subprocess
 import sys
+
+ROOT = Path(__file__).resolve().parents[1]
 
 
 def main() -> int:
@@ -19,11 +22,16 @@ def main() -> int:
 
     if args.scope == "smoke":
         print("[*] Running synthetic smoke example (not a research-result reproduction).", flush=True)
-        cmd = [sys.executable, "scripts/run.py", "--config", "configs/examples/synthetic.yaml"]
+        cmd = [
+            sys.executable,
+            str(ROOT / "scripts" / "run.py"),
+            "--config",
+            str(ROOT / "configs" / "examples" / "synthetic.yaml"),
+        ]
     else:
         print("[*] Running verification test suite.", flush=True)
-        cmd = [sys.executable, "-m", "pytest", "tests/"]
-    return subprocess.run(cmd, check=False).returncode
+        cmd = [sys.executable, "-m", "pytest", str(ROOT / "tests")]
+    return subprocess.run(cmd, cwd=str(ROOT), check=False).returncode
 
 
 if __name__ == "__main__":

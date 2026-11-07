@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "csd"
-version = "1.0.0-rc1"
+version = "1.0.0-rc2"
 description = "CSD: Clustering Stability–Accuracy Discordance in High-Dimensional Biomedical Data (Reproducibility Package for Springer Nature DMKD)"
 readme = "README.md"
 authors = [

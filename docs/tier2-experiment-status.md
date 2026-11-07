@@ -18,7 +18,7 @@ Unlike Tier 1 (which reconstructs metrics from saved partition arrays in under 6
 ## 2. Status of the Six-Cohort Stability Study (Completed)
 
 - **Total Planned Fits:** $4{,}320$ fits ($72\text{ cells} \times 30\text{ subsamples} \times 2\text{ modes [real, null]}$).
-- **Execution Status:** **100% Completed** in Loop 6.3 fresh re-execution (`D:\loop6_3_full_fresh_run_49f_20261102`).
+- **Execution Status:** **100% Completed** in dedicated clean-clone re-execution on 2026-11-02.
 - **Compute Time:** Approximately 10–14 hours of continuous compute on an AMD Ryzen 9 8940HX with an NVIDIA GeForce RTX 5060 Laptop GPU.
 - **Reproducibility Findings:**
   - 11 of 12 algorithms ($3{,}960$ of $4{,}320$ partitions) are **100% bitwise identical** to original historical outputs.

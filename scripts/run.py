@@ -57,6 +57,8 @@ def parse_args():
 def main():
     args = parse_args()
     config_path = Path(args.config)
+    if not config_path.exists() and (ROOT / args.config).exists():
+        config_path = ROOT / args.config
 
     override_config = {}
     if config_path.exists():

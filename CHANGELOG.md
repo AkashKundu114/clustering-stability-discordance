@@ -5,6 +5,17 @@ All notable changes to the **CSD (Clustering Stability–Accuracy Discordance)**
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.0-rc2] - 2026-11-07
+
+### Added
+- Top-level `csd` package alias (`src/csd/__init__.py`) re-exporting core clustering and conformal modules.
+- Restored root documentation links (`DATA_AVAILABILITY.md`, `ENVIRONMENT.md`, `REPRODUCIBILITY.md`).
+
+### Fixed
+- Fixed root `Dockerfile` path for locked requirements (`environment/requirements-lock.txt`).
+- Updated `scripts/run.py` and `scripts/reproduce.py` with repository-root independent path resolution.
+- Sanitized local development paths and removed residual coverage artifacts.
+
 ## [1.0.0-rc1] - 2026-11-07
 
 ### Added

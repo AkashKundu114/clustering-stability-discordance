@@ -28,7 +28,7 @@
 ## 2. Directory & Component Layout
 
 ```text
-d:\icc-clustering\
+csd/
 ├── .github/              # Issue templates and GitHub workflows
 ├── audit/                # Comprehensive forensic audit reports (loops 1 to 6.6.1)
 │   ├── loop6_6/          # Loop 6.6 baseline reports, patches, and artifact manifests
@@ -72,13 +72,13 @@ d:\icc-clustering\
 
 ## 4. Primary Data & Evidence Locations
 
-1. **Local Author Evidence Archive:**
-   - Location: `D:\Final Year Project\results\stability\`
+1. **Author Evidence Archive:**
+   - Location: `results/stability/`
    - Partitions: 4,320 `.npy` array files ($72\text{ cells} \times 30\text{ subsamples} \times 2\text{ modes}$)
    - Run Telemetry: 4,320 `.parquet` execution metadata files
    - Summaries: `subsample_stability_summary.csv` (Mean stability: `0.516586`), `real_data_stability_summary.csv`
 2. **Benchmark Historical Results:**
-   - Location: `D:\Final Year Project\results\passF\benchmark_matrix_passF.csv` and `exp3_cohirf_benchmark.csv`
+   - Location: `results/benchmark/benchmark_matrix_passF.csv` and `exp3_cohirf_benchmark.csv`
    - Total rows: 3,000 assembled historical score records from 1,430 planned fits
    - Completed fresh fits: 892 / 1,430 (538 incomplete, frozen due to 16 GB host memory limit)
 3. **Clinical Microarray Caches:**
