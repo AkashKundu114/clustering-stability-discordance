@@ -3,13 +3,13 @@
 
 numpy==2.4.6
 scipy==1.18.0
-pandas==2.2.3
+pandas==2.3.3
 scikit-learn==1.9.1
 pyyaml==6.0.3
-pytest==9.1.1
+pytest==9.2.0
 tabulate==0.10.0
-tqdm==4.70.0
-Pillow==11.0.0
-matplotlib==3.10.0
+tqdm==4.70.1
+Pillow==11.3.0
+matplotlib==3.10.9
 seaborn==0.13.2
 fastparquet==2024.11.0
