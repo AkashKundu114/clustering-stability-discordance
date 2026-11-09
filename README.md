@@ -7,7 +7,7 @@
 [![Types: Mypy](https://img.shields.io/badge/types-mypy-blue.svg)](https://mypy-lang.org/)
 
 > **CSD** stands for **Clustering Stability-Accuracy Discordance**.  
-> **Full Manuscript Title:** *An Empirical Analysis of Stability-Accuracy Discordance in High-Dimensional Consensus Clustering: Evidence from Biomedical Cohorts*  
+> **Full Manuscript Title:** *Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise*  
 > **Authors:** Kalyan Kumar Das (Techno India University), Akash Kundu (Techno India University), Anirban Mukhopadhyay (University of Kalyani)
 
 ---
@@ -131,7 +131,7 @@ If you use this codebase or refer to the stability-accuracy discordance findings
 
 ```bibtex
 @article{das2026csd,
-  title={An Empirical Analysis of Stability-Accuracy Discordance in High-Dimensional Consensus Clustering: Evidence from Biomedical Cohorts},
+  title={Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise},
   author={Das, Kalyan Kumar and Kundu, Akash and Mukhopadhyay, Anirban},
   year={2026},
   note={Working paper / Under review}

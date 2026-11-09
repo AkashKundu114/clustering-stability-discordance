@@ -64,7 +64,7 @@ csd/
 - **Immutable Backup Hash (SHA-256):** `c12c945878a0f616cad4f1243f05e18ce4040b9e9219d4cef49049a27c461742` (Stored at `audit/finalisation/backup/main.tex.orig`)
 - **Bibliography:** `paper/manuscript/references.bib` (SHA-256: `773e7cf911e4b073da02f1afc9da0dabec29967541ebca4c471349f67b12fb7c`)
 - **Document Class:** `sn-jnl.cls` (Journal LaTeX template)
-- **Title:** *An Empirical Analysis of Stability-Accuracy Discordance in High-Dimensional Consensus Clustering: Evidence from Biomedical Cohorts*
+- **Title:** *Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise*
 - **Authors:** Kalyan Kumar Das, Akash Kundu, Anirban Mukhopadhyay
 
 ---

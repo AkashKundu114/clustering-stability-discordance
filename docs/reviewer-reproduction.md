@@ -1,6 +1,6 @@
 # Reviewer Reproduction Guide: Peer-Reviewed Journal
 
-**Manuscript Title:** *An Empirical Analysis of Stability-Accuracy Discordance in High-Dimensional Consensus Clustering: Evidence from Biomedical Cohorts* 
+**Manuscript Title:** *Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise* 
 **Authors:** Kalyan Kumar Das, Akash Kundu, Anirban Mukhopadhyay 
 
 ---

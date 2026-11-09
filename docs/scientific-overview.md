@@ -2,7 +2,7 @@
 
 **Document:** `docs/scientific-overview.md` 
 **Date:** 2026-11-07 
-**Manuscript Title:** *An Empirical Analysis of Stability-Accuracy Discordance in High-Dimensional Consensus Clustering: Evidence from Biomedical Cohorts* 
+**Manuscript Title:** *Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise* 
 
 ---
 

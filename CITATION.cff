@@ -14,7 +14,7 @@ authors:
     affiliation: "University of Kalyani"
 preferred-citation:
   type: article
-  title: "An Empirical Analysis of Stability-Accuracy Discordance in High-Dimensional Consensus Clustering: Evidence from Biomedical Cohorts"
+  title: "Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise"
   authors:
     - name: "Kalyan Kumar Das"
       affiliation: "Techno India University"
