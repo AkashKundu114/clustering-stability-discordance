@@ -1,5 +1,11 @@
 # Test Automation Suite
 
+**Manuscript Title:** *Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise*  
+**Running Header:** *Feature-Gated Bipartite Consensus Under Noise*  
+**Canonical Repository:** [https://github.com/AkashKundu114/clustering-stability-discordance](https://github.com/AkashKundu114/clustering-stability-discordance)  
+**Companion Repository:** [https://github.com/AkashKundu114/icc-clustering](https://github.com/AkashKundu114/icc-clustering)  
+
+
 This directory contains the unit, integration, and regression test suites for **Invariant Core Consensus (ICC)**.
 
 All 118 tests pass with a 100% pass rate.

@@ -2,7 +2,10 @@
 
 **Document:** `docs/troubleshooting.md` 
 **Date:** 2026-11-07 
-**Project:** Stability-Accuracy Discordance in High-Dimensional Consensus Clustering 
+**Project:** Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise  
+**Running Header:** Feature-Gated Bipartite Consensus Under Noise  
+**Canonical Repository:** [https://github.com/AkashKundu114/clustering-stability-discordance](https://github.com/AkashKundu114/clustering-stability-discordance)  
+**Companion Repository:** [https://github.com/AkashKundu114/icc-clustering](https://github.com/AkashKundu114/icc-clustering) 
 
 ---
 
@@ -20,7 +23,7 @@
 
 ---
 
-### Issue 2: "MemoryError or OS Freezing during 13-Dataset Benchmark"
+### Issue 2: "MemoryError or OS Freezing during 13-Dataset Benchmark (12 Comparative Algorithms)"
 - **Symptom:** Host RAM climbs toward 100% and operating system becomes unresponsive when running large-dataset benchmarks.
 - **Cause:** Large-$N$ benchmarks ($N \ge 10{,}000$) create dense $N \times N$ distance and similarity matrices requiring >14 GB of RAM.
 - **Resolution:** Do not attempt full end-to-end reruns on systems with $\le 16\text{ GB}$ of RAM. Use the Tier 1 verification tool (`recompute_benchmark_scores.py`) to verify the arithmetic and Friedman statistics from the validated historical tables.

@@ -1,4 +1,11 @@
-# Dataset registry and access policy
+# Dataset Registry and Access Policy
+
+**Manuscript Title:** *Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise*  
+**Running Header:** *Feature-Gated Bipartite Consensus Under Noise*  
+**Canonical Repository:** [https://github.com/AkashKundu114/clustering-stability-discordance](https://github.com/AkashKundu114/clustering-stability-discordance)  
+**Companion Repository:** [https://github.com/AkashKundu114/icc-clustering](https://github.com/AkashKundu114/icc-clustering)  
+
+Governance and policies for the **13 benchmark datasets** evaluated across the **12 comparative algorithms**.
 
 `configs/datasets.yaml` and the loader code describe configured benchmark dataset variants and preprocessing. This directory intentionally contains no raw or cached research matrices. Registry license strings are legacy metadata, not legal determinations or permission to redistribute the exact upstream variant or its derivatives.
 

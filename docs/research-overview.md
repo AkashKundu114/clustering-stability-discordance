@@ -1,5 +1,12 @@
 # Research overview
 
+**Manuscript Title:** *Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise*  
+**Running Header:** *Feature-Gated Bipartite Consensus Under Noise*  
+**Canonical Repository:** [https://github.com/AkashKundu114/clustering-stability-discordance](https://github.com/AkashKundu114/clustering-stability-discordance)  
+**Companion Repository:** [https://github.com/AkashKundu114/icc-clustering](https://github.com/AkashKundu114/icc-clustering)  
+
+This research overview outlines the investigation into stability-accuracy discordance across **13 benchmark datasets** and **12 comparative clustering algorithms**.
+
 Clustering methods produce groups without requiring a target label during fitting. Researchers often perturb the input data and ask whether the resulting assignments remain similar. Such repeatability is useful information, but it is different from whether assignments agree with an available reference classification.
 
 This project examines that distinction in high-dimensional biomedical clustering. The central question is bounded: under a specified row-subsampling protocol, can partitions show substantial agreement with one another while having low adjusted Rand index (ARI) against the supplied cohort labels? A positive observation would show that stability and reference-label alignment answer different questions; it would not establish that one metric is a universal measure of clustering quality.

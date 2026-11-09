@@ -8,13 +8,16 @@
 
 > **CSD** stands for **Clustering Stability-Accuracy Discordance**.  
 > **Full Manuscript Title:** *Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise*  
-> **Authors:** Kalyan Kumar Das (Techno India University), Akash Kundu (Techno India University), Anirban Mukhopadhyay (University of Kalyani)
+> **Running Header:** *Feature-Gated Bipartite Consensus Under Noise*  
+> **Authors:** Kalyan Kumar Das (Techno India University), Akash Kundu (Techno India University), Anirban Mukhopadhyay (University of Kalyani)  
+> **Canonical Repository:** [https://github.com/AkashKundu114/clustering-stability-discordance](https://github.com/AkashKundu114/clustering-stability-discordance)  
+> **Companion Repository:** [https://github.com/AkashKundu114/icc-clustering](https://github.com/AkashKundu114/icc-clustering)
 
 ---
 
 ## 1. Scientific Summary and Core Thesis
 
-Subsample stability is widely treated as an empirical proxy for clustering reliability, and consensus clustering is frequently assumed to protect against distance concentration and high-dimensional noise. This repository (**CSD**) hosts the reproducible research code, saved-evidence reconstruction tools, dataset governance manifests, and documentation for an empirical investigation into whether resampling stability implies external reference-label accuracy in high-dimensional biomedical data ($D \gg N$).
+This repository (**CSD**) hosts the reproducible research code, saved-evidence reconstruction tools, dataset governance manifests, and documentation for the research manuscript *Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise* (Running header: *Feature-Gated Bipartite Consensus Under Noise*). The investigation empirically evaluates **13 benchmark datasets** (spanning high-dimensional biomedical cohorts and multi-domain benchmarks) across **12 comparative clustering algorithms** to investigate whether resampling stability implies external reference-label accuracy in high-dimensional biomedical data ($D \gg N$).
 
 ### Core Finding
 **Resampling stability and external reference-label alignment are fundamentally distinct mathematical quantities.** In high-dimensional regimes with extreme noise ($D/N > 20$), unsupervised clustering algorithms can repeatedly converge onto mutually agreeing, data-driven noise partitions. These partitions achieve high subsample stability while exhibiting zero or near-zero agreement with external diagnostic or biological ground-truth labels.
@@ -130,11 +133,20 @@ See [`DATA_AVAILABILITY.md`](DATA_AVAILABILITY.md) and [`THIRD_PARTY_NOTICES.md`
 If you use this codebase or refer to the stability-accuracy discordance findings, please cite:
 
 ```bibtex
-@article{das2026csd,
+@article{das2026stability,
   title={Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise},
   author={Das, Kalyan Kumar and Kundu, Akash and Mukhopadhyay, Anirban},
   year={2026},
-  note={Working paper / Under review}
+  journal={arXiv preprint},
+  note={Under review}
+}
+
+@software{csd2026code,
+  author={Das, Kalyan Kumar and Kundu, Akash and Mukhopadhyay, Anirban},
+  title={CSD: Clustering Stability-Accuracy Discordance in High-Dimensional Biomedical Data},
+  year={2026},
+  url={https://github.com/AkashKundu114/clustering-stability-discordance},
+  note={Companion repository: https://github.com/AkashKundu114/icc-clustering}
 }
 ```
 

@@ -1,5 +1,12 @@
 # Reproducibility status
 
+**Manuscript Title:** *Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise*  
+**Running Header:** *Feature-Gated Bipartite Consensus Under Noise*  
+**Canonical Repository:** [https://github.com/AkashKundu114/clustering-stability-discordance](https://github.com/AkashKundu114/clustering-stability-discordance)  
+**Companion Repository:** [https://github.com/AkashKundu114/icc-clustering](https://github.com/AkashKundu114/icc-clustering)  
+
+Reproducibility status for evaluating **13 benchmark datasets** and **12 comparative algorithms** across three verification tiers.
+
 Reproducibility is reported in three separate tiers. Testing one tier does not establish a higher tier.
 
 | Tier | Status for this repository snapshot | Inputs and environment | Command / expected output |

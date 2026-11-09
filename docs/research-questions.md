@@ -2,7 +2,10 @@
 
 **Document:** `docs/research-questions.md` 
 **Date:** 2026-11-07 
-**Project:** Stability-Accuracy Discordance in High-Dimensional Consensus Clustering 
+**Project:** Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise  
+**Running Header:** Feature-Gated Bipartite Consensus Under Noise  
+**Canonical Repository:** [https://github.com/AkashKundu114/clustering-stability-discordance](https://github.com/AkashKundu114/clustering-stability-discordance)  
+**Companion Repository:** [https://github.com/AkashKundu114/icc-clustering](https://github.com/AkashKundu114/icc-clustering) 
 
 ---
 
@@ -11,7 +14,7 @@
 > **Does subsample stability guarantee external reference-label accuracy in high-dimensional biomedical cohorts?**
 
 ### Empirical Evidence
-- Evaluated across 72 experimental cells (6 high-$D$ biomedical cohorts $\times$ 12 clustering algorithms).
+- Evaluated across 72 experimental cells (6 high-$D$ biomedical cohorts $\times$ 12 comparative algorithms, framed within the 13 benchmark datasets).
 - Total pairwise comparisons: $62{,}640$ evaluations ($31{,}320$ real $+ 31{,}320$ column-permuted null controls).
 - External ARI evaluations: $2{,}160$ measurements against clinical reference labels.
 - Across all 72 cells, authoritative fresh re-execution yields:

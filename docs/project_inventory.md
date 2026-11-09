@@ -10,11 +10,15 @@
 
 ## 1. Current Git Repository State
 
-- **Repository Origin:** `https://github.com/AkashKundu114/icc-clustering.git`
+- **Canonical Repository:** [https://github.com/AkashKundu114/clustering-stability-discordance](https://github.com/AkashKundu114/clustering-stability-discordance)
+- **Companion Repository:** [https://github.com/AkashKundu114/icc-clustering](https://github.com/AkashKundu114/icc-clustering)
+- **Manuscript Title:** *Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise*
+- **Running Header:** *Feature-Gated Bipartite Consensus Under Noise*
+- **Benchmark Coverage:** 13 benchmark datasets, 12 comparative algorithms
 - **Active Branch:** `release-finalisation` (branched from `main` at `aa9f716`)
 - **Main HEAD Commit:** `aa9f716d887ac94ca51792d37b310187c8da3231` ("Document provenance and harden Yale B downloads")
 - **Tags Present:** `v1.0.0`, `v2.0.0`, `v2.1.0`, `v2.2.0`, `v2.2.1`, `v2.2.2`
-- **Visibility:** Private (transitioning toward public candidate `clustering-stability-discordance`)
+- **Visibility:** Public reproducibility companion repository (`clustering-stability-discordance`)
 - **Untracked Historical Documentation Files at Start of Finalisation:**
  - `COMPUTE_REQUIREMENTS.md` (2,440 bytes)
  - `DATA_AVAILABILITY.md` (5,265 bytes)

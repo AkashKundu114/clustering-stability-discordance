@@ -2,7 +2,10 @@
 
 **Document:** `docs/tier1-reconstruction.md` 
 **Date:** 2026-11-07 
-**Project:** Stability-Accuracy Discordance in High-Dimensional Consensus Clustering 
+**Project:** Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise  
+**Running Header:** Feature-Gated Bipartite Consensus Under Noise  
+**Canonical Repository:** [https://github.com/AkashKundu114/clustering-stability-discordance](https://github.com/AkashKundu114/clustering-stability-discordance)  
+**Companion Repository:** [https://github.com/AkashKundu114/icc-clustering](https://github.com/AkashKundu114/icc-clustering) 
 
 ---
 
@@ -14,7 +17,7 @@ Tier 1 is a self-contained, zero-network-exposure evaluation protocol designed s
 - Validates all $4{,}320$ execution telemetry records (`.parquet`).
 - Recalculates all $62{,}640$ pairwise subsample stability ARIs ($31{,}320$ real $+ 31{,}320$ null).
 - Recalculates all $2{,}160$ external ARI measurements against diagnostic truth.
-- Computes mean and median discordance gaps across all 72 experimental cells.
+- Computes mean and median discordance gaps across all 72 experimental cells (6 high-D biomedical cohorts x 12 comparative algorithms, within the 13 benchmark datasets framework).
 - Evaluates non-degeneracy conditions (Rule i', Rule ii, Rule iii).
 - Verifies aggregate agreement with committed baseline summary tables down to double-precision floating-point limits ($< 1.11 \times 10^{-16}$).
 

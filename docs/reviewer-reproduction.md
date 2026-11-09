@@ -1,6 +1,9 @@
 # Reviewer Reproduction Guide: Peer-Reviewed Journal
 
-**Manuscript Title:** *Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise* 
+**Manuscript Title:** *Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise*  
+**Running Header:** *Feature-Gated Bipartite Consensus Under Noise*  
+**Canonical Repository:** [https://github.com/AkashKundu114/clustering-stability-discordance](https://github.com/AkashKundu114/clustering-stability-discordance)  
+**Companion Repository:** [https://github.com/AkashKundu114/icc-clustering](https://github.com/AkashKundu114/icc-clustering) 
 **Authors:** Kalyan Kumar Das, Akash Kundu, Anirban Mukhopadhyay 
 
 ---
@@ -66,7 +69,7 @@ Inspect `results/reviewer_audit/recomputed_cells.csv` to review the per-cell bre
 
 In Section 6.2, we report an exploratory historical comparison across 13 datasets. As detailed in our paper and `DATA_AVAILABILITY.md`:
 - The 3,000 assembled score records reflect historical benchmark archives.
-- The non-parametric Friedman omnibus test yields $\chi_F^2 = 11.556, p = 0.3979 \approx 0.40$ ($\text{df}=11$), establishing that all 12 estimators belong to a single equivalence clique under Nemenyi critical difference testing ($\text{CD}=4.62$). Simple K-Means attains top rank ($5.15$).
+- The non-parametric Friedman omnibus test yields $\chi_F^2 = 11.556, p = 0.3979 \approx 0.40$ ($\text{df}=11$), establishing that all 12 comparative algorithms belong to a single equivalence clique under Nemenyi critical difference testing ($\text{CD}=4.62$). Simple K-Means attains top rank ($5.15$).
 - A modern fresh re-execution completed 892 of 1,430 planned unique fits before being halted to avoid host memory exhaustion on dense spectral/distance matrix operations.
 - To verify the historical scores and Friedman calculation:
  ```bash

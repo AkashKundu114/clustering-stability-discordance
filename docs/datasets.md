@@ -1,5 +1,11 @@
 # Dataset access and third-party terms
 
+**Manuscript Title:** *Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise*  
+**Running Header:** *Feature-Gated Bipartite Consensus Under Noise*  
+**Canonical Repository:** [https://github.com/AkashKundu114/clustering-stability-discordance](https://github.com/AkashKundu114/clustering-stability-discordance)  
+**Companion Repository:** [https://github.com/AkashKundu114/icc-clustering](https://github.com/AkashKundu114/icc-clustering)  
+
+
 The dataset registry lists 13 variants. Shapes below are configured registry values, not a guarantee that a fresh upstream download has been matched byte-for-byte. Rights decisions are conservative: **REDISTRIBUTION_NOT_CLEARED** means this review did not establish affirmative permission to redistribute the exact repository variant; it does not assert that use is forbidden. The MIT software license does not apply to dataset files or derivatives. Do not bundle raw data, caches, sample IDs, partitions, or derived records without rights for the exact variant.
 
 | Dataset / registry variant | Configured N × D; K | Source and access | Associated source citation | Terms and release status |

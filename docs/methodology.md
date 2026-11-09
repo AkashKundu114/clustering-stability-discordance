@@ -1,5 +1,12 @@
 # Methodology and experiment scope
 
+**Manuscript Title:** *Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise*  
+**Running Header:** *Feature-Gated Bipartite Consensus Under Noise*  
+**Canonical Repository:** [https://github.com/AkashKundu114/clustering-stability-discordance](https://github.com/AkashKundu114/clustering-stability-discordance)  
+**Companion Repository:** [https://github.com/AkashKundu114/icc-clustering](https://github.com/AkashKundu114/icc-clustering)  
+
+This document defines the methodology evaluating **13 benchmark datasets** across **12 comparative algorithms**.
+
 ## Software protocol versus recovered experiment
 
 The repository contains clustering implementations, a YAML dataset registry, benchmark utilities, and loaders. The current ICC implementation and its default feature-pool behavior are summarized in [software architecture](software-architecture.md); those implementation details must not be substituted for the historical experiment protocol below. The six-cohort protocol producer source was recovered from Git history at [commit `49f3882`](https://github.com/AkashKundu114/icc-clustering/commit/49f3882fe5385913a9af1a5b89138c6ae6d95579). This is not a contemporaneous execution record: exact historical input identity, environment, and fit invocation remain unauthenticated. A later local fresh run used that source and the available cohort caches, but its results are not publicly bundled pending data-rights review. See [reproducibility](reproducibility.md).

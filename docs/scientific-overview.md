@@ -2,7 +2,10 @@
 
 **Document:** `docs/scientific-overview.md` 
 **Date:** 2026-11-07 
-**Manuscript Title:** *Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise* 
+**Manuscript Title:** *Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise*  
+**Running Header:** *Feature-Gated Bipartite Consensus Under Noise*  
+**Canonical Repository:** [https://github.com/AkashKundu114/clustering-stability-discordance](https://github.com/AkashKundu114/clustering-stability-discordance)  
+**Companion Repository:** [https://github.com/AkashKundu114/icc-clustering](https://github.com/AkashKundu114/icc-clustering) 
 
 ---
 
@@ -10,7 +13,7 @@
 
 Consensus clustering (cluster ensembling) is widely considered a gold standard for discovering reliable subgroups in biomedical data. In particular, resampling stability - the reproducibility of cluster partitions under random sample subsampling or bootstrapping - is frequently taken as evidence of biological cluster validity.
 
-This research empirically tests this foundational assumption. Across six high-dimensional biomedical microarray cohorts ($D/N > 20$) and twelve distinct clustering algorithms, we demonstrate that **subsample stability does not imply external classification accuracy**. Under high noise and feature-sample imbalance, base clusterers frequently latch onto mutually agreeing, data-driven noise partitions that display near-perfect subsample stability while showing zero or near-zero alignment with clinical diagnostic ground truth.
+This research empirically tests this foundational assumption. Across six high-dimensional biomedical microarray cohorts ($D/N > 20$) and 12 comparative clustering algorithms across 13 benchmark datasets (6 high-D biomedical cohorts and 7 multi-domain benchmarks), we demonstrate that **subsample stability does not imply external classification accuracy**. Under high noise and feature-sample imbalance, base clusterers frequently latch onto mutually agreeing, data-driven noise partitions that display near-perfect subsample stability while showing zero or near-zero alignment with clinical diagnostic ground truth.
 
 ---
 

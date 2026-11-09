@@ -1,6 +1,6 @@
 ---
 name: Bug Report
-about: Create a report to help us improve ICC-v2
+about: Create a report to help us improve CSD / ICC-v2
 title: '[BUG] '
 labels: bug
 assignees: ''

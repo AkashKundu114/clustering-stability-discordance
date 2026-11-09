@@ -1,6 +1,6 @@
 ---
 name: Feature Request
-about: Suggest an idea, algorithm extension, or enhancement for ICC-v2
+about: Suggest an idea, algorithm extension, or enhancement for CSD / ICC-v2
 title: '[FEAT] '
 labels: enhancement
 assignees: ''

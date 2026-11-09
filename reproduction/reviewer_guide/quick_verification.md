@@ -1,4 +1,11 @@
-# Reviewer guide: saved-output arithmetic checks
+# Reviewer Guide: Saved-Output Arithmetic Checks
+
+**Manuscript Title:** *Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise*  
+**Running Header:** *Feature-Gated Bipartite Consensus Under Noise*  
+**Canonical Repository:** [https://github.com/AkashKundu114/clustering-stability-discordance](https://github.com/AkashKundu114/clustering-stability-discordance)  
+**Companion Repository:** [https://github.com/AkashKundu114/icc-clustering](https://github.com/AkashKundu114/icc-clustering)  
+
+This guide provides instructions for verifying calculations across the **13 benchmark datasets** and **12 comparative algorithms**.
 
 This workflow verifies calculations only after the reviewer has lawfully obtained the exact saved inputs. The repository does not provide those inputs, and this guide is not evidence that a public clean clone can reproduce the paper's results.
 

@@ -2,7 +2,12 @@
 
 ## Supported Versions
 
-The following table lists the security support status for versions of the **Inductive Consensus Clustering (ICC)** framework:
+This security policy applies to **CSD** (`clustering-stability-discordance`) supporting the manuscript *Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise* (Running header: *Feature-Gated Bipartite Consensus Under Noise*):
+- **Canonical Repository:** [https://github.com/AkashKundu114/clustering-stability-discordance](https://github.com/AkashKundu114/clustering-stability-discordance)  
+- **Companion Repository:** [https://github.com/AkashKundu114/icc-clustering](https://github.com/AkashKundu114/icc-clustering)  
+- **Scope:** 13 benchmark datasets and 12 comparative algorithms  
+
+The following table lists the security support status for versions of the framework:
 
 | Version | Supported | Security Status |
 | ------- | ------------------ | ------------------------------------------------------- |

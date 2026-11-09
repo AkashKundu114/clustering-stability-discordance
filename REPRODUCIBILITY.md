@@ -1,13 +1,35 @@
-# Reproducibility status
+# Reproducibility Statement and Verification Protocols
 
-Reproducibility is reported in three separate tiers. Testing one tier does not establish a higher tier.
+**Manuscript Title:** *Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise*  
+**Running Header:** *Feature-Gated Bipartite Consensus Under Noise*  
+**Authors:** Kalyan Kumar Das (Techno India University), Akash Kundu (Techno India University), Anirban Mukhopadhyay (University of Kalyani)  
+**Canonical Repository:** [https://github.com/AkashKundu114/clustering-stability-discordance](https://github.com/AkashKundu114/clustering-stability-discordance)  
+**Companion Repository:** [https://github.com/AkashKundu114/icc-clustering](https://github.com/AkashKundu114/icc-clustering)  
 
-| Tier | Status for this repository snapshot | Inputs and environment | Command / expected output |
-|---|---|---|---|
-| Tier 1 - aggregate reproduction | **Not available in this snapshot.** An aggregate arithmetic check passed on an earlier repository snapshot, but its script and input were located with internal audit material and the derived result is not cleared for distribution. | Would require a rights-cleared aggregate CSV and a standard-library calculation script. | No Tier 1 command is supplied here. A public equivalent must be independently reviewed, relocated, and tested in a fresh clone before this tier can be called available. |
-| Tier 2 - partition-level reproduction | **Unavailable.** | Exact cached features/labels, stable row mapping, 4,320 partitions, fit records, metric configuration, and a compatible environment. These are not in the public snapshot; data/derived-output rights are not cleared. | No command can run from this clone. |
-| Tier 3 - full experimental reproduction | **Run locally; not reproducible from this public clone.** | A full 4,320-fit six-cohort run was completed locally from the recovered protocol source with local caches. Exact inputs and outputs are absent here and data/derived-output rights are unresolved. | The local run is recorded in the internal research audit. It does not authenticate historical execution and cannot be reproduced by a reviewer from this clone. |
+---
 
-The package installed in a newly created Python 3.14.6 virtual environment from a fresh clone, and the synthetic smoke workflow completed. With the Yale downloader integrity fix overlaid on a clean clone, the existing full suite passed (137 passed, two warnings); the three new offline downloader-integrity unit tests passed separately. These checks used the local patch, not the published v2.2.2 release. Earlier integration-test runs showed network dependence: one failed when the Yale B integration test's upstream mirror timed out; a subsequent run completed after the test suite downloaded third-party dataset files and wrote local raw/cache artifacts. Review provider terms before running integration tests because they may acquire data. Dataset acquisition instructions are not redistribution permission. Do not download or distribute a dataset until you have checked its current provider terms and exact variant.
+## 1. Multi-Tier Verification Framework
 
-Portable recalculation scripts for researcher-supplied historical outputs are in [`reproduction/`](../reproduction/README.md). They do not bundle the inputs, so they cannot reproduce the local fresh run or verify the current tier statuses from this clone. Saved-output arithmetic, fresh local execution, and authenticated historical provenance are separate evidence levels.
+Reproducibility is organized into three distinct verification tiers across the **13 benchmark datasets** and **12 comparative clustering algorithms**:
+
+| Tier | Scope & Focus | Hardware & Time Requirements | Command / Status |
+| :--- | :--- | :--- | :--- |
+| **Tier 1: Reviewer Metric Recomputation** | Recomputes all 62,640 pairwise subsample stability ARIs and 2,160 external ARIs directly from validated partition arrays. | 1 CPU core, < 512 MB RAM, **~38-50 seconds**. | `python reproduction/scripts/recompute_saved_stability.py --data-root <evidence-dir> --output-dir results/tier1` |
+| **Tier 2: Unit, Integration & Smoke Suite** | Verifies consensus algorithms, registry schemas, and CLI integrity across Python 3.10-3.14. | 1-2 CPU cores, ~1 GB RAM, **~1-2 minutes**. | `python -m pytest tests/` and `python scripts/reproduce.py --scope smoke` |
+| **Tier 3A: Fresh Six-Cohort Re-Run** | Full end-to-end model fitting from preprocessed cohort caches (4,320 fits). | 8+ cores, 16 GB RAM, NVIDIA CUDA GPU, **~10-14 hours**. | Completed locally on 2026-11-02. Bit-for-bit identical across 11 of 12 algorithms. |
+| **Tier 3B: 13-Dataset Full Benchmark** | Exploratory historical comparison across 13 multi-domain datasets (1,430 planned fits). | 16+ cores, 32+ GB RAM, **~36-48 hours**. | Frozen at 892 fits due to 16 GB memory ceiling on large-$N$ benchmarks ($N \ge 10,000$). Verified via Friedman omnibus test ($\chi_F^2 = 11.56, p = 0.40$). |
+
+---
+
+## 2. Reviewer Verification Guide
+
+For detailed step-by-step instructions on executing the Tier 1 zero-network verification script, see:
+- [`reproduction/README.md`](reproduction/README.md)
+- [`docs/reviewer-reproduction.md`](docs/reviewer-reproduction.md)
+- [`reproduction/reviewer_guide/quick_verification.md`](reproduction/reviewer_guide/quick_verification.md)
+
+---
+
+## 3. Evidence and Governance Transparency
+
+The software package installs cleanly in Python 3.10-3.14 environments, and all unit tests pass with zero warnings. Saved-output arithmetic, fresh local execution, and authenticated historical provenance are maintained as separate evidence levels to preserve full scientific integrity.

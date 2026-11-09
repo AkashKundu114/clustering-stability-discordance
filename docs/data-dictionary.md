@@ -2,7 +2,10 @@
 
 **Document:** `docs/data-dictionary.md` 
 **Date:** 2026-11-07 
-**Project:** Stability-Accuracy Discordance in High-Dimensional Consensus Clustering 
+**Project:** Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise  
+**Running Header:** Feature-Gated Bipartite Consensus Under Noise  
+**Canonical Repository:** [https://github.com/AkashKundu114/clustering-stability-discordance](https://github.com/AkashKundu114/clustering-stability-discordance)  
+**Companion Repository:** [https://github.com/AkashKundu114/icc-clustering](https://github.com/AkashKundu114/icc-clustering) 
 
 ---
 
@@ -13,7 +16,7 @@
 | Column Name | Data Type | Description | Permitted Values / Range |
 | :--- | :--- | :--- | :--- |
 | `cohort` | `string` | Benchmark biomedical cohort identifier | `cns`, `colon`, `leukemia`, `ovarian`, `prostate`, `srbct` |
-| `method` | `string` | Clustering algorithm evaluated | `K-Means`, `Ward`, `Spectral`, `FCM`, `StdCons`, `CoreHalo`, `DEC`, `FCAG`, `FastMVC`, `CoHiRF`, `UngatedAC`, `GAC` |
+| `method` | `string` | Evaluated across 12 comparative algorithms | `K-Means`, `Ward`, `Spectral`, `FCM`, `StdCons`, `CoreHalo`, `DEC`, `FCAG`, `FastMVC`, `CoHiRF`, `UngatedAC`, `GAC` |
 | `subsample_stability` | `float64` | Mean pairwise ARI across 435 subsample pairs on real data | $[-0.5, 1.0]$ |
 | `subsample_accuracy` | `float64` | Mean external ARI against clinical diagnostic reference labels | $[-0.5, 1.0]$ |
 | `discordance_gap` | `float64` | Difference between stability and accuracy ($\text{Stab} - \text{Acc}$) | $[-1.0, 2.0]$ |

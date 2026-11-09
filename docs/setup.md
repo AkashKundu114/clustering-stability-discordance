@@ -7,15 +7,15 @@ The package metadata declares Python 3.10 or later. The GitHub Actions workflow 
 ## Install from source
 
 ```bash
-git clone https://github.com/AkashKundu114/icc-clustering.git
-cd icc-clustering
+git clone https://github.com/AkashKundu114/clustering-stability-discordance.git
+cd clustering-stability-discordance
 python -m venv .venv
 # Activate the environment using the instructions for your shell.
 python -m pip install --upgrade pip
 python -m pip install -e .
 ```
 
-The project distribution name is `icc-clustering`; the Python import package remains `icc`. Install from this repository rather than assuming that a similarly named package on a package index is this project.
+This is the canonical repository for **CSD** ([https://github.com/AkashKundu114/clustering-stability-discordance](https://github.com/AkashKundu114/clustering-stability-discordance)), developed as the reproducible companion to [`icc-clustering`](https://github.com/AkashKundu114/icc-clustering) supporting the manuscript *Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise* across **13 benchmark datasets** and **12 comparative clustering algorithms**.
 
 Optional dependency groups are declared in `pyproject.toml`: `.[deep]` for selected deep-learning baselines, `.[bio]` for Scanpy/AnnData integrations, and `.[dev]` for tests and development tools. The `.[all]` group is broad and may require substantial platform-specific dependencies. For contributor/test setup, `python -m pip install -r requirements-dev.txt` installs the current checkout with the `dev` extra.
 

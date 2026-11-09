@@ -1,3 +1,8 @@
-# Dataset guide
+# Dataset Guide and Access Policy
 
-See the current [dataset access and rights guide](datasets.md) for the configured dataset variants, upstream links, citations, and current redistribution cautions. Registry dimensions are not proof of exact downloaded-data identity. Do not rely on older dataset license labels or cached-file hashes as redistribution authorization.
+**Manuscript Title:** *Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise*  
+**Running Header:** *Feature-Gated Bipartite Consensus Under Noise*  
+**Canonical Repository:** [https://github.com/AkashKundu114/clustering-stability-discordance](https://github.com/AkashKundu114/clustering-stability-discordance)  
+**Companion Repository:** [https://github.com/AkashKundu114/icc-clustering](https://github.com/AkashKundu114/icc-clustering)  
+
+See the current [dataset access and rights guide](datasets.md) for configured benchmark dataset variants (covering the **13 benchmark datasets**), upstream links, citations, and current redistribution terms across the **12 comparative algorithms**.

@@ -1,26 +1,30 @@
 # Support and Inquiries
 
-Thank you for your interest in the Invariant Core Consensus (`icc`) library and framework.
+Thank you for your interest in the **CSD** (`clustering-stability-discordance`) research package and reproducible evidence suite for the manuscript *Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise* (Running header: *Feature-Gated Bipartite Consensus Under Noise*), evaluating **13 benchmark datasets** across **12 comparative algorithms**.
+
+- **Canonical Repository:** [https://github.com/AkashKundu114/clustering-stability-discordance](https://github.com/AkashKundu114/clustering-stability-discordance)  
+- **Companion Repository:** [https://github.com/AkashKundu114/icc-clustering](https://github.com/AkashKundu114/icc-clustering)  
 
 ---
 
 ## 1. How to Get Help
 
 - **Documentation:**
- - [Setup Guide](docs/setup.md)
- - [Usage Guide](docs/usage.md)
- - [API Reference](docs/api.md)
- - [Theoretical Foundations](docs/theory.md)
+  - [Setup Guide](docs/setup.md)
+  - [Usage Guide](docs/usage.md)
+  - [API Reference](docs/api.md)
+  - [Theoretical Foundations](docs/theory.md)
+  - [Reviewer Reproduction Guide](docs/reviewer-reproduction.md)
 
 - **Bug Reports & Issues:**
- If you find a bug, unexpected behaviour, or an error:
- - Check the [Issue Tracker](https://github.com/AkashKundu114/icc-clustering/issues) to see if it has already been reported.
- - File a new issue using our issue templates with a minimal reproducible code snippet, input data shape, seed, and your environment specifications (`python -V`, `pip freeze`).
+  If you find a bug, unexpected behaviour, or an error:
+  - Check the [CSD Issue Tracker](https://github.com/AkashKundu114/clustering-stability-discordance/issues) or companion [ICC Issue Tracker](https://github.com/AkashKundu114/icc-clustering/issues).
+  - File a new issue using our issue templates with a minimal reproducible code snippet, input data shape, seed, and your environment specifications (`python -V`, `pip freeze`).
 
 - **Reproducibility Inquiries:**
- If you encounter discrepancies reproducing benchmark results:
- - Consult the [Reproducibility Guide](docs/reproducibility.md).
- - Verify that your environment flags match the single-thread determinism constraints (`OMP_NUM_THREADS=1`, `MKL_NUM_THREADS=1`).
+  If you encounter discrepancies reproducing benchmark results:
+  - Consult the [Reproducibility Guide](REPRODUCIBILITY.md) and [Reviewer Guide](docs/reviewer-reproduction.md).
+  - Verify that your environment flags match single-thread determinism constraints (`OMP_NUM_THREADS=1`, `MKL_NUM_THREADS=1`).
 
 ---
 
