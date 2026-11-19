@@ -7,16 +7,19 @@
   "access_right": "open",
   "creators": [
     {
-      "name": "Kalyan Kumar Das",
-      "affiliation": "Techno India University"
+      "name": "Akash Kundu",
+      "affiliation": "Techno India University",
+      "orcid": "0009-0003-8246-7316"
     },
     {
-      "name": "Akash Kundu",
-      "affiliation": "Techno India University"
+      "name": "Kalyan Kumar Das",
+      "affiliation": "Techno India University",
+      "orcid": "0009-0004-8333-8900"
     },
     {
       "name": "Anirban Mukhopadhyay",
-      "affiliation": "University of Kalyani"
+      "affiliation": "University of Kalyani",
+      "orcid": "0000-0001-8128-3521"
     }
   ],
   "keywords": [

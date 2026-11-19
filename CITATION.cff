@@ -6,20 +6,32 @@ date-released: 2026-11-07
 repository-code: "https://github.com/AkashKundu114/clustering-stability-discordance"
 license: MIT
 authors:
-  - name: "Kalyan Kumar Das"
+  - family-names: "Kundu"
+    given-names: "Akash"
     affiliation: "Techno India University"
-  - name: "Akash Kundu"
+    orcid: "https://orcid.org/0009-0003-8246-7316"
+  - family-names: "Das"
+    given-names: "Kalyan Kumar"
     affiliation: "Techno India University"
-  - name: "Anirban Mukhopadhyay"
+    orcid: "https://orcid.org/0009-0004-8333-8900"
+  - family-names: "Mukhopadhyay"
+    given-names: "Anirban"
     affiliation: "University of Kalyani"
+    orcid: "https://orcid.org/0000-0001-8128-3521"
 preferred-citation:
   type: article
   title: "Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise"
   authors:
-    - name: "Kalyan Kumar Das"
+    - family-names: "Kundu"
+      given-names: "Akash"
       affiliation: "Techno India University"
-    - name: "Akash Kundu"
+      orcid: "https://orcid.org/0009-0003-8246-7316"
+    - family-names: "Das"
+      given-names: "Kalyan Kumar"
       affiliation: "Techno India University"
-    - name: "Anirban Mukhopadhyay"
+      orcid: "https://orcid.org/0009-0004-8333-8900"
+    - family-names: "Mukhopadhyay"
+      given-names: "Anirban"
       affiliation: "University of Kalyani"
+      orcid: "https://orcid.org/0000-0001-8128-3521"
   year: 2026

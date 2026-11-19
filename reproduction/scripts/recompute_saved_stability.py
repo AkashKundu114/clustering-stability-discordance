@@ -23,8 +23,36 @@ from typing import Any
 
 import numpy as np
 import pandas as pd
-import sklearn
-from sklearn.metrics import adjusted_rand_score
+try:
+    import sklearn
+    from sklearn.metrics import adjusted_rand_score
+except Exception:
+    class _FakeSklearn:
+        __version__ = "fallback-pure-numpy"
+    sklearn = _FakeSklearn()
+
+    def adjusted_rand_score(labels_true: Any, labels_pred: Any) -> float:
+        labels_true = np.asarray(labels_true)
+        labels_pred = np.asarray(labels_pred)
+        n = len(labels_true)
+        if n <= 1:
+            return 1.0
+        classes, class_idx = np.unique(labels_true, return_inverse=True)
+        clusters, cluster_idx = np.unique(labels_pred, return_inverse=True)
+        contingency = np.zeros((len(classes), len(clusters)), dtype=np.int64)
+        np.add.at(contingency, (class_idx, cluster_idx), 1)
+        sum_comb_c = int(np.sum(contingency * (contingency - 1) // 2))
+        a = contingency.sum(axis=1)
+        b = contingency.sum(axis=0)
+        sum_a = int(np.sum(a * (a - 1) // 2))
+        sum_b = int(np.sum(b * (b - 1) // 2))
+        sum_n = n * (n - 1) // 2
+        prod = (sum_a * sum_b) / sum_n
+        mean = 0.5 * (sum_a + sum_b)
+        if mean == prod:
+            return 1.0
+        return float((sum_comb_c - prod) / (mean - prod))
+
 
 COHORTS = ("cns", "colon", "leukemia", "ovarian", "prostate", "srbct")
 METHODS = (
