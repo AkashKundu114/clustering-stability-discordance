@@ -13,7 +13,13 @@ Run:
     python demo.py
 """
 
+import sys
 import time
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent
+if str(ROOT / "src") not in sys.path:
+    sys.path.insert(0, str(ROOT / "src"))
 
 import numpy as np
 from tabulate import tabulate

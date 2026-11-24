@@ -1,5 +1,6 @@
 # CSD: Clustering Stability-Accuracy Discordance in High-Dimensional Biomedical Data
 
+[![CI](https://github.com/AkashKundu114/clustering-stability-discordance/actions/workflows/ci.yml/badge.svg)](https://github.com/AkashKundu114/clustering-stability-discordance/actions/workflows/ci.yml)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/)
 [![Tests: 82 Passing](https://img.shields.io/badge/tests-82%20passed-brightgreen.svg)](tests/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg)](LICENSE)

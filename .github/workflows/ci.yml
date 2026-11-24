@@ -1,4 +1,4 @@
-name: ICC CI/CD
+name: CSD CI
 
 on:
   push:
@@ -60,7 +60,7 @@ jobs:
 
       - name: Run Pytest Test Suite
         run: |
-          python -m pytest tests -v --cov=src/icc
+          python -m pytest tests -v --cov=src
 
       - name: Run Interactive Demo Walkthrough
         run: |

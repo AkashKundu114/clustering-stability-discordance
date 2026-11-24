@@ -13,26 +13,18 @@ All notable changes to the **CSD (Clustering Stability-Accuracy Discordance)** r
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Under Review] - 2026-11-24
-
-### Milestone: Submitted to Springer Nature DMKD
-- **Journal:** Springer Nature - *Data Mining and Knowledge Discovery* (DMKD)
-- **Current Status:** Under Review (Stage: With Editor)
-- **Editorial Progress:**
-  - Submission received: Done
-  - Technical check: Done
-  - Editorial assignment: Done
-  - Current stage: With Editor (assigned to handling editor for preliminary evaluation and referee selection)
-- **Documentation Updates:** Updated repository metadata, citation records, and documentation files to reflect the journal submission and review status.
-
-## [1.0.0-rc2] - 2026-11-07
+## [1.0.0-rc2] - 2026-11-24
 
 ### Added
 - Top-level `csd` package alias (`src/csd/__init__.py`) re-exporting core clustering and conformal modules.
 - Restored root documentation links (`DATA_AVAILABILITY.md`, `ENVIRONMENT.md`, `REPRODUCIBILITY.md`).
+- Added Contributor Covenant Code of Conduct and Contributing guidelines.
+- Standardized four-tier reproducibility audit framework under `audit/`.
 
 ### Fixed
 - Fixed root `Dockerfile` path for locked requirements (`environment/requirements-lock.txt`).
+- Fixed cross-platform console handle error in reproduction CLI tests.
+- Synchronized author sequence with submitted manuscript title page across metadata.
 - Updated `scripts/run.py` and `scripts/reproduce.py` with repository-root independent path resolution.
 - Sanitized local development paths and removed residual coverage artifacts.
 
