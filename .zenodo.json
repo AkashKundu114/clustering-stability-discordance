@@ -7,14 +7,14 @@
   "access_right": "open",
   "creators": [
     {
-      "name": "Akash Kundu",
-      "affiliation": "Techno India University",
-      "orcid": "0009-0003-8246-7316"
-    },
-    {
       "name": "Kalyan Kumar Das",
       "affiliation": "Techno India University",
       "orcid": "0009-0004-8333-8900"
+    },
+    {
+      "name": "Akash Kundu",
+      "affiliation": "Techno India University",
+      "orcid": "0009-0003-8246-7316"
     },
     {
       "name": "Anirban Mukhopadhyay",

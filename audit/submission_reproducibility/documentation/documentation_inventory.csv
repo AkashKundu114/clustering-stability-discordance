@@ -1,0 +1,93 @@
+path,file_type,purpose,audience,current_status,last_relevant_commit,contains_scientific_claims,contains_commands,contains_dataset_information,contains_artifact_paths,contains_outdated_information,action_required,verification_status
+.editorconfig,dotfile,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,1f9a48e,False,False,False,False,False,retain_as_is,VERIFIED
+.env.example,other_config,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,1f9a48e,False,False,False,True,False,retain_as_is,VERIFIED
+.gitattributes,dotfile,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,1f9a48e,False,False,False,False,False,retain_as_is,VERIFIED
+.gitignore,dotfile,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,1f9a48e,True,True,False,True,False,retain_as_is,VERIFIED
+.zenodo.json,json_config,Project documentation and configuration,"Researchers, Reviewers, Developers",Current but incomplete,44838fa,True,False,True,False,True,synchronize_and_expand_details,VERIFIED
+CHANGELOG.md,markdown,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,83d69ef,True,False,True,True,False,retain_as_is,VERIFIED
+CITATION.cff,citation_cff,Project documentation and configuration,"Researchers, Reviewers, Developers",Current but incomplete,44838fa,True,False,False,False,True,synchronize_and_expand_details,VERIFIED
+COMPUTE_REQUIREMENTS.md,markdown,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,83d69ef,True,False,True,False,False,retain_as_is,VERIFIED
+DATA_AVAILABILITY.md,markdown,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,83d69ef,True,False,True,True,False,retain_as_is,VERIFIED
+Dockerfile,other_config,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,29dea0e,False,True,False,False,False,retain_as_is,VERIFIED
+ENVIRONMENT.md,markdown,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,83d69ef,True,True,True,False,False,retain_as_is,VERIFIED
+LICENSE,other_config,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,1f9a48e,True,False,False,False,False,retain_as_is,VERIFIED
+Makefile,other_config,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,1f9a48e,False,True,False,False,False,retain_as_is,VERIFIED
+README.md,markdown,Project documentation and configuration,"Researchers, Reviewers, Developers",Current but incomplete,83d69ef,True,True,True,True,True,synchronize_and_expand_details,VERIFIED
+REPRODUCIBILITY.md,markdown,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,83d69ef,True,True,True,True,False,retain_as_is,VERIFIED
+SECURITY.md,markdown,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,83d69ef,True,True,True,False,False,retain_as_is,VERIFIED
+SUPPORT.md,markdown,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,83d69ef,True,True,True,False,False,retain_as_is,VERIFIED
+THIRD_PARTY_NOTICES.md,markdown,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,1f20c97,False,False,True,False,False,retain_as_is,VERIFIED
+configs\README.md,markdown,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,83d69ef,True,False,True,False,False,retain_as_is,VERIFIED
+configs\baselines.yaml,yaml_config,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,1f9a48e,False,False,False,False,False,retain_as_is,VERIFIED
+configs\datasets.yaml,yaml_config,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,1f9a48e,False,False,True,True,False,retain_as_is,VERIFIED
+configs\default.yaml,yaml_config,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,1f9a48e,True,False,True,True,False,retain_as_is,VERIFIED
+configs\examples\genomics.yaml,yaml_config,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,1f9a48e,False,False,True,True,False,retain_as_is,VERIFIED
+configs\examples\synthetic.yaml,yaml_config,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,1f9a48e,False,False,True,True,False,retain_as_is,VERIFIED
+configs\experiment_defaults.yaml,yaml_config,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,1f9a48e,False,False,False,True,False,retain_as_is,VERIFIED
+data\README.md,markdown,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,83d69ef,True,False,True,False,False,retain_as_is,VERIFIED
+data\registry.yaml,yaml_config,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,1f9a48e,False,False,True,False,False,retain_as_is,VERIFIED
+docs\README.md,markdown,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,83d69ef,True,False,True,False,False,retain_as_is,VERIFIED
+docs\api.md,markdown,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,1f20c97,True,False,True,True,False,retain_as_is,VERIFIED
+docs\citation.md,markdown,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,83d69ef,True,False,True,False,False,retain_as_is,VERIFIED
+docs\compute-requirements.md,markdown,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,83d69ef,True,True,True,False,False,retain_as_is,VERIFIED
+docs\data-dictionary.md,markdown,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,83d69ef,True,False,True,True,False,retain_as_is,VERIFIED
+docs\data-rights-and-licences.md,markdown,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,83d69ef,True,False,True,True,False,retain_as_is,VERIFIED
+docs\data.md,markdown,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,83d69ef,True,False,True,False,False,retain_as_is,VERIFIED
+docs\datasets-and-provenance.md,markdown,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,83d69ef,True,True,True,False,False,retain_as_is,VERIFIED
+docs\datasets.md,markdown,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,83d69ef,True,False,True,True,False,retain_as_is,VERIFIED
+docs\development.md,markdown,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,1f20c97,True,True,True,True,False,retain_as_is,VERIFIED
+docs\environment-setup.md,markdown,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,83d69ef,True,True,True,False,False,retain_as_is,VERIFIED
+docs\experimental-protocol.md,markdown,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,83d69ef,True,False,True,False,False,retain_as_is,VERIFIED
+docs\faq.md,markdown,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,1f20c97,True,False,True,False,False,retain_as_is,VERIFIED
+docs\glossary.md,markdown,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,1f20c97,True,False,False,False,False,retain_as_is,VERIFIED
+docs\index.md,markdown,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,83d69ef,True,False,True,False,False,retain_as_is,VERIFIED
+docs\limitations.md,markdown,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,1f9a48e,True,False,True,False,False,retain_as_is,VERIFIED
+docs\methodology.md,markdown,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,83d69ef,True,False,True,False,False,retain_as_is,VERIFIED
+docs\project_inventory.md,markdown,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,83d69ef,True,True,True,True,False,retain_as_is,VERIFIED
+docs\provenance.md,markdown,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,83d69ef,True,False,True,False,False,retain_as_is,VERIFIED
+docs\release-process.md,markdown,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,1f20c97,True,False,True,True,False,retain_as_is,VERIFIED
+docs\reproducibility.md,markdown,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,83d69ef,True,False,True,True,False,retain_as_is,VERIFIED
+docs\research-overview.md,markdown,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,83d69ef,True,False,True,False,False,retain_as_is,VERIFIED
+docs\research-questions.md,markdown,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,83d69ef,True,False,True,False,False,retain_as_is,VERIFIED
+docs\results-and-interpretation.md,markdown,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,83d69ef,True,False,False,False,False,retain_as_is,VERIFIED
+docs\results.md,markdown,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,1f9a48e,True,False,True,False,False,retain_as_is,VERIFIED
+docs\reviewer-reproduction.md,markdown,Project documentation and configuration,Reviewers,Current and accurate,83d69ef,True,True,True,True,False,retain_as_is,VERIFIED
+docs\reviewer_reproduction.md,markdown,Project documentation and configuration,Reviewers,Current and accurate,83d69ef,True,True,True,True,False,retain_as_is,VERIFIED
+docs\scientific-overview.md,markdown,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,83d69ef,True,False,True,False,False,retain_as_is,VERIFIED
+docs\setup.md,markdown,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,83d69ef,True,True,True,False,False,retain_as_is,VERIFIED
+docs\software-architecture.md,markdown,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,1f9a48e,True,False,True,True,False,retain_as_is,VERIFIED
+docs\statistical-analysis.md,markdown,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,1f9a48e,True,False,True,False,False,retain_as_is,VERIFIED
+docs\theory.md,markdown,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,1f20c97,True,False,False,False,False,retain_as_is,VERIFIED
+docs\tier1-reconstruction.md,markdown,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,83d69ef,True,True,True,True,False,retain_as_is,VERIFIED
+docs\tier2-experiment-status.md,markdown,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,83d69ef,True,False,True,False,False,retain_as_is,VERIFIED
+docs\troubleshooting.md,markdown,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,83d69ef,True,True,True,True,False,retain_as_is,VERIFIED
+docs\usage.md,markdown,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,1f20c97,True,True,False,True,False,retain_as_is,VERIFIED
+environment\Dockerfile,other_config,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,1f9a48e,True,True,False,False,False,retain_as_is,VERIFIED
+environment\environment.yml,yaml_config,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,1f9a48e,False,True,False,False,False,retain_as_is,VERIFIED
+environment\requirements-lock.txt,text,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,1f9a48e,False,True,False,False,False,retain_as_is,VERIFIED
+environment\versions.json,json_config,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,1f9a48e,True,True,False,False,False,retain_as_is,VERIFIED
+pyproject.toml,toml_config,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,1f20c97,True,True,True,False,False,retain_as_is,VERIFIED
+reproduction\README.md,markdown,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,83d69ef,True,True,True,True,False,retain_as_is,VERIFIED
+reproduction\environment\win-py314-requirements-lock.txt,text,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,1f9a48e,False,True,False,False,False,retain_as_is,VERIFIED
+reproduction\numerical_comparison_report.md,markdown,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,83d69ef,True,False,True,False,False,retain_as_is,VERIFIED
+reproduction\reviewer_guide\quick_verification.md,markdown,Project documentation and configuration,Reviewers,Current and accurate,83d69ef,True,True,True,False,False,retain_as_is,VERIFIED
+requirements-dev.txt,text,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,1f9a48e,False,False,False,False,False,retain_as_is,VERIFIED
+requirements.txt,text,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,1f9a48e,False,True,False,False,False,retain_as_is,VERIFIED
+results\experiments\run_20261107_161711.json,json_config,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,untracked,False,False,True,False,False,retain_as_is,VERIFIED
+results\experiments\run_20261107_163917.json,json_config,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,untracked,False,False,True,False,False,retain_as_is,VERIFIED
+results\experiments\run_20261107_174932.json,json_config,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,untracked,False,False,True,False,False,retain_as_is,VERIFIED
+results\experiments\run_20261107_191830.json,json_config,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,untracked,True,False,True,False,False,retain_as_is,VERIFIED
+scripts\README.md,markdown,Project documentation and configuration,"Researchers, Reviewers, Developers",Current and accurate,83d69ef,True,True,True,True,False,retain_as_is,VERIFIED
+tests\README.md,markdown,Project documentation and configuration,Developers,Current and accurate,83d69ef,True,True,True,False,False,retain_as_is,VERIFIED
+EXPERIMENTAL_PROTOCOL.md,markdown,Core experimental protocol specification,"Researchers, Reviewers",Current and accurate,docs/hygiene,True,True,True,True,False,retain_as_is,VERIFIED
+audit/submission_reproducibility/documentation/configuration_audit.md,markdown,Configuration and packaging synchronization audit,"Reviewers, Developers",Current and accurate,docs/hygiene,False,True,False,True,False,retain_as_is,VERIFIED
+audit/submission_reproducibility/documentation/final_consistency_report.md,markdown,Final numerical consistency reconciliation report,"Reviewers, Researchers",Current and accurate,docs/hygiene,True,False,True,True,False,retain_as_is,VERIFIED
+audit/submission_reproducibility/documentation/final_reviewer_simulation.md,markdown,Clean-clone 10-step reviewer simulation report,"Reviewers, Developers",Current and accurate,docs/hygiene,False,True,True,True,False,retain_as_is,VERIFIED
+audit/submission_reproducibility/documentation/ignore_rules_audit.md,markdown,Git ignore rules and tracking audit report,"Reviewers, Developers",Current and accurate,docs/hygiene,False,True,False,True,False,retain_as_is,VERIFIED
+docs/data_rights.md,markdown,Dataset rights and governance taxonomy,"Reviewers, Researchers",Current and accurate,docs/hygiene,False,False,True,False,False,retain_as_is,VERIFIED
+docs/experiment_catalog.md,markdown,Catalog of EXP-01 through EXP-07 mappings,"Reviewers, Researchers",Current and accurate,docs/hygiene,True,True,True,True,False,retain_as_is,VERIFIED
+docs/experimental_provenance.md,markdown,Experimental artifact provenance classifications,"Reviewers, Researchers",Current and accurate,docs/hygiene,True,False,True,True,False,retain_as_is,VERIFIED
+docs/repository_structure.md,markdown,Repository directory structure and responsibilities,"Reviewers, Developers",Current and accurate,docs/hygiene,False,False,False,True,False,retain_as_is,VERIFIED
+docs/reproducibility_architecture.md,markdown,Four-tier reproducibility architecture specification,"Reviewers, Researchers",Current and accurate,docs/hygiene,False,True,True,True,False,retain_as_is,VERIFIED
+docs/result_dictionary.md,markdown,Dictionary of empirical metrics and reported values,"Reviewers, Researchers",Current and accurate,docs/hygiene,True,False,True,True,False,retain_as_is,VERIFIED
+docs/submitted_manuscript.md,markdown,Submitted manuscript metadata and evidence map,"Reviewers, Researchers",Current and accurate,docs/hygiene,True,False,True,True,False,retain_as_is,VERIFIED

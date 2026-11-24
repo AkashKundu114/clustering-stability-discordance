@@ -1,5 +1,6 @@
 # Private research and audit material
-/audit/
+/audit/*
+!/audit/submission_reproducibility/
 /paper/
 /manuscript/
 /submission/
@@ -8,6 +9,10 @@
 /private-research/
 /publication-records/
 /internal-notes/
+
+# Submission packages and publication source bundles (tracked in private archive)
+DMKD_Submission_Package/
+*.zip
 
 # Research data and machine-local caches
 /data/raw/
