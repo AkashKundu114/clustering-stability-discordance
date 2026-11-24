@@ -1,5 +1,11 @@
 # Third-Party Notices and Dataset Terms of Use
 
+**Manuscript Reference:** *Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise*
+**Authors:** Kalyan Kumar Das, Akash Kundu, Anirban Mukhopadhyay
+**Journal:** Springer Nature - *Data Mining and Knowledge Discovery* (DMKD)
+**Status:** Under review
+**Canonical Repository:** [https://github.com/AkashKundu114/clustering-stability-discordance](https://github.com/AkashKundu114/clustering-stability-discordance)
+
 This repository incorporates, references, or interfaces with open-source software libraries, benchmark dataset repositories, and scientific archives. This document details the upstream copyrights, licenses, and terms of use governing these third-party components.
 
 ---
@@ -69,7 +75,7 @@ The six high-dimensional biomedical cohorts analyzed in this work are de-identif
 5. **Prostate Microarray:** OpenML ID 45099 (Singh et al., *Cancer Cell* 2002)
 6. **Small Round Blue Cell Tumors (SRBCT):** OpenML ID 45101 (Khan et al., *Nature Medicine* 2001)
 
-**Compliance Notice:** 
+**Compliance Notice:**
 All clinical cohorts consist of de-identified historical research data exempt from human subject consent requirements under institutional review board secondary analysis provisions. Raw patient expression arrays are accessed directly via the OpenML API without author redistribution. Evaluation partition arrays are safeguarded under a confidential peer-review Data Use Agreement (DUA).
 
 ---

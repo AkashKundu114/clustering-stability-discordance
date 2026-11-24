@@ -1,6 +1,8 @@
 # Private research and audit material
 /audit/*
-!/audit/submission_reproducibility/
+!/audit/*.md
+!/audit/*.csv
+!/audit/logs/
 /paper/
 /manuscript/
 /submission/
@@ -44,7 +46,7 @@ DMKD_Submission_Package/
 **/checkpoints/
 *.ckpt
 *.log
-!/audit/submission_reproducibility/logs/*.log
+!/audit/logs/*.log
 /logs/
 
 # Python, build, test, and coverage outputs

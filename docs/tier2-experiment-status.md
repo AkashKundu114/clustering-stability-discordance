@@ -1,11 +1,13 @@
 # Tier 2: Fresh Experiment Status and Incomplete Benchmark Disclosure
 
-**Document:** `docs/tier2-experiment-status.md` 
-**Date:** 2026-11-07 
-**Project:** Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise  
-**Running Header:** Feature-Gated Bipartite Consensus Under Noise  
-**Canonical Repository:** [https://github.com/AkashKundu114/clustering-stability-discordance](https://github.com/AkashKundu114/clustering-stability-discordance)  
-**Companion Repository:** [https://github.com/AkashKundu114/icc-clustering](https://github.com/AkashKundu114/icc-clustering) 
+**Document:** `docs/tier2-experiment-status.md`
+**Date:** 2026-11-07
+**Project:** Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise
+**Running Header:** Feature-Gated Bipartite Consensus Under Noise
+**Authors:** Kalyan Kumar Das, Akash Kundu, Anirban Mukhopadhyay
+**Journal:** Springer Nature - *Data Mining and Knowledge Discovery* (DMKD)
+**Status:** Under review
+**Canonical Repository:** [https://github.com/AkashKundu114/clustering-stability-discordance](https://github.com/AkashKundu114/clustering-stability-discordance)
 
 ---
 
@@ -30,8 +32,8 @@ Unlike Tier 1 (which reconstructs metrics from saved partition arrays in under 6
 
 ## 3. Status of the 13-Dataset Multi-Domain Benchmark (Exploratory / Incomplete)
 
-> [!IMPORTANT] 
-> **Mandatory Disclosure for Referees and Authors:** 
+> [!IMPORTANT]
+> **Mandatory Disclosure for Referees and Authors:**
 > The 13-dataset multi-domain benchmark is presented strictly as an **exploratory historical comparison**, NOT as a completed fresh benchmark.
 
 ### The Numbers:

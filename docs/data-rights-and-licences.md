@@ -1,11 +1,10 @@
 # Data Rights, Licensing, and Governance Framework
 
-**Document:** `docs/data-rights-and-licences.md` 
-**Date:** 2026-11-07 
-**Project:** Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise  
-**Running Header:** Feature-Gated Bipartite Consensus Under Noise  
-**Canonical Repository:** [https://github.com/AkashKundu114/clustering-stability-discordance](https://github.com/AkashKundu114/clustering-stability-discordance)  
-**Companion Repository:** [https://github.com/AkashKundu114/icc-clustering](https://github.com/AkashKundu114/icc-clustering) 
+**Document:** `docs/data-rights-and-licences.md`
+**Date:** 2026-11-07
+**Project:** Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise
+**Running Header:** Feature-Gated Bipartite Consensus Under Noise
+**Canonical Repository:** [https://github.com/AkashKundu114/clustering-stability-discordance](https://github.com/AkashKundu114/clustering-stability-discordance)
 
 ---
 
@@ -15,13 +14,13 @@
 
 In strict adherence to academic research ethics, copyright laws, and standard research data policies:
 
-1. **Download Availability $\neq$ Redistribution Permission:** 
+1. **Download Availability $\neq$ Redistribution Permission:**
  The ability to download a dataset from an institutional website, personal repository, or competition server does not grant legal authority to redistribute the raw data in a GitHub repository or Zenodo archive.
-2. **Upstream Copyright Ownership:** 
+2. **Upstream Copyright Ownership:**
  Secondary aggregators (e.g., OpenML, Kaggle) cannot override the licensing terms or human-subject biobank restrictions established by the primary creators or hospital ethics committees.
-3. **Protection of Clinical & Patient Data:** 
+3. **Protection of Clinical & Patient Data:**
  Even de-identified clinical genomic microarrays must not be checked into public version control systems.
-4. **Derived Artifact Safeguards:** 
+4. **Derived Artifact Safeguards:**
  Partition files containing sample-level cluster assignment vectors indexed directly to hospital clinical observations are treated as confidential research materials.
 
 ---

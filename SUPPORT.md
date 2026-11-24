@@ -2,11 +2,10 @@
 
 Thank you for your interest in the **CSD** (`clustering-stability-discordance`) research package and reproducible evidence suite for the manuscript *Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise* (Running header: *Feature-Gated Bipartite Consensus Under Noise*), submitted to Springer Nature *Data Mining and Knowledge Discovery* (DMKD) and currently Under Review (Current stage: With Editor; Milestones: Submission received: Done, Technical check: Done, Editorial assignment: Done, With Editor: Active), evaluating 13 benchmark datasets across 12 comparative algorithms.
 
-- **Authors:** Kalyan Kumar Das, Akash Kundu, Anirban Mukhopadhyay  
-- **Journal:** Springer Nature - *Data Mining and Knowledge Discovery* (DMKD)  
-- **Status:** Under Review (Stage: With Editor)  
-- **Canonical Repository:** [https://github.com/AkashKundu114/clustering-stability-discordance](https://github.com/AkashKundu114/clustering-stability-discordance)  
-- **Companion Repository:** [https://github.com/AkashKundu114/icc-clustering](https://github.com/AkashKundu114/icc-clustering)  
+- **Authors:** Kalyan Kumar Das, Akash Kundu, Anirban Mukhopadhyay
+- **Journal:** Springer Nature - *Data Mining and Knowledge Discovery* (DMKD)
+- **Status:** Under Review (Stage: With Editor)
+- **Canonical Repository:** [https://github.com/AkashKundu114/clustering-stability-discordance](https://github.com/AkashKundu114/clustering-stability-discordance)
 
 ---
 
@@ -21,7 +20,7 @@ Thank you for your interest in the **CSD** (`clustering-stability-discordance`) 
 
 - **Bug Reports & Issues:**
   If you find a bug, unexpected behaviour, or an error:
-  - Check the [CSD Issue Tracker](https://github.com/AkashKundu114/clustering-stability-discordance/issues) or companion [ICC Issue Tracker](https://github.com/AkashKundu114/icc-clustering/issues).
+  - Check the [CSD Issue Tracker](https://github.com/AkashKundu114/clustering-stability-discordance/issues).
   - File a new issue using our issue templates with a minimal reproducible code snippet, input data shape, seed, and your environment specifications (`python -V`, `pip freeze`).
 
 - **Reproducibility Inquiries:**

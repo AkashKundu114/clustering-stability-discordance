@@ -1,10 +1,11 @@
 # Citation and Bibliographic Information
 
-**Manuscript Title:** *Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise*  
-**Running Header:** *Feature-Gated Bipartite Consensus Under Noise*  
-**Authors:** Kalyan Kumar Das (Techno India University), Akash Kundu (Techno India University), Anirban Mukhopadhyay (University of Kalyani)  
-**Canonical Repository:** [https://github.com/AkashKundu114/clustering-stability-discordance](https://github.com/AkashKundu114/clustering-stability-discordance)  
-**Companion Repository:** [https://github.com/AkashKundu114/icc-clustering](https://github.com/AkashKundu114/icc-clustering)  
+**Manuscript Title:** *Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise*
+**Running Header:** *Feature-Gated Bipartite Consensus Under Noise*
+**Authors:** Kalyan Kumar Das (Techno India University), Akash Kundu (Techno India University), Anirban Mukhopadhyay (University of Kalyani)
+**Journal:** Springer Nature - *Data Mining and Knowledge Discovery* (DMKD)
+**Status:** Under review
+**Canonical Repository:** [https://github.com/AkashKundu114/clustering-stability-discordance](https://github.com/AkashKundu114/clustering-stability-discordance)
 
 ---
 
@@ -17,8 +18,8 @@ If you use this research, empirical findings, or stability-accuracy discordance 
   title={Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise},
   author={Das, Kalyan Kumar and Kundu, Akash and Mukhopadhyay, Anirban},
   year={2026},
-  journal={arXiv preprint},
-  note={Under review}
+  journal={Data Mining and Knowledge Discovery (Under Review)},
+  note={Submitted; Current stage: With Editor (Milestones: Submission received: Done, Technical check: Done, Editorial assignment: Done, With Editor: Active)}
 }
 ```
 
@@ -34,7 +35,6 @@ The repository distributes software under the MIT License. Cite the exact softwa
   title={CSD: Clustering Stability-Accuracy Discordance in High-Dimensional Biomedical Data},
   year={2026},
   url={https://github.com/AkashKundu114/clustering-stability-discordance},
-  note={Companion repository: https://github.com/AkashKundu114/icc-clustering}
 }
 ```
 

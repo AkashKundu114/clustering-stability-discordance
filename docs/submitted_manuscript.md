@@ -3,7 +3,16 @@
 **Canonical Repository:** [https://github.com/AkashKundu114/clustering-stability-discordance](https://github.com/AkashKundu114/clustering-stability-discordance)
 **Document Type:** Formal Historical Submission Reference
 **Submission Date:** November 19, 2026
-**Target Journal:** Springer Nature – *Data Mining and Knowledge Discovery* (DMKD)
+**Journal:** Springer Nature - *Data Mining and Knowledge Discovery* (DMKD)
+**Status:** Under Review (Current stage: With Editor)
+
+### Editorial Process and Review Milestones
+| Milestone | Status | Description |
+|---|---|---|
+| Submission received | Done | Full 48-page manuscript and reproduction package submitted via Editorial Manager |
+| Technical check | Done | Initial editorial and technical formatting check passed |
+| Editorial assignment | Done | Assigned to handling editor |
+| With editor | Active | Under editorial assessment and reviewer assignment |
 
 ---
 
@@ -27,11 +36,11 @@ The authoritative reference for all scientific claims, experimental methodology,
 
 ## 2. Structure of the Submitted 48-Page Manuscript
 
-### Main Paper (Pages 1–35)
+### Main Paper (Pages 1-35)
 1. **Section 1: Introduction** - High-dimensional geometry ($D \gg N$), distance concentration, the core premise of subsample stability vs external accuracy.
 2. **Section 2: Related Work** - Stability and consensus literature, feature selection in high dimensions, anchor graph methods, out-of-sample extension.
 3. **Section 3: Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise**
-   - *Section 3.1: Simulation Under Isotropic Distractor Noise* (Table 2, Figure 2a–c)
+   - *Section 3.1: Simulation Under Isotropic Distractor Noise* (Table 2, Figure 2a-c)
    - *Section 3.2: Evidence from Biomedical Cohorts* (Table 3, Table 4, Table 5, Figure 3)
 4. **Section 4: Case Study: Gated Anchor Consensus (GAC)**
    - *Section 4.1: Bimodality-Gated Subspace Selection (BGSS)*
@@ -47,11 +56,11 @@ The authoritative reference for all scientific claims, experimental methodology,
 8. **Section 8: Conclusion**
 9. **Declarations:** Mandatory Springer Nature statements (Funding, Conflicts of Interest, Ethics & Consent, Publication Consent, Data Availability, Code Availability, CRediT Author Contributions).
 
-### Electronic Supplementary Material (Pages 36–48)
+### Electronic Supplementary Material (Pages 36-48)
 - **Section S1:** Computational Scalability and Extreme Memory Scaling ($N \le 10^6$ instances; Table S1, Table S2, Figure S2, Figure 6).
-- **Section S2:** Out-of-Sample Inductive Generalization and Centroid Projections (Table S3, Figure S1, Figure 4a–b).
-- **Section S3:** Multi-Domain 13-Dataset Benchmark Diagnostic Suite (13-panel gallery Figure 7a–n, Tables S4–S10).
-- **Section S4:** Extended Modular Ablations and Noise Regimes (Tables S11–S12, Figure S5, Figure 10).
+- **Section S2:** Out-of-Sample Inductive Generalization and Centroid Projections (Table S3, Figure S1, Figure 4a-b).
+- **Section S3:** Multi-Domain 13-Dataset Benchmark Diagnostic Suite (13-panel gallery Figure 7a-n, Tables S4-S10).
+- **Section S4:** Extended Modular Ablations and Noise Regimes (Tables S11-S12, Figure S5, Figure 10).
 
 ---
 
@@ -61,7 +70,7 @@ The authoritative reference for all scientific claims, experimental methodology,
 |---|---|---|
 | **Table 1** | Summary of 6 biomedical cohorts ($N, D, D/N, K$) | `data/dataset_registry.csv` |
 | **Table 2** | Synthetic distance geometries under isotropic noise | `src/icc/core.py`, `tests/unit/test_core.py` |
-| **Table 3** | Primary 6-cohort stability–accuracy benchmark across 72 cells | `reproduction/scripts/recompute_saved_stability.py` |
+| **Table 3** | Primary 6-cohort stability-accuracy benchmark across 72 cells | `reproduction/scripts/recompute_saved_stability.py` |
 | **Table 4** | Subsample degeneracy diagnostic audit (5% threshold) | `reproduction/scripts/recompute_saved_stability.py` |
 | **Table 5** | Clustered bootstrap confidence intervals for primary gap | `docs/statistical-analysis.md`, `docs/result_dictionary.md` |
 | **Table 6** | 13-dataset benchmark ARI and Friedman ranks | `reproduction/scripts/recompute_benchmark_scores.py` |
@@ -70,11 +79,11 @@ The authoritative reference for all scientific claims, experimental methodology,
 | **Table 18** | $2 \times 2$ factorial decomposition (Ambient vs BGSS $\times$ Dense vs Bipartite) | `docs/result_dictionary.md`, `docs/experiment_catalog.md` |
 | **Table 19** | Component knockout ablations ($V_5 \to V_0$) | `docs/result_dictionary.md`, `docs/experiment_catalog.md` |
 | **Figure 1** | Conceptual overview diagram | `docs/scientific-overview.md` |
-| **Figure 2a–c** | Synthetic simulation accuracy, stability, and noise sensitivity | `tests/unit/test_core.py` |
+| **Figure 2a-c** | Synthetic simulation accuracy, stability, and noise sensitivity | `tests/unit/test_core.py` |
 | **Figure 3** | Six-cohort empirical stability vs accuracy scatter plot | `reproduction/scripts/recompute_saved_stability.py` |
 | **Figure 4** | GAC algorithmic workflow schematic | `src/icc/consensus/icc.py` |
 | **Figure 6 (Supp S1)** | Empirical scalability curves up to $N = 10^6$ instances | `tests/regression/test_scaling_timing.py` |
-| **Figure 7a–n (Supp S3)**| 13-panel empirical ARI boxplots | `reproduction/scripts/recompute_benchmark_scores.py` |
+| **Figure 7a-n (Supp S3)**| 13-panel empirical ARI boxplots | `reproduction/scripts/recompute_benchmark_scores.py` |
 
 ---
 

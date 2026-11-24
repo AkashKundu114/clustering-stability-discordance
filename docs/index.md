@@ -1,10 +1,11 @@
 # CSD Documentation: Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise
 
-**Manuscript Title:** *Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise*  
-**Running Header:** *Feature-Gated Bipartite Consensus Under Noise*  
-**Authors:** Kalyan Kumar Das, Akash Kundu, Anirban Mukhopadhyay  
-**Canonical Repository:** [https://github.com/AkashKundu114/clustering-stability-discordance](https://github.com/AkashKundu114/clustering-stability-discordance)  
-**Companion Repository:** [https://github.com/AkashKundu114/icc-clustering](https://github.com/AkashKundu114/icc-clustering)  
+**Manuscript Title:** *Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise*
+**Running Header:** *Feature-Gated Bipartite Consensus Under Noise*
+**Authors:** Kalyan Kumar Das, Akash Kundu, Anirban Mukhopadhyay
+**Journal:** Springer Nature - *Data Mining and Knowledge Discovery* (DMKD)
+**Status:** Under review
+**Canonical Repository:** [https://github.com/AkashKundu114/clustering-stability-discordance](https://github.com/AkashKundu114/clustering-stability-discordance)
 
 This documentation suite describes the reproducible research software, data loaders, governance protocols, and empirical findings for the investigation of clustering stability-accuracy discordance across **13 benchmark datasets** and **12 comparative clustering algorithms**.
 

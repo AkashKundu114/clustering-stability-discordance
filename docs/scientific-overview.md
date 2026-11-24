@@ -1,11 +1,10 @@
 # Scientific Overview: Stability-Accuracy Discordance
 
-**Document:** `docs/scientific-overview.md` 
-**Date:** 2026-11-07 
-**Manuscript Title:** *Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise*  
-**Running Header:** *Feature-Gated Bipartite Consensus Under Noise*  
-**Canonical Repository:** [https://github.com/AkashKundu114/clustering-stability-discordance](https://github.com/AkashKundu114/clustering-stability-discordance)  
-**Companion Repository:** [https://github.com/AkashKundu114/icc-clustering](https://github.com/AkashKundu114/icc-clustering) 
+**Document:** `docs/scientific-overview.md`
+**Date:** 2026-11-07
+**Manuscript Title:** *Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise*
+**Running Header:** *Feature-Gated Bipartite Consensus Under Noise*
+**Canonical Repository:** [https://github.com/AkashKundu114/clustering-stability-discordance](https://github.com/AkashKundu114/clustering-stability-discordance)
 
 ---
 
@@ -21,13 +20,13 @@ This research empirically tests this foundational assumption. Across six high-di
 
 It is crucial to distinguish between three orthogonal concepts that are often conflated in unsupervised literature:
 
-1. **Resampling Stability ($\text{Stab}$):** 
+1. **Resampling Stability ($\text{Stab}$):**
  Agreement between partitions produced on different random subsamples of the same dataset. Evaluated via the Adjusted Rand Index (ARI) on overlapping samples:
  $$\text{Stab}(C_1, C_2) = \text{ARI}(C_1|_{S_1 \cap S_2}, C_2|_{S_1 \cap S_2})$$
-2. **External Label Alignment ($\text{Acc}$):** 
+2. **External Label Alignment ($\text{Acc}$):**
  Agreement between an unsupervised partition and an independent external biological or clinical reference label vector $y^*$:
  $$\text{Acc}(C) = \text{ARI}(C, y^*)$$
-3. **The Discordance Gap ($\Delta$):** 
+3. **The Discordance Gap ($\Delta$):**
  The arithmetic difference between observed stability and external label recovery:
  $$\Delta = \text{Stab} - \text{Acc}$$
  When $\Delta \gg 0$ alongside high stability ($\text{Stab} \ge 0.50$), an algorithm is in a state of **stability-accuracy discordance**.

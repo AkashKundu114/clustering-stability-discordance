@@ -14,7 +14,6 @@
 > **Status:** Under review
 > **Authoritative Submission Reference:** Exact 48-page submitted PDF (`Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise.pdf`, SHA-256: `b32259bfd704a7a7e6dd45e5717a731f0d8100d819cfd792911645e7da571a3c`)
 > **Canonical Repository:** [https://github.com/AkashKundu114/clustering-stability-discordance](https://github.com/AkashKundu114/clustering-stability-discordance)
-> **Companion Repository:** [https://github.com/AkashKundu114/icc-clustering](https://github.com/AkashKundu114/icc-clustering)
 
 ---
 
@@ -162,7 +161,6 @@ If you use this codebase or refer to the stability-accuracy discordance findings
   year={2026},
   version={1.0.0-rc2},
   url={https://github.com/AkashKundu114/clustering-stability-discordance},
-  note={Companion repository: https://github.com/AkashKundu114/icc-clustering}
 }
 ```
 

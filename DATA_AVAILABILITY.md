@@ -6,7 +6,6 @@
 **Journal:** Springer Nature - *Data Mining and Knowledge Discovery* (DMKD)
 **Status:** Under review
 **Canonical Repository:** [https://github.com/AkashKundu114/clustering-stability-discordance](https://github.com/AkashKundu114/clustering-stability-discordance)
-**Companion Repository:** [https://github.com/AkashKundu114/icc-clustering](https://github.com/AkashKundu114/icc-clustering)
 
 ---
 

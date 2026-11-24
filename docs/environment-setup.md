@@ -1,12 +1,11 @@
 # Environment Setup and Installation Guide
 
-**Document:** `docs/environment-setup.md` 
-**Date:** 2026-11-07 
-**Project:** Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise  
-**Running Header:** Feature-Gated Bipartite Consensus Under Noise  
-**Canonical Repository:** [https://github.com/AkashKundu114/clustering-stability-discordance](https://github.com/AkashKundu114/clustering-stability-discordance)  
-**Companion Repository:** [https://github.com/AkashKundu114/icc-clustering](https://github.com/AkashKundu114/icc-clustering)  
-**Benchmark Scope:** 13 benchmark datasets and 12 comparative algorithms 
+**Document:** `docs/environment-setup.md`
+**Date:** 2026-11-07
+**Project:** Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise
+**Running Header:** Feature-Gated Bipartite Consensus Under Noise
+**Canonical Repository:** [https://github.com/AkashKundu114/clustering-stability-discordance](https://github.com/AkashKundu114/clustering-stability-discordance)
+**Benchmark Scope:** 13 benchmark datasets and 12 comparative algorithms
 
 ---
 
@@ -43,7 +42,7 @@ If using Anaconda or Miniconda:
 
 ```bash
 conda env create -f environment/environment.yml
-conda activate icc-clustering
+conda activate csd
 pip install -e .
 ```
 

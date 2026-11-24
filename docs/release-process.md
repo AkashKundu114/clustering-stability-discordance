@@ -1,16 +1,16 @@
 # Release Engineering and Publication Gate Process
 
-**Document:** `docs/release-process.md` 
-**Date:** 2026-11-07 
-**Candidate Version:** `v1.0.0-rc1` 
-**Final Release Target:** `v1.0.0` 
+**Document:** `docs/release-process.md`
+**Date:** 2026-11-07
+**Candidate Version:** `v1.0.0-rc1`
+**Final Release Target:** `v1.0.0`
 
 ---
 
 ## 1. Release Architecture & Naming Strategy
 
 ### 1.1 Repository Identity
-- **Current Repository:** `AkashKundu114/icc-clustering`
+- **Current Repository:** `AkashKundu114/clustering-stability-discordance`
 - **Proposed Public Candidate Name:** `clustering-stability-discordance`
 - **Proposed Public Title:** **Clustering Stability-Accuracy Discordance in High-Dimensional Biomedical Data**
 - **Description:** "Reproducible research code, saved-evidence reconstruction tools, and documentation for an empirical study of resampling stability and external-label alignment in high-dimensional biomedical clustering."
@@ -18,7 +18,7 @@
 
 ### 1.2 Renaming vs. Mirror Repository Strategy
 Before renaming the existing repository on GitHub:
-1. GitHub automatically redirects HTTP clone requests, release downloads, and web page visits from `AkashKundu114/icc-clustering` to `AkashKundu114/clustering-stability-discordance`.
+1. GitHub automatically handles clone requests and release downloads directly under `AkashKundu114/clustering-stability-discordance`.
 2. Existing Git remotes will continue functioning seamlessly via automatic server-side 301 redirects.
 3. However, all internal links in documentation, `CITATION.cff`, and README have been proactively updated to reference `clustering-stability-discordance`.
 4. **Publication Gate:** The repository visibility must **NOT** be changed from Private to Public, and the repository must **NOT** be renamed, until all human co-authors provide formal written sign-off at the final publication gate.

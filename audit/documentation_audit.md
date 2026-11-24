@@ -1,10 +1,10 @@
 # CSD Documentation, Configuration & Repository Hygiene Audit
 
-**Document:** `audit/submission_reproducibility/documentation_audit.md`  
-**Date:** November 2026  
-**Canonical Repository:** [`AkashKundu114/clustering-stability-discordance`](https://github.com/AkashKundu114/clustering-stability-discordance)  
-**Maintenance Branch:** `docs/hygiene-and-synchronization`  
-**Audited Baseline Commit:** `44838fa`  
+**Document:** `audit/documentation_audit.md`
+**Date:** November 2026
+**Canonical Repository:** [`AkashKundu114/clustering-stability-discordance`](https://github.com/AkashKundu114/clustering-stability-discordance)
+**Maintenance Branch:** `docs/hygiene-and-synchronization`
+**Audited Baseline Commit:** `44838fa`
 
 ---
 
@@ -31,7 +31,7 @@ The repository contains **92 documentation and configuration files**, classified
 | **`results/`** | 7 | Result directory and figure descriptions (`results/README.md`, `results/figures/README.md`, etc.) | **VERIFIED** |
 | **`reproduction/`** | 3 | Historical arithmetic checks and reviewer guidance (`reproduction/README.md`, `quick_verification.md`, `numerical_comparison_report.md`) | **VERIFIED** |
 | **`tests/`** | 2 | Test suite documentation and CLI verification tests (`tests/README.md`, `tests/test_reproduce_cli.py`) | **VERIFIED** |
-| **`audit/submission_reproducibility/`** | 5 | Core public audit records (`README.md`, `audit_report.md`, `claim_evidence_matrix.csv`, `reproduction_status.csv`, `documentation_audit.md`) | **VERIFIED** |
+| **`audit/`** | 5 | Core public audit records (`README.md`, `audit_report.md`, `claim_evidence_matrix.csv`, `reproduction_status.csv`, `documentation_audit.md`) | **VERIFIED** |
 | **Dotfiles & Tool Configs** | 51 | GitHub workflows, linting, editor, git configuration, and lockfiles | **VERIFIED** |
 | **Total Tracked** | **92** | Full documentation and configuration surface | **100% AUDITED** |
 
@@ -80,7 +80,7 @@ A forensic audit of `.gitignore` was conducted to ensure proper isolation of pri
 
 | Category | Ignore Rules in `.gitignore` | Audit Finding & Safety Verification |
 |---|---|---|
-| **Private Audit & Research** | `/audit/*`<br>`!/audit/submission_reproducibility/`<br>`/paper/`<br>`/manuscript/`<br>`/submission/` | Private author audit material remains excluded; the official submission reproducibility directory is explicitly permitted. |
+| **Private Audit & Research** | `/audit/*`<br>`!/audit/`<br>`/paper/`<br>`/manuscript/`<br>`/submission/` | Private author audit material remains excluded; the official submission reproducibility directory is explicitly permitted. |
 | **Submission Bundles** | `DMKD_Submission_Package/`<br>`*.zip` | Prevents heavy 33+ MB submission packages and zip archives from bloating git history. |
 | **Research Data & Caches** | `/data/raw/`<br>`/data/cache/`<br>`*.h5`<br>`*.h5ad`<br>`/results/stability/partitions/`<br>`/results/stability/runs/` | Human clinical microarrays, SELDI spectra, and patient-indexed partition arrays are strictly excluded from git tracking. |
 | **Python Build & Tests** | `__pycache__/`<br>`*.py[cod]`<br>`.pytest_cache/`<br>`.ruff_cache/`<br>`.coverage`<br>`build/`<br>`dist/` | Standard build and test cache artifacts are cleanly excluded. |
@@ -108,7 +108,7 @@ Every cross-reference between `README.md`, `REPRODUCIBILITY.md`, `EXPERIMENTAL_P
 
 | File Path | Change Type | Reason | Verification Status |
 |---|---|---|---|
-| `.gitignore` | MODIFIED | Allow `audit/submission_reproducibility/` while ignoring private audit and zip archives | **VERIFIED** |
+| `.gitignore` | MODIFIED | Allow `audit/` while ignoring private audit and zip archives | **VERIFIED** |
 | `CITATION.cff` | MODIFIED | Synchronize author order to Das, Kundu, Mukhopadhyay | **VERIFIED** |
 | `.zenodo.json` | MODIFIED | Synchronize Zenodo creators order | **VERIFIED** |
 | `README.md` | MODIFIED | Update test badge, add submitted PDF reference, fix UPV/EHU typo, link 4-tier model | **VERIFIED** |
@@ -125,8 +125,8 @@ Every cross-reference between `README.md`, `REPRODUCIBILITY.md`, `EXPERIMENTAL_P
 | `docs/submitted_manuscript.md` | CREATED | Exact metadata, SHA-256 hash, and evidence mapping for 48-page submitted PDF | **VERIFIED** |
 | `docs/data_rights.md` | CREATED | Data governance taxonomy (Category A, B, C) for all 13 datasets | **VERIFIED** |
 | `docs/experimental_provenance.md` | CREATED | Provenance classifications (Authenticated, Corroborated, Historical) | **VERIFIED** |
-| `audit/submission_reproducibility/claim_evidence_matrix.csv` | CREATED | Manuscript claim to code and artifact mapping | **VERIFIED** |
-| `audit/submission_reproducibility/reproduction_status.csv` | CREATED | Experiment reproduction tier, status, and limitations registry | **VERIFIED** |
-| `audit/submission_reproducibility/audit_report.md` | CREATED | Comprehensive consolidated audit findings and final assessment | **VERIFIED** |
-| `audit/submission_reproducibility/documentation_audit.md` | CREATED | Consolidated documentation, packaging, ignore-rule, and link audit | **VERIFIED** |
-| `audit/submission_reproducibility/README.md` | CREATED | Audit navigation, interpretation, and scope guide | **VERIFIED** |
+| `audit/claim_evidence_matrix.csv` | CREATED | Manuscript claim to code and artifact mapping | **VERIFIED** |
+| `audit/reproduction_status.csv` | CREATED | Experiment reproduction tier, status, and limitations registry | **VERIFIED** |
+| `audit/audit_report.md` | CREATED | Comprehensive consolidated audit findings and final assessment | **VERIFIED** |
+| `audit/documentation_audit.md` | CREATED | Consolidated documentation, packaging, ignore-rule, and link audit | **VERIFIED** |
+| `audit/README.md` | CREATED | Audit navigation, interpretation, and scope guide | **VERIFIED** |

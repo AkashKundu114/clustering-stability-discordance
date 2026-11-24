@@ -8,7 +8,6 @@ All notable changes to the **CSD (Clustering Stability-Accuracy Discordance)** r
 - **Journal:** Springer Nature - *Data Mining and Knowledge Discovery* (DMKD)
 - **Status:** Under review
 - **Canonical Repository:** [https://github.com/AkashKundu114/clustering-stability-discordance](https://github.com/AkashKundu114/clustering-stability-discordance)
-- **Companion Repository:** [https://github.com/AkashKundu114/icc-clustering](https://github.com/AkashKundu114/icc-clustering)
 - **Benchmark Scope:** 13 benchmark datasets and 12 comparative clustering algorithms.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),

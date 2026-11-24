@@ -3,7 +3,6 @@
 **Document:** `docs/project_inventory.md`
 **Date:** November 2026
 **Canonical Repository:** [https://github.com/AkashKundu114/clustering-stability-discordance](https://github.com/AkashKundu114/clustering-stability-discordance)
-**Companion Repository:** [https://github.com/AkashKundu114/icc-clustering](https://github.com/AkashKundu114/icc-clustering)
 **Package Version:** `1.0.0-rc2`
 **Base Commit:** `44838faec32b051d40b31b6e556ecac205008549`
 
@@ -15,7 +14,8 @@
 - **Manuscript Title:** *Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise*
 - **Running Header:** *Feature-Gated Bipartite Consensus Under Noise*
 - **Authors:** Kalyan Kumar Das (Techno India University), Akash Kundu (Techno India University), Anirban Mukhopadhyay (University of Kalyani)
-- **Target Journal:** Springer Nature – *Data Mining and Knowledge Discovery* (DMKD)
+- **Journal:** Springer Nature - *Data Mining and Knowledge Discovery* (DMKD)
+- **Status:** Under review
 - **Tracked Files:** 194 files
 - **Python Compatibility:** Python `>=3.10` (Tested on Python 3.10 through Python 3.14.6 64-bit AMD64)
 - **Active Test Suite:** 150 total tests collected; all 82 unit tests passing in $\approx 85\text{ seconds}$

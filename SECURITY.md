@@ -5,7 +5,6 @@
 This security policy applies to **CSD** (`clustering-stability-discordance`) supporting the manuscript *Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise* (Running header: *Feature-Gated Bipartite Consensus Under Noise*), submitted to Springer Nature *Data Mining and Knowledge Discovery* (DMKD) and currently Under Review (Current stage: With Editor; Milestones: Submission received: Done, Technical check: Done, Editorial assignment: Done, With Editor: Active):
 - **Authors:** Kalyan Kumar Das, Akash Kundu, Anirban Mukhopadhyay
 - **Canonical Repository:** [https://github.com/AkashKundu114/clustering-stability-discordance](https://github.com/AkashKundu114/clustering-stability-discordance)
-- **Companion Repository:** [https://github.com/AkashKundu114/icc-clustering](https://github.com/AkashKundu114/icc-clustering)
 - **Scope:** 13 benchmark datasets and 12 comparative algorithms
 
 The following table lists the security support status for versions of the framework:

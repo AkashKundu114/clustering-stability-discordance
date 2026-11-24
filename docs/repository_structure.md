@@ -161,4 +161,4 @@ csd/
 2. **`reproduction/scripts/`:** Zero-dependency, pure-NumPy verification tools designed to run in $< 60$ seconds on saved partition bundles, verifying all 62,640 pairwise stability ARIs and computing Friedman rank tests.
 3. **`data/manifests/`:** Explicit integrity manifests recording file paths, byte sizes, and SHA-256 hashes of all public and restricted research artifacts.
 4. **`docs/`:** Authoritative documentation covering the submitted manuscript, experimental protocols, dataset rights, limitations, and mathematical formulations.
-5. **`audit/submission_reproducibility/`:** Permanent version-controlled audit records verifying documentation inventory, link integrity, ignore rules, and reviewer simulation logs.
+5. **`audit/`:** Permanent version-controlled audit records verifying documentation inventory, link integrity, ignore rules, and reviewer simulation logs.

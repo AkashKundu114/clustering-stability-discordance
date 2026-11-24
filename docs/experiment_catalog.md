@@ -8,7 +8,7 @@ This catalog provides an authoritative mapping of every major experiment in the 
 
 ---
 
-## EXP-01: Primary Six-Cohort Stability–Accuracy Benchmark
+## EXP-01: Primary Six-Cohort Stability-Accuracy Benchmark
 
 - **Manuscript Reference:** Section 3.2, Table 3, Table 4, Table 5, Figure 3.
 - **Core Scientific Question:** Does subsample stability guarantee external reference-label accuracy in high-dimensional biomedical cohorts ($D \gg N$)?
@@ -49,7 +49,7 @@ This catalog provides an authoritative mapping of every major experiment in the 
 
 ## EXP-02: Synthetic Distractor Noise Expansion
 
-- **Manuscript Reference:** Section 3.1, Table 2, Figure 2a–c.
+- **Manuscript Reference:** Section 3.1, Table 2, Figure 2a-c.
 - **Core Scientific Question:** How do clustering accuracy, subsample stability, and distance metric geometries behave as uninformative ambient noise expands?
 - **Experimental Design:**
   - Synthetic Gaussian mixtures ($N=300, K=3$) with 10 signal dimensions ($D_{\text{signal}}=10$).
@@ -58,7 +58,7 @@ This catalog provides an authoritative mapping of every major experiment in the 
 - **Key Findings:**
   - Subsample stability tracks accuracy degradation, collapsing below $0.03$ for centroid and fuzzy partitioners (Ward drops from $1.000$ to $0.026$).
   - Discrepancy $\Delta = \text{Stability} - \text{ARI}$ remains $< 0.20$ across almost all regimes under isotropic noise.
-  - Critical distinction: **Synthetic simulations document accuracy collapse; real biomedical cohorts document stability–accuracy discordance.**
+  - Critical distinction: **Synthetic simulations document accuracy collapse; real biomedical cohorts document stability-accuracy discordance.**
 
 ---
 
@@ -109,7 +109,7 @@ This catalog provides an authoritative mapping of every major experiment in the 
 
 ## EXP-06: Out-of-Sample Inductive Generalization
 
-- **Manuscript Reference:** Section 5.2, Table 6, Table S3, Figure 4a–b (Supplementary Section S2).
+- **Manuscript Reference:** Section 5.2, Table 6, Table S3, Figure 4a-b (Supplementary Section S2).
 - **Core Scientific Question:** Can transductive consensus partitions be extended to unseen query points without re-estimating the graph?
 - **Protocol:** 10 random train/test splits (80% fit, 20% query) using closed-form determinacy-weighted centroid projections.
 - **Key Finding:** Projection scales in $O(K \cdot |\mathcal{F}_{\text{active}}|)$ time, matching nearest-centroid labels on $95.3\%$ of query instances.
@@ -118,7 +118,7 @@ This catalog provides an authoritative mapping of every major experiment in the 
 
 ## EXP-07: Exploratory Multi-Domain 13-Dataset Benchmark
 
-- **Manuscript Reference:** Section 5.1, Table 6, Figure 7a–n (Supplementary Section S3).
+- **Manuscript Reference:** Section 5.1, Table 6, Figure 7a-n (Supplementary Section S3).
 - **Core Scientific Question:** How does GAC perform across non-microarray domains (text, audio, face images, single-cell)?
 - **Evaluated Datasets ($N=13$):**
   6 biomedical microarrays + `sonar`, `madelon`, `isolet`, `zheng68k`, `newsgroups20`, `indian_pines`, `yale_b`.

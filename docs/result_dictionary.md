@@ -28,7 +28,7 @@ This dictionary provides standard definitions, mathematical formulas, inferentia
 - **Historical Value:** `0.052311684347`
 - **Interpretation:** External reference labels provide an operational diagnostic benchmark, not an infallible biological ground truth.
 
-### Stability–Accuracy Discordance Gap ($\bar{\Delta}$)
+### Stability-Accuracy Discordance Gap ($\bar{\Delta}$)
 - **Mathematical Definition:** Arithmetic difference between subsample stability and external reference accuracy:
   $$\bar{\Delta} = \bar{S} - \bar{A}$$
 - **Reported Manuscript Values:**

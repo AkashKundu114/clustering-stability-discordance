@@ -6,7 +6,6 @@
 **Journal:** Springer Nature - *Data Mining and Knowledge Discovery* (DMKD)
 **Status:** Under review
 **Canonical Repository:** [https://github.com/AkashKundu114/clustering-stability-discordance](https://github.com/AkashKundu114/clustering-stability-discordance)
-**Companion Repository:** [https://github.com/AkashKundu114/icc-clustering](https://github.com/AkashKundu114/icc-clustering)
 
 This document details hardware specifications, memory budgets, software dependencies, and expected runtimes for evaluating the **CSD** (`clustering-stability-discordance`) codebase across the **13 benchmark datasets** and **12 comparative clustering algorithms**.
 

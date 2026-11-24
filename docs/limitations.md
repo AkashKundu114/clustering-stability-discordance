@@ -11,7 +11,7 @@ To maintain scientific rigor and prevent overgeneralization, this document compi
 ## 1. Scope and Generalization Boundaries
 
 1. **Small Clinical Cohort Sample Size ($n=6$):**
-   The primary empirical analysis evaluates six clinical cancer microarray cohorts ($D/N$ from 28 to 124). While severe stability–accuracy discordance is demonstrated across all six cohorts, six datasets do not constitute a random sample of all biomedical domains. Broad population-level claims regarding all high-dimensional data are not supported.
+   The primary empirical analysis evaluates six clinical cancer microarray cohorts ($D/N$ from 28 to 124). While severe stability-accuracy discordance is demonstrated across all six cohorts, six datasets do not constitute a random sample of all biomedical domains. Broad population-level claims regarding all high-dimensional data are not supported.
 2. **Operational Reference Labels vs. Biological Ground Truth:**
    External reference labels (e.g. binary tumor status, histological subtypes) are operational clinical diagnostic categories. An Adjusted Rand Index of $\bar{A} \approx 0.00$ indicates that clusters do not align with primary clinical classifications; it does not prove the absence of unannotated biological or batch heterogeneity. External ARI serves as a diagnostic benchmark, not an absolute gold standard.
 3. **Resampling Stability vs. Initialization Sensitivity:**

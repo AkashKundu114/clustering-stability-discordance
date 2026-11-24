@@ -1,11 +1,11 @@
 # CSD Submission Reproducibility & Scientific Evidence Audit Report
 
-**Document:** `audit/submission_reproducibility/audit_report.md`  
-**Date:** November 2026  
-**Canonical Repository:** [`AkashKundu114/clustering-stability-discordance`](https://github.com/AkashKundu114/clustering-stability-discordance)  
-**Maintenance Branch:** `docs/hygiene-and-synchronization`  
-**Audited Baseline Commit:** `44838fa`  
-**Final Release Commit:** `17ec21c`  
+**Document:** `audit/audit_report.md`
+**Date:** November 2026
+**Canonical Repository:** [`AkashKundu114/clustering-stability-discordance`](https://github.com/AkashKundu114/clustering-stability-discordance)
+**Maintenance Branch:** `docs/hygiene-and-synchronization`
+**Audited Baseline Commit:** `44838fa`
+**Final Release Commit:** `17ec21c`
 **Authoritative Submission Reference:** Exact 48-page submitted manuscript PDF (*Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise* by Kalyan Kumar Das, Akash Kundu, and Anirban Mukhopadhyay; SHA-256: `b32259bfd704a7a7e6dd45e5717a731f0d8100d819cfd792911645e7da571a3c`).
 
 ---

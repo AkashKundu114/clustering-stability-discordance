@@ -2,8 +2,7 @@
 
 > **Note:** Under review.
 
-**Canonical Repository:** [`AkashKundu114/clustering-stability-discordance`](https://github.com/AkashKundu114/clustering-stability-discordance)  
-**Companion Repository:** [`AkashKundu114/icc-clustering`](https://github.com/AkashKundu114/icc-clustering)  
+**Canonical Repository:** [`AkashKundu114/clustering-stability-discordance`](https://github.com/AkashKundu114/clustering-stability-discordance)
 **Authoritative Reference:** Exact 48-page submitted manuscript PDF (*Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise* by Kalyan Kumar Das, Akash Kundu, and Anirban Mukhopadhyay; SHA-256: `b32259bfd704a7a7e6dd45e5717a731f0d8100d819cfd792911645e7da571a3c`).
 
 ---

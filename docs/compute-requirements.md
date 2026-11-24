@@ -1,11 +1,10 @@
 # Compute Requirements and Resource Profiles
 
-**Document:** `docs/compute-requirements.md` 
-**Date:** 2026-11-07 
-**Project:** Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise  
-**Running Header:** Feature-Gated Bipartite Consensus Under Noise  
-**Canonical Repository:** [https://github.com/AkashKundu114/clustering-stability-discordance](https://github.com/AkashKundu114/clustering-stability-discordance)  
-**Companion Repository:** [https://github.com/AkashKundu114/icc-clustering](https://github.com/AkashKundu114/icc-clustering) 
+**Document:** `docs/compute-requirements.md`
+**Date:** 2026-11-07
+**Project:** Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise
+**Running Header:** Feature-Gated Bipartite Consensus Under Noise
+**Canonical Repository:** [https://github.com/AkashKundu114/clustering-stability-discordance](https://github.com/AkashKundu114/clustering-stability-discordance)
 
 ---
 
