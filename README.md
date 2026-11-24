@@ -3,6 +3,8 @@
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/)
 [![Tests: 82 Passing](https://img.shields.io/badge/tests-82%20passed-brightgreen.svg)](tests/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg)](LICENSE)
+[![Code style: Ruff](https://img.shields.io/badge/code%20style-ruff-000000.svg)](https://github.com/astral-sh/ruff)
+[![Types: Mypy](https://img.shields.io/badge/types-mypy-blue.svg)](https://mypy-lang.org/)
 [![Reproducibility: 4-Tier Audit](https://img.shields.io/badge/reproducibility-4--tier%20audit-success.svg)](audit/)
 
 > **Note:** Under review.
