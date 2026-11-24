@@ -44,6 +44,7 @@ DMKD_Submission_Package/
 **/checkpoints/
 *.ckpt
 *.log
+!/audit/submission_reproducibility/logs/*.log
 /logs/
 
 # Python, build, test, and coverage outputs

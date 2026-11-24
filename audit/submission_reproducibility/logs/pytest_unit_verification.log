@@ -1,0 +1,23 @@
+============================= test session starts =============================
+platform win32 -- Python 3.14.6, pytest-9.1.1, pluggy-1.6.0
+rootdir: D:\csd
+configfile: pyproject.toml
+plugins: anyio-4.14.2, fast-array-utils-1.5.1, langsmith-0.10.17, asyncio-1.4.0, cov-7.1.0, zarr-3.4.1
+asyncio: mode=Mode.STRICT, debug=False, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function
+collected 86 items
+
+tests\unit\test_algorithms.py .........                                  [ 10%]
+tests\unit\test_aspp.py .......                                          [ 18%]
+tests\unit\test_autok.py ...                                             [ 22%]
+tests\unit\test_cicc.py ....                                             [ 26%]
+tests\unit\test_consensus.py ...............                             [ 44%]
+tests\unit\test_core.py ............                                     [ 58%]
+tests\unit\test_dataset_registry.py .....                                [ 63%]
+tests\unit\test_edge_cases.py .........                                  [ 74%]
+tests\unit\test_inductive.py ......                                      [ 81%]
+tests\unit\test_manifest_integrity.py .....                              [ 87%]
+tests\unit\test_metrics.py ....                                          [ 91%]
+tests\unit\test_yale_b_download_integrity.py ...                         [ 95%]
+tests\test_reproduce_cli.py ....                                         [100%]
+
+============================= 86 passed in 52.38s =============================

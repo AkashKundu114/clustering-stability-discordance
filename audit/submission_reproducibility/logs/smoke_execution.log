@@ -1,0 +1,24 @@
+[*] Running synthetic smoke example (not a research-result reproduction).
+C:\Users\Akash\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\base.py:1403: ConvergenceWarning: Number of distinct clusters (1) found smaller than n_clusters (2). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+C:\Users\Akash\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\sklearn\base.py:1403: ConvergenceWarning: Number of distinct clusters (1) found smaller than n_clusters (2). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+[2026-11-24 18:02:46] [INFO] icc: Running algorithms=['icc_v2', 'kmeans', 'spectral', 'fcag', 'sparse_kmeans'] on datasets=['synthetic_gaussian'] with seeds=[101, 102, 103]
+[2026-11-24 18:02:46] [INFO] icc: Starting benchmark run: 15 total configurations.
+[2026-11-24 18:02:46] [INFO] icc: Running dataset=synthetic_gaussian, algorithm=icc_v2, seed=101
+[2026-11-24 18:02:48] [INFO] icc: Running dataset=synthetic_gaussian, algorithm=icc_v2, seed=102
+[2026-11-24 18:02:49] [INFO] icc: Running dataset=synthetic_gaussian, algorithm=icc_v2, seed=103
+[2026-11-24 18:02:49] [INFO] icc: Running dataset=synthetic_gaussian, algorithm=kmeans, seed=101
+[2026-11-24 18:02:49] [INFO] icc: Running dataset=synthetic_gaussian, algorithm=kmeans, seed=102
+[2026-11-24 18:02:49] [INFO] icc: Running dataset=synthetic_gaussian, algorithm=kmeans, seed=103
+[2026-11-24 18:02:49] [INFO] icc: Running dataset=synthetic_gaussian, algorithm=spectral, seed=101
+[2026-11-24 18:02:49] [INFO] icc: Running dataset=synthetic_gaussian, algorithm=spectral, seed=102
+[2026-11-24 18:02:49] [INFO] icc: Running dataset=synthetic_gaussian, algorithm=spectral, seed=103
+[2026-11-24 18:02:49] [INFO] icc: Running dataset=synthetic_gaussian, algorithm=fcag, seed=101
+[2026-11-24 18:02:49] [INFO] icc: Running dataset=synthetic_gaussian, algorithm=fcag, seed=102
+[2026-11-24 18:02:49] [INFO] icc: Running dataset=synthetic_gaussian, algorithm=fcag, seed=103
+[2026-11-24 18:02:49] [INFO] icc: Running dataset=synthetic_gaussian, algorithm=sparse_kmeans, seed=101
+[2026-11-24 18:02:49] [INFO] icc: Running dataset=synthetic_gaussian, algorithm=sparse_kmeans, seed=102
+[2026-11-24 18:02:49] [INFO] icc: Running dataset=synthetic_gaussian, algorithm=sparse_kmeans, seed=103
+[2026-11-24 18:02:49] [INFO] icc: Saved 15 results to results\experiments\run_20261124_180249.json
+[2026-11-24 18:02:49] [INFO] icc: Completed 15 experiment runs successfully.
