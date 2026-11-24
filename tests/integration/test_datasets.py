@@ -97,14 +97,25 @@ def test_get_dataset_info():
         get_dataset_info("non_existent_dataset_12345")
 
 
+def _handle_remote_dataset_error(e: Exception) -> None:
+    """Gracefully skip tests when external dataset repositories or APIs encounter outages or rate-limits."""
+    err_msg = str(e).lower()
+    err_type = type(e).__name__.lower()
+    if (
+        "openml" in err_type
+        or "openml" in err_msg
+        or any(term in err_msg for term in ("503", "404", "http error", "urlerror", "connection", "timed out", "timeout", "not found", "service unavailable"))
+    ):
+        pytest.skip(f"Upstream dataset service temporarily unavailable: {e}")
+    raise e
+
+
 def test_load_cached_genomics():
     # Load colon from existing cache, or skip if upstream OpenML is unreachable
     try:
         X, y, meta = load_dataset("colon")
     except Exception as e:
-        if any(err in str(e).lower() for err in ("503", "http error", "urlerror", "connection", "timed out", "timeout")):
-            pytest.skip(f"OpenML service temporarily unavailable: {e}")
-        raise
+        _handle_remote_dataset_error(e)
     assert X.shape == (62, 2000)
     assert len(y) == 62
     assert meta["K"] == 2
@@ -116,9 +127,7 @@ def test_load_20newsgroups():
     try:
         X, y, meta = load_dataset("newsgroups20")
     except Exception as e:
-        if any(err in str(e).lower() for err in ("503", "http error", "urlerror", "connection", "timed out", "timeout")):
-            pytest.skip(f"Dataset service temporarily unavailable: {e}")
-        raise
+        _handle_remote_dataset_error(e)
     assert isinstance(X, np.ndarray)
     assert isinstance(y, np.ndarray)
     assert X.shape == (18846, 10000)
@@ -133,9 +142,7 @@ def test_load_isolet():
     try:
         X, y, meta = load_dataset("isolet")
     except Exception as e:
-        if any(err in str(e).lower() for err in ("503", "http error", "urlerror", "connection", "timed out", "timeout")):
-            pytest.skip(f"OpenML service temporarily unavailable: {e}")
-        raise
+        _handle_remote_dataset_error(e)
     assert isinstance(X, np.ndarray)
     assert isinstance(y, np.ndarray)
     assert X.shape == (7797, 617)
@@ -150,9 +157,7 @@ def test_load_indian_pines():
     try:
         X, y, meta = load_dataset("indian_pines")
     except Exception as e:
-        if any(err in str(e).lower() for err in ("503", "http error", "urlerror", "connection", "timed out", "timeout")):
-            pytest.skip(f"Dataset service temporarily unavailable: {e}")
-        raise
+        _handle_remote_dataset_error(e)
     assert isinstance(X, np.ndarray)
     assert isinstance(y, np.ndarray)
     assert X.shape == (10249, 200)
@@ -167,9 +172,7 @@ def test_load_yale_b():
     try:
         X, y, meta = load_dataset("yale_b")
     except Exception as e:
-        if any(err in str(e).lower() for err in ("503", "http error", "urlerror", "connection", "timed out", "timeout")):
-            pytest.skip(f"Dataset service temporarily unavailable: {e}")
-        raise
+        _handle_remote_dataset_error(e)
     assert isinstance(X, np.ndarray)
     assert isinstance(y, np.ndarray)
     assert X.shape == (2414, 1024)

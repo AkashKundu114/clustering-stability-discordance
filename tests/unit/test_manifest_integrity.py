@@ -1,8 +1,8 @@
 """Unit tests for public/private artifact manifest integrity and security boundaries."""
 
 from pathlib import Path
+
 import pandas as pd
-import pytest
 
 ROOT = Path(__file__).resolve().parents[2]
 PUBLIC_MANIFEST = ROOT / "data" / "manifests" / "public_artifacts.csv"
@@ -30,7 +30,7 @@ def test_no_restricted_data_in_public_manifest():
     for path in pub_df["relative_path"]:
         assert not path.endswith(".npy"), f"Forbidden partition array in public manifest: {path}"
         assert not path.endswith(".npz"), f"Forbidden patient cache in public manifest: {path}"
-        assert not "cache/" in path, f"Cache path leaked to public manifest: {path}"
+        assert "cache/" not in path, f"Cache path leaked to public manifest: {path}"
 
 
 def test_no_absolute_or_escaping_paths():

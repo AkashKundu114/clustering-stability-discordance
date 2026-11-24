@@ -1,8 +1,8 @@
 """Unit tests validating the dataset registry integrity and rights classifications."""
 
 from pathlib import Path
+
 import pandas as pd
-import pytest
 
 ROOT = Path(__file__).resolve().parents[2]
 REGISTRY_PATH = ROOT / "data" / "dataset_registry.csv"
