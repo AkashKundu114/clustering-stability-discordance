@@ -98,8 +98,13 @@ def test_get_dataset_info():
 
 
 def test_load_cached_genomics():
-    # Load colon from existing cache
-    X, y, meta = load_dataset("colon")
+    # Load colon from existing cache, or skip if upstream OpenML is unreachable
+    try:
+        X, y, meta = load_dataset("colon")
+    except Exception as e:
+        if any(err in str(e).lower() for err in ("503", "http error", "urlerror", "connection", "timed out", "timeout")):
+            pytest.skip(f"OpenML service temporarily unavailable: {e}")
+        raise
     assert X.shape == (62, 2000)
     assert len(y) == 62
     assert meta["K"] == 2
@@ -108,7 +113,12 @@ def test_load_cached_genomics():
 
 def test_load_20newsgroups():
     # Load newsgroups20 via unified registry loader
-    X, y, meta = load_dataset("newsgroups20")
+    try:
+        X, y, meta = load_dataset("newsgroups20")
+    except Exception as e:
+        if any(err in str(e).lower() for err in ("503", "http error", "urlerror", "connection", "timed out", "timeout")):
+            pytest.skip(f"Dataset service temporarily unavailable: {e}")
+        raise
     assert isinstance(X, np.ndarray)
     assert isinstance(y, np.ndarray)
     assert X.shape == (18846, 10000)
@@ -120,7 +130,12 @@ def test_load_20newsgroups():
 
 def test_load_isolet():
     # Load isolet via unified registry loader
-    X, y, meta = load_dataset("isolet")
+    try:
+        X, y, meta = load_dataset("isolet")
+    except Exception as e:
+        if any(err in str(e).lower() for err in ("503", "http error", "urlerror", "connection", "timed out", "timeout")):
+            pytest.skip(f"OpenML service temporarily unavailable: {e}")
+        raise
     assert isinstance(X, np.ndarray)
     assert isinstance(y, np.ndarray)
     assert X.shape == (7797, 617)
@@ -132,7 +147,12 @@ def test_load_isolet():
 
 def test_load_indian_pines():
     # Load indian_pines via unified registry loader
-    X, y, meta = load_dataset("indian_pines")
+    try:
+        X, y, meta = load_dataset("indian_pines")
+    except Exception as e:
+        if any(err in str(e).lower() for err in ("503", "http error", "urlerror", "connection", "timed out", "timeout")):
+            pytest.skip(f"Dataset service temporarily unavailable: {e}")
+        raise
     assert isinstance(X, np.ndarray)
     assert isinstance(y, np.ndarray)
     assert X.shape == (10249, 200)
@@ -144,7 +164,12 @@ def test_load_indian_pines():
 
 def test_load_yale_b():
     # Load yale_b via unified registry loader
-    X, y, meta = load_dataset("yale_b")
+    try:
+        X, y, meta = load_dataset("yale_b")
+    except Exception as e:
+        if any(err in str(e).lower() for err in ("503", "http error", "urlerror", "connection", "timed out", "timeout")):
+            pytest.skip(f"Dataset service temporarily unavailable: {e}")
+        raise
     assert isinstance(X, np.ndarray)
     assert isinstance(y, np.ndarray)
     assert X.shape == (2414, 1024)

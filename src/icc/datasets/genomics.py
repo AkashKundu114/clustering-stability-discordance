@@ -14,6 +14,7 @@ Supports all 8 high-dimensional benchmark datasets:
 """
 
 import os
+import time
 from pathlib import Path
 from typing import Any, Dict, Optional, Tuple
 
@@ -137,12 +138,28 @@ def load_genomics_dataset(
         return X, y, metadata
 
     print(f"[*] Downloading '{dataset_name}' from OpenML...")
-    raw = fetch_openml(
-        cfg["name"],
-        version=cfg.get("version", 1),
-        as_frame=cfg.get("as_frame", False),
-        parser="auto",
-    )
+    raw = None
+    last_err: Optional[Exception] = None
+    for attempt in range(3):
+        try:
+            raw = fetch_openml(
+                cfg["name"],
+                version=cfg.get("version", 1),
+                as_frame=cfg.get("as_frame", False),
+                parser="auto",
+            )
+            break
+        except Exception as e:
+            last_err = e
+            if attempt < 2 and any(term in str(e).lower() for term in ("503", "timeout", "timed out", "connection")):
+                time.sleep(2 * (attempt + 1))
+                continue
+            raise
+
+    if raw is None:
+        if last_err is not None:
+            raise last_err
+        raise RuntimeError(f"Failed to download '{dataset_name}' from OpenML.")
 
     if cfg.get("as_frame", False):
         raw_X = raw.data.to_numpy(dtype=np.float64)
