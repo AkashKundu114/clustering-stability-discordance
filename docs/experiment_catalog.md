@@ -2,6 +2,8 @@
 
 **Canonical Repository:** [https://github.com/AkashKundu114/clustering-stability-discordance](https://github.com/AkashKundu114/clustering-stability-discordance)
 **Submitted Manuscript Reference:** *Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise*
+**Journal:** Springer Nature - *Data Mining and Knowledge Discovery* (DMKD)
+**Status:** Under review
 **Authors:** Kalyan Kumar Das, Akash Kundu, Anirban Mukhopadhyay
 
 This catalog provides an authoritative mapping of every major experiment in the submitted manuscript to its identifier, purpose, protocol, datasets, evaluated methods, parameters, and evidence artifacts.

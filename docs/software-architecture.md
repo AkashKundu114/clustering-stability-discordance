@@ -1,5 +1,13 @@
 # Software architecture
 
+**Manuscript Reference:** *Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise*
+**Authors:** Kalyan Kumar Das, Akash Kundu, Anirban Mukhopadhyay
+**Journal:** Springer Nature - *Data Mining and Knowledge Discovery* (DMKD)
+**Status:** Under review
+**Canonical Repository:** [https://github.com/AkashKundu114/clustering-stability-discordance](https://github.com/AkashKundu114/clustering-stability-discordance)
+
+---
+
 The repository uses a `src/` layout. Core modules are in `src/icc/`, with an additional `src/cicc/` package for conformal/inductive components. Public paths below refer to code organization, not a guarantee that every module was used in the six-cohort saved-output analysis.
 
 - `src/icc/consensus/`: consensus-clustering implementations, including ICC variants, GAC, AutoK, and perturbation profiling. `src/icc/consensus_v2.py` is a backward-compatibility import shim.

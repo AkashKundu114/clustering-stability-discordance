@@ -3,6 +3,9 @@
 **Document:** `docs/results-and-interpretation.md`
 **Date:** 2026-11-07
 **Project:** Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise
+**Authors:** Kalyan Kumar Das, Akash Kundu, Anirban Mukhopadhyay
+**Journal:** Springer Nature - *Data Mining and Knowledge Discovery* (DMKD)
+**Status:** Under review
 **Running Header:** Feature-Gated Bipartite Consensus Under Noise
 **Canonical Repository:** [https://github.com/AkashKundu114/clustering-stability-discordance](https://github.com/AkashKundu114/clustering-stability-discordance)
 

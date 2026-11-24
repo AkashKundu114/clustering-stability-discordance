@@ -2,6 +2,9 @@
 
 **Canonical Repository:** [https://github.com/AkashKundu114/clustering-stability-discordance](https://github.com/AkashKundu114/clustering-stability-discordance)
 **Submitted Manuscript Reference:** *Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise*
+**Authors:** Kalyan Kumar Das, Akash Kundu, Anirban Mukhopadhyay
+**Journal:** Springer Nature - *Data Mining and Knowledge Discovery* (DMKD)
+**Status:** Under review
 **Audited Baseline Commit:** `44838fa`
 
 To guarantee ethical compliance and adhere strictly to copyright, clinical biobank access terms, and third-party data licenses, this repository classifies all 13 evaluated benchmark datasets into three distinct governance categories.

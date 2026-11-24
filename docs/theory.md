@@ -1,5 +1,13 @@
 # Implementation notes and theoretical scope
 
+**Manuscript Reference:** *Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise*
+**Authors:** Kalyan Kumar Das, Akash Kundu, Anirban Mukhopadhyay
+**Journal:** Springer Nature - *Data Mining and Knowledge Discovery* (DMKD)
+**Status:** Under review
+**Canonical Repository:** [https://github.com/AkashKundu114/clustering-stability-discordance](https://github.com/AkashKundu114/clustering-stability-discordance)
+
+---
+
 This page does not state or claim general theorems for ICC, GAC, CICC, or the empirical clustering results. The implementation contains heuristic feature filters, consensus constructions, and optional inductive/conformal components. Their behavior depends on their assumptions, input representation, parameters, implementation details, and data distribution.
 
 In particular, no universal guarantee of cluster recovery, biomedical validity, clinical utility, feature-selection correctness, or superiority over other methods is established by this repository. Any formal property of a specific component must be evaluated against its source implementation and the assumptions stated in the relevant method reference.

@@ -1,5 +1,13 @@
 # Statistical analysis
 
+**Manuscript Reference:** *Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise*
+**Authors:** Kalyan Kumar Das, Akash Kundu, Anirban Mukhopadhyay
+**Journal:** Springer Nature - *Data Mining and Knowledge Discovery* (DMKD)
+**Status:** Under review
+**Canonical Repository:** [https://github.com/AkashKundu114/clustering-stability-discordance](https://github.com/AkashKundu114/clustering-stability-discordance)
+
+---
+
 ## Estimands
 
 For each cohort-method cell in the reconstructed six-cohort design, stability was defined as the mean of ARIs across all unordered pairs of saved partitions, comparing assignments only on samples shared by both partitions. External reference alignment was calculated as the mean ARI between each real-mode partition and the reference labels for its sampled observations. The summaries share cohort, method, and sampling design, but are not paired one-to-one. Pairwise values reuse partitions and observations and must not be treated as independent measurements.

@@ -1,5 +1,13 @@
 # Research results and release status
 
+**Manuscript Reference:** *Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise*
+**Authors:** Kalyan Kumar Das, Akash Kundu, Anirban Mukhopadhyay
+**Journal:** Springer Nature - *Data Mining and Knowledge Discovery* (DMKD)
+**Status:** Under review
+**Canonical Repository:** [https://github.com/AkashKundu114/clustering-stability-discordance](https://github.com/AkashKundu114/clustering-stability-discordance)
+
+---
+
 The public claim ledger in [`reproduction/claim-to-evidence-matrix.csv`](../reproduction/claim-to-evidence-matrix.csv) and its [numerical comparison report](../reproduction/numerical_comparison_report.md) describe claim status without publishing dataset-derived numerical results. A local saved-output reconstruction and a later local fresh run were performed, but their scalar summaries, partitions, caches, and other derived artifacts have not been cleared for redistribution. A clean clone therefore cannot verify the empirical result. The recovered protocol source does not authenticate historical execution.
 
 The six-cohort investigation compares pairwise agreement among subsampled partitions with ARI to supplied reference labels. A fresh local execution has now occurred, but its inputs and output evidence are not present in this public snapshot. No public artifact in this snapshot allows an independent researcher to regenerate or verify that analysis.

@@ -1,5 +1,13 @@
 # FAQ
 
+**Manuscript Reference:** *Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise*
+**Authors:** Kalyan Kumar Das, Akash Kundu, Anirban Mukhopadhyay
+**Journal:** Springer Nature - *Data Mining and Knowledge Discovery* (DMKD)
+**Status:** Under review
+**Canonical Repository:** [https://github.com/AkashKundu114/clustering-stability-discordance](https://github.com/AkashKundu114/clustering-stability-discordance)
+
+---
+
 ### What does this repository implement?
 A Python research codebase for consensus clustering, ICC variants, baseline wrappers, benchmark utilities, data loading, and evaluation. See [Software architecture](software-architecture.md).
 

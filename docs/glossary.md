@@ -1,5 +1,13 @@
 # Glossary
 
+**Manuscript Reference:** *Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise*
+**Authors:** Kalyan Kumar Das, Akash Kundu, Anirban Mukhopadhyay
+**Journal:** Springer Nature - *Data Mining and Knowledge Discovery* (DMKD)
+**Status:** Under review
+**Canonical Repository:** [https://github.com/AkashKundu114/clustering-stability-discordance](https://github.com/AkashKundu114/clustering-stability-discordance)
+
+---
+
 - **Adjusted Rand Index (ARI):** An external partition similarity measure that adjusts pair agreement for chance, calculated between a clustering assignment and a supplied reference partition. It evaluates alignment to that reference; it does not establish that the reference is complete biological truth.
 - **Consensus clustering:** A procedure that combines information from multiple partitions, often through pairwise co-assignment frequencies or a related consensus representation.
 - **Degenerate partition:** A clustering output with a pathological structure for the intended analysis, such as one cluster or a tiny cluster under a prespecified rule. The exact rule must be reported.
