@@ -28,8 +28,8 @@ The authoritative reference for all scientific claims, experimental methodology,
 ## 2. Structure of the Submitted 48-Page Manuscript
 
 ### Main Paper (Pages 1–35)
-1. **Section 1: Introduction** — High-dimensional geometry ($D \gg N$), distance concentration, the core premise of subsample stability vs external accuracy.
-2. **Section 2: Related Work** — Stability and consensus literature, feature selection in high dimensions, anchor graph methods, out-of-sample extension.
+1. **Section 1: Introduction** - High-dimensional geometry ($D \gg N$), distance concentration, the core premise of subsample stability vs external accuracy.
+2. **Section 2: Related Work** - Stability and consensus literature, feature selection in high dimensions, anchor graph methods, out-of-sample extension.
 3. **Section 3: Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise**
    - *Section 3.1: Simulation Under Isotropic Distractor Noise* (Table 2, Figure 2a–c)
    - *Section 3.2: Evidence from Biomedical Cohorts* (Table 3, Table 4, Table 5, Figure 3)

@@ -1,10 +1,12 @@
 # Data Availability Statement
 
-**Manuscript Title:** *Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise*  
-**Running Header:** *Feature-Gated Bipartite Consensus Under Noise*  
-**Authors:** Kalyan Kumar Das (Techno India University), Akash Kundu (Techno India University), Anirban Mukhopadhyay (University of Kalyani)  
-**Canonical Repository:** [https://github.com/AkashKundu114/clustering-stability-discordance](https://github.com/AkashKundu114/clustering-stability-discordance)  
-**Companion Repository:** [https://github.com/AkashKundu114/icc-clustering](https://github.com/AkashKundu114/icc-clustering)  
+**Manuscript Title:** *Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise*
+**Running Header:** *Feature-Gated Bipartite Consensus Under Noise*
+**Authors:** Kalyan Kumar Das (Techno India University), Akash Kundu (Techno India University), Anirban Mukhopadhyay (University of Kalyani)
+**Journal:** Springer Nature - *Data Mining and Knowledge Discovery* (DMKD)
+**Status:** Under review
+**Canonical Repository:** [https://github.com/AkashKundu114/clustering-stability-discordance](https://github.com/AkashKundu114/clustering-stability-discordance)
+**Companion Repository:** [https://github.com/AkashKundu114/icc-clustering](https://github.com/AkashKundu114/icc-clustering)
 
 ---
 

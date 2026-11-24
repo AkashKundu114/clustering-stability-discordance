@@ -21,7 +21,7 @@ To ensure that independent researchers can inspect, verify, and reproduce the em
 
 ## 2. Detailed Tier Specifications
 
-### Tier 0 — Software Environment & Algorithmic Fidelity
+### Tier 0 - Software Environment & Algorithmic Fidelity
 - **What it verifies:** Package installation, CLI entry points, mathematical correctness of bimodality scoring, bipartite Laplacian construction, spectral embedding, and algorithm wrappers.
 - **Execution:**
   ```powershell
@@ -30,7 +30,7 @@ To ensure that independent researchers can inspect, verify, and reproduce the em
   ```
 - **Expected Outcome:** 82 unit tests pass in $\approx 85\text{ seconds}$. 0 test failures.
 
-### Tier 1 — Aggregate Benchmark Score Verification
+### Tier 1 - Aggregate Benchmark Score Verification
 - **What it verifies:** Recomputes the multi-domain benchmark arithmetic, per-method mean ARIs, cross-dataset ranks, Friedman test statistic ($\chi_F^2 = 11.556, p = 0.3979 \approx 0.40$), and Nemenyi critical difference ($\text{CD} = 4.622$) across all 156 cells ($13 \times 12$).
 - **Tool:** `reproduction/scripts/recompute_benchmark_scores.py`
 - **Execution:**
@@ -41,7 +41,7 @@ To ensure that independent researchers can inspect, verify, and reproduce the em
   ```
 - **What it does not verify:** Does not authenticate the execution timestamps or environments of the original historical fits; verifies numerical arithmetic and rank tests.
 
-### Tier 2 — Saved-Partition Stability Verification
+### Tier 2 - Saved-Partition Stability Verification
 - **What it verifies:** Loads all 4,320 saved partition arrays (`.npy`), recomputes all 31,320 real pairwise stability ARIs, all 31,320 column-permuted null ARIs, all 2,160 external diagnostic ARIs, and checks the 5% cluster degeneracy criterion across all 72 cells.
 - **Tool:** `reproduction/scripts/recompute_saved_stability.py`
 - **Execution:**
@@ -52,7 +52,7 @@ To ensure that independent researchers can inspect, verify, and reproduce the em
   ```
 - **Expected Outcome:** Reproduces fresh grand mean stability ($0.510$), accuracy ($0.053$), gap ($+0.457$), null stability ($0.007$), Rule (i') 18-cell subset ($+0.715$), and Rule (iii) 9-cell core ($+0.687$).
 
-### Tier 3 — Fresh Experimental Reproduction & Hardware Boundaries
+### Tier 3 - Fresh Experimental Reproduction & Hardware Boundaries
 - **What it verifies:** Full re-execution of clustering pipelines on raw or preprocessed datasets, generating fresh partitions, computing pairwise stability, and re-fitting all models.
 - **Feasibility & Hardware Bounds:**
   - *High-Dimensional Microarrays ($n=6$):* 100% feasible on standard workstations (completed on 2026-11-02 in $\approx 4\text{ hours}$).

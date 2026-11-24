@@ -2,14 +2,29 @@
 
 All notable changes to the **CSD (Clustering Stability-Accuracy Discordance)** reproducibility package are documented here.
 
-- **Manuscript Title:** *Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise*  
-- **Running Header:** *Feature-Gated Bipartite Consensus Under Noise*  
-- **Canonical Repository:** [https://github.com/AkashKundu114/clustering-stability-discordance](https://github.com/AkashKundu114/clustering-stability-discordance)  
-- **Companion Repository:** [https://github.com/AkashKundu114/icc-clustering](https://github.com/AkashKundu114/icc-clustering)  
+- **Manuscript Title:** *Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise*
+- **Running Header:** *Feature-Gated Bipartite Consensus Under Noise*
+- **Authors:** Kalyan Kumar Das, Akash Kundu, Anirban Mukhopadhyay
+- **Journal:** Springer Nature - *Data Mining and Knowledge Discovery* (DMKD)
+- **Status:** Under review
+- **Canonical Repository:** [https://github.com/AkashKundu114/clustering-stability-discordance](https://github.com/AkashKundu114/clustering-stability-discordance)
+- **Companion Repository:** [https://github.com/AkashKundu114/icc-clustering](https://github.com/AkashKundu114/icc-clustering)
 - **Benchmark Scope:** 13 benchmark datasets and 12 comparative clustering algorithms.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [Under Review] - 2026-11-24
+
+### Milestone: Submitted to Springer Nature DMKD
+- **Journal:** Springer Nature - *Data Mining and Knowledge Discovery* (DMKD)
+- **Current Status:** Under Review (Stage: With Editor)
+- **Editorial Progress:**
+  - Submission received: Done
+  - Technical check: Done
+  - Editorial assignment: Done
+  - Current stage: With Editor (assigned to handling editor for preliminary evaluation and referee selection)
+- **Documentation Updates:** Updated repository metadata, citation records, and documentation files to reflect the journal submission and review status.
 
 ## [1.0.0-rc2] - 2026-11-07
 

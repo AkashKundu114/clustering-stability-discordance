@@ -49,12 +49,12 @@ This dictionary provides standard definitions, mathematical formulas, inferentia
 
 ## 2. Discordance Filtering Rules & Subsets
 
-### Rule (i) — Pre-Specified Numeric Discordance Filter
+### Rule (i) - Pre-Specified Numeric Discordance Filter
 - **Criteria:** $\bar{S} \ge 0.50$ AND $\bar{A} \le 0.05$.
 - **Cell Count:** Exactly **20 cells** pass out of 72.
 - **Recalculated Metrics:** Mean $\bar{S} = 0.723201$, Mean $\bar{A} = 0.004052$, Mean $\bar{\Delta} = +0.719149$.
 
-### Rule (i') — Post-Hoc Non-Degeneracy Filter
+### Rule (i') - Post-Hoc Non-Degeneracy Filter
 - **Criteria:** Passes Rule (i) AND smallest cluster contains $\ge 5\%$ of subsample points in $\ge 27$ of 30 subsample repeats ($\min N_c / N \ge 0.05$).
 - **Cell Count:** Exactly **18 cells** pass (filters out `UngatedAC` on Colon [25/30 passed] and `K-Means` on CNS [24/30 passed]).
 - **Timing Status:** Introduced post-hoc after observing trivial single-point cluster collapse in CoreHalo on Prostate.
@@ -64,13 +64,13 @@ This dictionary provides standard definitions, mathematical formulas, inferentia
   - Mean Discordance Gap: `+0.714644` (Manuscript: `+0.715`)
 - **Historical Means:** Mean $\bar{S} = 0.720011$, Mean $\bar{A} = 0.003873$.
 
-### Rule (ii) — Pre-Specified Excess Stability Criterion
+### Rule (ii) - Pre-Specified Excess Stability Criterion
 - **Criteria:** $\bar{S} - \bar{S}_{\text{null}} \ge 0.10$.
 - **Result:** Satisfied by all 20 Rule (i) cells.
 
-### Rule (iii) — Multi-Cohort Persistence Core
+### Rule (iii) - Multi-Cohort Persistence Core
 - **Criteria:** Algorithms satisfying Rule (i') across $\ge 3$ distinct cohorts.
-- **Qualifying Algorithms:** `FCAG` (CNS, Colon, Prostate), `FCM` (CNS, Colon, Ovarian), `FastMVC` (CNS, Colon, Prostate) — totaling **9 cells**.
+- **Qualifying Algorithms:** `FCAG` (CNS, Colon, Prostate), `FCM` (CNS, Colon, Ovarian), `FastMVC` (CNS, Colon, Prostate) - totaling **9 cells**.
 - **9-Cell Core Descriptive Means:** Mean $\bar{S} = \mathbf{0.683764}$ (`0.684`), Mean $\bar{A} = \mathbf{-0.002853}$ (`-0.003`), Mean $\bar{\Delta} = \mathbf{+0.686617}$ (`+0.687`).
 - **All 18 Evaluations (3 methods $\times$ 6 cohorts):** Mean $\bar{S} = \mathbf{0.638304}$ (`0.638`), Mean $\bar{A} = \mathbf{0.045733}$ (`0.046`), Mean $\bar{\Delta} = \mathbf{+0.592571}$ (`+0.593`).
 

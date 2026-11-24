@@ -10,7 +10,8 @@
 > **Full Manuscript Title:** *Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise*
 > **Running Header:** *Feature-Gated Bipartite Consensus Under Noise*
 > **Authors:** Kalyan Kumar Das (Techno India University), Akash Kundu (Techno India University), Anirban Mukhopadhyay (University of Kalyani)
-> **Target Journal:** Springer Nature – *Data Mining and Knowledge Discovery* (DMKD)
+> **Journal:** Springer Nature - Data Mining and Knowledge Discovery (DMKD)
+> **Status:** Under review
 > **Authoritative Submission Reference:** Exact 48-page submitted PDF (`Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise.pdf`, SHA-256: `b32259bfd704a7a7e6dd45e5717a731f0d8100d819cfd792911645e7da571a3c`)
 > **Canonical Repository:** [https://github.com/AkashKundu114/clustering-stability-discordance](https://github.com/AkashKundu114/clustering-stability-discordance)
 > **Companion Repository:** [https://github.com/AkashKundu114/icc-clustering](https://github.com/AkashKundu114/icc-clustering)
@@ -134,9 +135,9 @@ python reproduction/scripts/recompute_saved_stability.py \
 ## 5. Dataset Governance & Rights
 
 To comply with ethical regulations, biobank data-use agreements, and third-party licenses:
-- **Category A (Public Open Access — CC BY 4.0):** Sonar, Madelon, ISOLET, 20 Newsgroups, PBMC68k reduced. Fully distributable with attribution.
-- **Category B (Source-Fetch-Only — Clinical Microarrays & University Servers):** Human cancer tissue biopsies (CNS, Colon, Leukemia, Ovarian, Prostate, SRBCT) and Indian Pines hyperspectral scene. Patient-indexed raw matrices are not bundled in public git; retrieved dynamically via OpenML API or institutional server.
-- **Category C (Restricted Redistribution — Explicit Legal Proscription):** Extended Yale Face Database B (Yale CVC terms prohibit public redistribution in third-party archives). Acquired dynamically via `icc.datasets.image.load_yale_b`.
+- **Category A (Public Open Access - CC BY 4.0):** Sonar, Madelon, ISOLET, 20 Newsgroups, PBMC68k reduced. Fully distributable with attribution.
+- **Category B (Source-Fetch-Only - Clinical Microarrays & University Servers):** Human cancer tissue biopsies (CNS, Colon, Leukemia, Ovarian, Prostate, SRBCT) and Indian Pines hyperspectral scene. Patient-indexed raw matrices are not bundled in public git; retrieved dynamically via OpenML API or institutional server.
+- **Category C (Restricted Redistribution - Explicit Legal Proscription):** Extended Yale Face Database B (Yale CVC terms prohibit public redistribution in third-party archives). Acquired dynamically via `icc.datasets.image.load_yale_b`.
 
 See [`DATA_AVAILABILITY.md`](DATA_AVAILABILITY.md) and [`docs/data_rights.md`](docs/data_rights.md).
 
@@ -151,8 +152,8 @@ If you use this codebase or refer to the stability-accuracy discordance findings
   title={Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise},
   author={Das, Kalyan Kumar and Kundu, Akash and Mukhopadhyay, Anirban},
   year={2026},
-  journal={Springer Nature Data Mining and Knowledge Discovery (Under Review)},
-  note={Submission package v2.0-final-submission}
+  journal={Data Mining and Knowledge Discovery (Under Review)},
+  note={Under review}
 }
 
 @software{csd2026code,

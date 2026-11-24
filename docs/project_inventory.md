@@ -110,8 +110,8 @@ csd/
 
 ## 5. Test Suite & Verification Toolchain
 
-- **Algorithmic & Mathematical Unit Tests:** `python -m pytest tests/unit` — **82 passed in ~85s**
-- **CLI Reproduction Tests:** `python -m pytest tests/test_reproduce_cli.py` — **4 passed in ~5s**
+- **Algorithmic & Mathematical Unit Tests:** `python -m pytest tests/unit` - **82 passed in ~85s**
+- **CLI Reproduction Tests:** `python -m pytest tests/test_reproduce_cli.py` - **4 passed in ~5s**
 - **Full Test Suite:** 150 tests across unit, integration, and regression suites.
-- **Tier 1 Saved-Partition Recomputation:** `python reproduction/scripts/recompute_saved_stability.py` — Verified in ~50s.
-- **Tier 1 Benchmark Recomputation:** `python reproduction/scripts/recompute_benchmark_scores.py` — Verified in ~10s.
+- **Tier 1 Saved-Partition Recomputation:** `python reproduction/scripts/recompute_saved_stability.py` - Verified in ~50s.
+- **Tier 1 Benchmark Recomputation:** `python reproduction/scripts/recompute_benchmark_scores.py` - Verified in ~10s.

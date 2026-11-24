@@ -2,6 +2,9 @@
 
 **Canonical Repository:** [https://github.com/AkashKundu114/clustering-stability-discordance](https://github.com/AkashKundu114/clustering-stability-discordance)
 **Submitted Manuscript Reference:** *Stability, Accuracy, and Feature-Gated Bipartite Consensus Under Noise*
+**Authors:** Kalyan Kumar Das, Akash Kundu, Anirban Mukhopadhyay
+**Journal:** Springer Nature - *Data Mining and Knowledge Discovery* (DMKD)
+**Status:** Under review
 **Audited Baseline Commit:** `44838fa`
 
 This guide documents the software stack, operating system specifications, hardware boundaries, and installation instructions for running the CSD reproducibility suite.

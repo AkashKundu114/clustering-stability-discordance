@@ -10,7 +10,7 @@ To guarantee ethical compliance and adhere strictly to copyright, clinical bioba
 
 ## 1. Governance Categories
 
-### Category A — Public Open Access (Permissive Redistribution)
+### Category A - Public Open Access (Permissive Redistribution)
 These datasets are distributed under standard, permissive open-source licenses (primarily Creative Commons Attribution 4.0 International, CC BY 4.0). They may be freely accessed, processed, and redistributed with appropriate academic attribution:
 
 1. **`sonar` (Connectionist Bench Sonar, Mines vs. Rocks):**
@@ -36,7 +36,7 @@ These datasets are distributed under standard, permissive open-source licenses (
 
 ---
 
-### Category B — Source-Fetch-Only (Clinical Microarrays & University Endpoints)
+### Category B - Source-Fetch-Only (Clinical Microarrays & University Endpoints)
 These datasets originate from clinical human tissue biopsies or university server archives. To preserve donor privacy, satisfy biobank data-use agreements, and comply with institutional terms, **raw expression matrices and patient-level sample identifiers are not redistributed in the public Git repository**. Instead, users and reviewers acquire the data dynamically from authorized upstream repositories:
 
 6. **`cns` (Central Nervous System Embryonal Tumors):**
@@ -70,7 +70,7 @@ These datasets originate from clinical human tissue biopsies or university serve
 
 ---
 
-### Category C — Restricted Redistribution (Explicit Legal Proscription)
+### Category C - Restricted Redistribution (Explicit Legal Proscription)
 13. **`yale_b` (Extended Yale Face Database B):**
     - *Publisher:* Georghiades et al. (IEEE TPAMI 2001) / Yale Center for Computational Vision and Control (CVC)
     - *Upstream Host:* `https://cvc.cs.yale.edu/cvc/projects/yalefacesB/yalefacesB.html`
